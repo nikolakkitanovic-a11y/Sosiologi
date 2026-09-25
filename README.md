@@ -24,3 +24,10 @@ Siden er delt i fem faner: **Hjem** (nedtelling, kveldens plan og framdrift), **
 - **Langsvar-verktøykasse** — struktur, formuleringsbank og fem ferdige disposisjoner
 
 Avkryssinger, planen, prøvesvar, quizresultat og temavalg lagres i nettleserens localStorage, ikke noe sted ellers.
+
+## Del 2-håndbok
+
+`del2.html` er en egen side bare for langsvarsdelen: tidsplan med timer, tolkning av oppgaveord,
+avsnittsmodellen, drøftingsteknikk, notatmal til dokumentaren, 17 oppgaver med disposisjon og
+eksempeltekster, teoretikerbank, eksempelbank, formuleringsbank, kildebruk, vanlige feil,
+vurderingskriterier, sjekkliste og begrepsoppslag.

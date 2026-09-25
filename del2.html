@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Del 2-håndbok til fagdag i sosiologi 25. september: metode, oppgavebank med eksempeltekster, teoretikere, eksempler, formuleringer og sjekkliste.">
+<style>
+:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;font:14px system-ui,sans-serif;background:#faf9f7}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Del 2-håndbok</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+:root{
+  --paper:#F1F2F6; --surface:#FFFFFF; --surface-2:#E9EBF2; --surface-3:#DFE2EC;
+  --ink:#14161D; --ink-2:#454A5B; --ink-3:#6A7084;
+  --line:#D4D7E2; --line-2:#B7BCCC;
+  --accent:#33408C; --accent-2:#4B5BB8; --accent-soft:#E4E7F7; --on-accent:#FFFFFF;
+  --amber:#8A5100; --amber-soft:#F8EAD3;
+  --rosa:#9E1656; --rosa-soft:#FBE2EE;
+  --good:#1A6B45; --good-soft:#DCF0E5;
+  --bad:#9B2226; --bad-soft:#FBE3E3;
+  --shadow-1:0 1px 2px rgba(20,22,29,.07);
+  --shadow-2:0 1px 2px rgba(20,22,29,.06), 0 10px 28px -14px rgba(20,22,29,.28);
+  --r:10px; --r-lg:16px;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  --maxw:1240px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0F1118; --surface:#171A23; --surface-2:#1E222D; --surface-3:#262B38;
+  --ink:#ECEEF4; --ink-2:#B6BCCB; --ink-3:#8E96A9;
+  --line:#2B3141; --line-2:#3D4456;
+  --accent:#9DAAF7; --accent-2:#B4BEFA; --accent-soft:#232A47; --on-accent:#10131F;
+  --amber:#EDAC55; --amber-soft:#3A2B12;
+  --rosa:#F58CBA; --rosa-soft:#3A1830;
+  --good:#63D6A0; --good-soft:#12301F;
+  --bad:#F08A8A; --bad-soft:#341717;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4);
+  --shadow-2:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -16px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#0F1118; --surface:#171A23; --surface-2:#1E222D; --surface-3:#262B38;
+  --ink:#ECEEF4; --ink-2:#B6BCCB; --ink-3:#8E96A9;
+  --line:#2B3141; --line-2:#3D4456;
+  --accent:#9DAAF7; --accent-2:#B4BEFA; --accent-soft:#232A47; --on-accent:#10131F;
+  --amber:#EDAC55; --amber-soft:#3A2B12;
+  --rosa:#F58CBA; --rosa-soft:#3A1830;
+  --good:#63D6A0; --good-soft:#12301F;
+  --bad:#F08A8A; --bad-soft:#341717;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4);
+  --shadow-2:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -16px rgba(0,0,0,.8);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:16.5px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--serif); font-weight:600; line-height:1.18; text-wrap:balance; margin:0}
+p{margin:0 0 .85em}
+a{color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:1px}
+a:hover{color:var(--accent-2)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
+img{max-width:100%}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--surface-2);padding:.1em .35em;border-radius:4px}
+
+/* ---------- main ---------- */
+.prose{max-width:70ch}
+.prose p, .prose li{color:var(--ink-2)}
+.prose strong{color:var(--ink);font-weight:600}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:7px;font-size:.7rem;font-weight:700;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:10px
+}
+.eyebrow .pip{width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.eyebrow.k1 .pip{background:var(--amber)} .eyebrow.k1{color:var(--amber)}
+.eyebrow.k4 .pip{background:var(--accent)} .eyebrow.k4{color:var(--accent)}
+.eyebrow.rs .pip{background:var(--rosa)} .eyebrow.rs{color:var(--rosa)}
+
+h2{font-size:clamp(1.65rem,3.4vw,2.2rem);letter-spacing:-.018em;margin-bottom:.35em}
+h3{font-size:1.28rem;letter-spacing:-.012em;margin:2.1em 0 .5em}
+h4{font-family:var(--sans);font-size:.98rem;font-weight:700;letter-spacing:.005em;margin:1.5em 0 .4em}
+.lede{font-size:1.09rem;color:var(--ink-2);max-width:66ch}
+
+/* ---------- hero ---------- */
+.hero{padding-block:40px 6px;position:relative}
+.hero h1{font-size:clamp(2.2rem,6.4vw,3.5rem);letter-spacing:-.03em;margin-bottom:.22em}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .sub{font-size:1.12rem;color:var(--ink-2);max-width:56ch}
+.netfig{width:100%;max-width:100%;height:auto;display:block;margin:20px 0 0;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface)}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;margin-top:22px}
+.facts div{background:var(--surface);padding:14px 16px}
+.facts dt{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3);font-weight:700}
+.facts dd{margin:4px 0 0;font-family:var(--serif);font-size:1.04rem;font-weight:600;color:var(--ink);line-height:1.3}
+
+/* ---------- generic blocks ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 22px;box-shadow:var(--shadow-1)}
+.grid2{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:720px){.grid2{grid-template-columns:1fr 1fr}}
+.grid3{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:620px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
+
+.def{border-left:3px solid var(--accent);background:var(--accent-soft);padding:14px 18px;border-radius:0 var(--r) var(--r) 0;margin:1.1em 0}
+.def .t{font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px}
+.def p{margin:0;color:var(--ink)}
+
+.quote{margin:1.4em 0;padding-left:20px;border-left:2px solid var(--line-2)}
+.quote blockquote{margin:0;font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--ink);line-height:1.5}
+.quote cite{display:block;margin-top:9px;font-style:normal;font-size:.85rem;color:var(--ink-3)}
+
+.tip{display:flex;gap:11px;background:var(--amber-soft);border-radius:var(--r);padding:13px 16px;margin:1.2em 0;font-size:.95rem;color:var(--ink)}
+.tip svg{flex:none;width:17px;height:17px;margin-top:3px;color:var(--amber)}
+.tip b{color:var(--amber)}
+
+.tbl-scroll{overflow-x:auto;margin:1.2em 0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.93rem}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+th{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);background:var(--surface-2)}
+tbody tr:last-child td{border-bottom:0}
+td strong{color:var(--ink)}
+
+ul.clean{list-style:none;padding:0;margin:.6em 0}
+ul.clean li{position:relative;padding-left:22px;margin-bottom:.45em;color:var(--ink-2)}
+ul.clean li::before{content:"";position:absolute;left:4px;top:.68em;width:6px;height:6px;border-radius:2px;background:var(--accent);opacity:.6}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:.8em 0}
+ol.steps li{counter-increment:s;position:relative;padding-left:38px;margin-bottom:.85em;color:var(--ink-2)}
+ol.steps li::before{
+  content:counter(s);position:absolute;left:0;top:1px;width:25px;height:25px;border-radius:7px;
+  background:var(--accent-soft);color:var(--accent);font-size:.78rem;font-weight:700;display:grid;place-items:center
+}
+/* ---------- begrepsbank ---------- */
+.toolrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 18px}
+.chip{
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);
+  padding:8px 14px;min-height:38px;border-radius:999px;font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap
+}
+.chip:hover{background:var(--surface-2);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip .n{font-size:.76rem;opacity:.7;font-variant-numeric:tabular-nums}
+
+.terms{display:grid;gap:12px;grid-template-columns:1fr}
+.terms>*{min-width:0}
+@media(min-width:760px){.terms{grid-template-columns:1fr 1fr}}
+@media(min-width:1280px){.terms{grid-template-columns:1fr 1fr}}
+.term{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:15px 17px;box-shadow:var(--shadow-1);position:relative
+}
+.term.pv{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber) inset, var(--shadow-1)}
+.term-head{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.term h4{font-family:var(--serif);font-size:1.12rem;font-weight:600;margin:0;letter-spacing:-.01em;flex:1 1 60%;min-width:0;overflow-wrap:break-word;color:var(--ink)}
+.tag{
+  font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 7px;border-radius:5px;white-space:nowrap;line-height:1.4
+}
+.tag.k1{background:var(--amber-soft);color:var(--amber)}
+.tag.k4{background:var(--accent-soft);color:var(--accent)}
+.tag.ut{background:var(--rosa-soft);color:var(--rosa)}
+.tag.pv{background:var(--amber);color:#fff}
+:root[data-theme="dark"] .tag.pv,:root:not([data-theme="light"]) .tag.pv{color:#2A1B05}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .tag.pv{color:#fff}}
+.term .d{margin:9px 0 0;font-size:.95rem;color:var(--ink-2)}
+.term .more{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.term .more .lbl{font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.term .more p{font-size:.92rem;margin:0 0 .7em;color:var(--ink-2)}
+.term .more p:last-child{margin-bottom:0}
+.term-foot{display:flex;gap:8px;align-items:center;margin-top:11px}
+.linkbtn{background:none;border:0;color:var(--accent);font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;padding:6px 0;text-align:left}
+.linkbtn:hover{text-decoration:underline}
+.knowbox{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:var(--ink-3);cursor:pointer;user-select:none;padding:6px 2px;min-height:34px}
+.knowbox input{width:17px;height:17px;accent-color:var(--good);cursor:pointer}
+.term.done{border-color:var(--good)}
+.term.done .knowbox{color:var(--good);font-weight:600}
+.empty{padding:40px 10px;text-align:center;color:var(--ink-3)}
+mark{background:var(--amber-soft);color:var(--ink);padding:0 2px;border-radius:3px}
+
+/* ---------- flashcards ---------- */
+.fcwrap{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px}
+.fc{
+  background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r);
+  min-height:220px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:28px 22px;cursor:pointer;box-shadow:var(--shadow-2)
+}
+.fc .side-lbl{font-size:.66rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px}
+.fc .frontT{font-family:var(--serif);font-size:1.6rem;font-weight:600;letter-spacing:-.015em;color:var(--ink)}
+.fc .backT{font-size:1rem;color:var(--ink-2);max-width:52ch;text-align:left}
+.fc .backT .lbl{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);display:block;margin:10px 0 2px}
+.fc .hint{margin-top:16px;font-size:.8rem;color:var(--ink-3)}
+.fcbar{display:flex;gap:8px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.btn{
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:inherit;font-size:.9rem;font-weight:600;
+  padding:10px 16px;min-height:44px;border-radius:var(--r);cursor:pointer;display:inline-flex;align-items:center;gap:7px
+}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent-2);border-color:var(--accent-2)}
+.btn svg{width:16px;height:16px}
+.counter{margin-left:auto;font-size:.85rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* ---------- quiz ---------- */
+.qz{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:12px}
+.qz .qn{font-size:.68rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+.qz .qt{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin:6px 0 13px;color:var(--ink)}
+.opts{display:grid;gap:8px}
+.opt{
+  display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);
+  padding:11px 14px;min-height:44px;border-radius:var(--r);font:inherit;font-size:.94rem;cursor:pointer
+}
+.opt:hover:not(:disabled){background:var(--surface-2)}
+.opt .k{flex:none;width:22px;height:22px;border-radius:6px;background:var(--surface-3);color:var(--ink-3);font-size:.75rem;font-weight:700;display:grid;place-items:center}
+.opt.right{background:var(--good-soft);border-color:var(--good);color:var(--ink)}
+.opt.right .k{background:var(--good);color:var(--surface)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad);color:var(--ink)}
+.opt.wrong .k{background:var(--bad);color:var(--surface)}
+.expl{margin-top:11px;padding:11px 14px;border-radius:var(--r);background:var(--surface-2);font-size:.92rem;color:var(--ink-2)}
+.expl b{color:var(--ink)}
+.score{font-family:var(--serif);font-size:1.2rem;font-weight:600}
+
+/* ---------- drill ---------- */
+.drill{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px;margin-bottom:10px}
+.drill h4{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin:0 0 8px}
+.drill textarea{
+  width:100%;min-height:86px;resize:vertical;padding:10px 12px;border-radius:var(--r);
+  border:1px solid var(--line-2);background:var(--paper);color:var(--ink);font:inherit;font-size:.94rem;line-height:1.55
+}
+.drill .model{margin-top:10px;padding:12px 14px;border-radius:var(--r);background:var(--good-soft);font-size:.94rem;color:var(--ink)}
+.drill .model .lbl{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--good);display:block;margin-bottom:3px}
+
+/* ---------- rosa sider ---------- */
+.rosa{background:var(--rosa-soft);border:1px solid var(--rosa);border-radius:var(--r-lg);padding:22px 24px;margin:1.4em 0}
+.rosa h3{margin-top:0;color:var(--ink)}
+.rosa .who{font-size:.85rem;color:var(--rosa);font-weight:700;letter-spacing:.03em;margin-bottom:10px}
+.rosa p,.rosa li{color:var(--ink-2)}
+.rosa .extra{margin-top:14px;padding-top:13px;border-top:1px solid color-mix(in srgb,var(--rosa) 40%, transparent)}
+.rosa .extra .lbl{font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rosa);display:block;margin-bottom:5px}
+
+/* ---------- sitatbank ---------- */
+.sit{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:17px 19px;display:flex;flex-direction:column;gap:9px}
+.sit q{font-family:var(--serif);font-size:1.03rem;font-style:italic;color:var(--ink);line-height:1.5;quotes:"\00ab" "\00bb"}
+.sit .src{font-size:.82rem;color:var(--ink-3)}
+.sit .use{font-size:.87rem;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:9px}
+.sit .use b{color:var(--accent);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:2px}
+
+/* ---------- sentence bank ---------- */
+.phr{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.phr h4{margin:0 0 7px}
+.phr li{font-size:.93rem;color:var(--ink-2);margin-bottom:.4em}
+.phr li i{color:var(--ink-3);font-style:normal}
+
+/* ---------- model answer ---------- */
+.model-ans{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--surface);margin:14px 0}
+.model-ans > summary{
+  cursor:pointer;padding:15px 18px;font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--ink);
+  list-style:none;display:flex;gap:10px;align-items:center;min-height:52px
+}
+.model-ans > summary::-webkit-details-marker{display:none}
+.model-ans > summary::before{content:"+";font-family:var(--sans);font-weight:700;color:var(--accent);font-size:1.15rem;width:22px;height:22px;flex:none;display:grid;place-items:center;background:var(--accent-soft);border-radius:6px}
+.model-ans[open] > summary::before{content:"\2212"}
+.model-ans > summary:hover{background:var(--surface-2)}
+.model-ans .body{padding:2px 18px 18px;border-top:1px solid var(--line)}
+.model-ans .body h5{font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:16px 0 5px}
+.model-ans .body p,.model-ans .body li{font-size:.95rem;color:var(--ink-2)}
+
+/* ---------- misc ---------- */
+.callout-6{
+  background:linear-gradient(180deg, var(--accent-soft), var(--surface));
+  border:1px solid var(--accent); border-radius:var(--r-lg); padding:22px 24px
+}
+.skipto{position:absolute;left:-9999px;top:0}
+.skipto:focus{left:8px;top:8px;z-index:200;background:var(--surface);color:var(--ink);padding:10px 14px;border-radius:8px;border:1px solid var(--accent)}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 10px;color:var(--ink-3);font-size:.88rem;max-width:70ch}
+footer a{color:var(--ink-2)}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+
+@media print{
+  .topbar,.side,.fcwrap,.toolrow,.knowbox,.linkbtn,.btn,.iconbtn,.opts,.drill textarea{display:none!important}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .shell{display:block;max-width:none;padding:0}
+  .term,.card,.sit,.qz{break-inside:avoid;border:1px solid #bbb;box-shadow:none}
+  .term .more{display:block!important}
+  section{padding-block:14px 0}
+  a{color:#000;text-decoration:none}
+}
+/* ---------- app shell ---------- */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:var(--maxw);margin:0 auto;padding:8px 16px;display:flex;gap:10px;align-items:center;min-height:58px}
+@media(min-width:1000px){.topbar-in{padding:8px 24px}}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;white-space:nowrap;color:var(--ink);text-decoration:none;min-height:40px}
+.brand:hover{color:var(--ink)}
+.brand .dotgrid{width:22px;height:22px;flex:none;color:var(--accent)}
+.spacer{flex:1}
+.iconbtn{width:40px;height:40px;flex:none;display:grid;place-items:center;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.iconbtn:hover{background:var(--surface-2);color:var(--ink)}
+.iconbtn svg{width:18px;height:18px}
+.searchbtn{display:flex;align-items:center;gap:8px;height:40px;padding:0 11px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-3);font:inherit;font-size:.92rem;cursor:pointer;flex:none}
+.searchbtn:hover{background:var(--surface-2);color:var(--ink-2)}
+.searchbtn svg{width:17px;height:17px;flex:none}
+.searchbtn .lbl,.searchbtn kbd{display:none}
+@media(min-width:720px){.searchbtn{width:230px}.searchbtn .lbl{display:inline}.searchbtn kbd{display:inline-block;margin-left:auto}}
+kbd{font-family:var(--sans);font-size:.72rem;font-weight:700;border:1px solid var(--line-2);border-bottom-width:2px;border-radius:5px;padding:0 6px;color:var(--ink-3);background:var(--surface-2);line-height:1.5}
+
+.tabs{display:flex;gap:2px;margin-left:10px}
+.tabs a{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.93rem;min-height:40px;white-space:nowrap}
+.tabs a svg{width:18px;height:18px;flex:none}
+.tabs a:hover{background:var(--surface-2);color:var(--ink)}
+.tabs a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+@media(max-width:879px){
+  .tabs{position:fixed;left:0;right:0;bottom:0;z-index:65;margin:0;background:var(--surface);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom,0px));justify-content:space-around;gap:0;box-shadow:0 -6px 20px -14px rgba(0,0,0,.35)}
+  .tabs a{flex:1;flex-direction:column;gap:2px;padding:6px 2px;border-radius:10px;font-size:.72rem;min-height:52px;justify-content:center}
+  .tabs a svg{width:21px;height:21px}
+  .tabs a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
+  main{padding-bottom:110px!important}
+}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+@media(min-width:1000px){.wrap{padding:0 24px}}
+main{padding-block:4px 90px;min-width:0}
+.view{min-width:0}
+@media (prefers-reduced-motion: no-preference){.view:not([hidden]){animation:vin .2s ease}}
+@keyframes vin{from{opacity:.55;transform:translateY(4px)}to{opacity:1;transform:none}}
+section{scroll-margin-top:132px;padding-block:34px 0}
+@media(min-width:1000px){section{scroll-margin-top:80px}}
+.pane{padding-block:0}
+
+/* segmented control */
+.seg{display:flex;gap:4px;padding:4px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);margin:22px 0 6px;width:max-content;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg a{padding:8px 15px;min-height:40px;display:flex;align-items:center;gap:6px;border-radius:9px;color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.9rem;white-space:nowrap}
+.seg a:hover{color:var(--ink)}
+.seg a[aria-current="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-1)}
+.seg a .n{font-size:.75rem;color:var(--ink-3);font-weight:600}
+
+/* les */
+.les-grid{display:grid;grid-template-columns:minmax(0,1fr)}
+@media(min-width:1000px){.les-grid{grid-template-columns:230px minmax(0,1fr);gap:44px}}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 59px);z-index:20;background:var(--paper);margin:0 -16px;padding:9px 16px;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.toc::-webkit-scrollbar{display:none}
+.toc a{flex:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);text-decoration:none;font-size:.84rem;font-weight:600;white-space:nowrap;min-height:36px;display:flex;align-items:center}
+.toc a.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.toc .toc-h{display:none}
+@media(min-width:1000px){
+  .toc{top:calc(env(safe-area-inset-top,0px) + 76px);align-self:start;margin:0;padding:8px 0 0;border:0;flex-direction:column;gap:2px;background:none;max-height:calc(100vh - 100px);overflow-y:auto}
+  .toc .toc-h{display:block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:0 0 8px 12px}
+  .toc a{border:0;border-left:2px solid transparent;background:none;border-radius:0 8px 8px 0;padding:8px 10px;white-space:normal;font-weight:500;font-size:.92rem}
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.on{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent);font-weight:600}
+}
+.kjerne{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:.3em 0 1.3em;max-width:72ch;box-shadow:var(--shadow-1)}
+.kjerne b{flex:none;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--good);background:var(--good-soft);padding:3px 8px;border-radius:5px;margin-top:3px}
+.kjerne span{color:var(--ink);font-size:.99rem;line-height:1.55}
+.chapnav{display:grid;grid-template-columns:1fr;gap:12px;margin-top:52px}
+@media(min-width:640px){.chapnav{grid-template-columns:1fr 1fr}}
+.chapnav a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);text-decoration:none;color:var(--ink);min-height:44px}
+.chapnav a:hover{border-color:var(--accent)}
+.chapnav small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px}
+.chapnav strong{font-family:var(--serif);font-size:1.1rem;font-weight:600}
+.chapnav .next{text-align:right;grid-column:-2}
+
+/* hjem */
+.home-hero{padding-block:30px 4px}
+.home-hero h1{font-size:clamp(2.1rem,6vw,3.3rem);letter-spacing:-.03em;margin-bottom:.22em}
+.home-hero h1 em{font-style:italic;color:var(--accent)}
+.home-hero .sub{font-size:1.1rem;color:var(--ink-2);max-width:58ch}
+.countdown{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:var(--amber-soft);color:var(--amber);font-weight:700;font-size:.85rem;margin-bottom:14px}
+.countdown i{width:8px;height:8px;border-radius:50%;background:var(--amber)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn.big{padding:12px 20px;font-size:1rem;min-height:50px;border-radius:12px;text-decoration:none}
+a.btn{text-decoration:none}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:24px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px;text-decoration:none;color:var(--ink);display:block;box-shadow:var(--shadow-1)}
+.tile:hover{border-color:var(--accent);color:var(--ink)}
+.tile .lbl{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tile .big{font-family:var(--serif);font-size:2.1rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1;margin:6px 0 10px}
+.tile .big small{font-size:1rem;color:var(--ink-3);font-weight:600}
+.tile .bar{margin:0}
+.tile .go{font-size:.85rem;color:var(--accent);font-weight:600;margin-top:10px;display:block}
+.plan{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;max-width:760px}
+.plan li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:13px 15px}
+.plan li.done{background:var(--good-soft);border-color:var(--good)}
+.plan input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--good);flex:none;cursor:pointer}
+.plan .t{flex:1;min-width:0}
+.plan .t label{display:block;color:var(--ink);font-weight:700;cursor:pointer}
+.plan .t span{display:block;font-size:.92rem;color:var(--ink-2);margin-top:1px}
+.plan .t a{font-size:.88rem;font-weight:600;display:inline-block;margin-top:5px;padding:2px 0}
+.plan .min{font-size:.78rem;font-weight:700;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums;margin-top:3px}
+.plan li.done .t label{text-decoration:line-through;text-decoration-color:var(--good)}
+.pill{display:inline-block;font-family:var(--sans);font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);vertical-align:middle;margin-left:8px;letter-spacing:0;font-variant-numeric:tabular-nums}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+
+/* begreper */
+.bsearch{position:relative;max-width:520px;margin-top:16px}
+.bsearch svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--ink-3);pointer-events:none}
+.bsearch input{width:100%;height:46px;padding:0 14px 0 40px;border-radius:12px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:inherit;font-size:1rem}
+.bsearch input::placeholder{color:var(--ink-3)}
+.shown{font-size:.88rem;color:var(--ink-3);margin:-4px 0 12px}
+.term .golink{font-size:.85rem;font-weight:600;padding:6px 0;text-decoration:none}
+.term .golink:hover{text-decoration:underline}
+.term h3{font-family:var(--serif);font-size:1.12rem;font-weight:600;margin:0;letter-spacing:-.01em;flex:1 1 60%;min-width:0;overflow-wrap:break-word;color:var(--ink)}
+.term.flash{animation:flash 1.6s ease}
+@keyframes flash{0%,40%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:var(--shadow-1)}}
+.term-foot{flex-wrap:wrap;column-gap:14px}
+
+/* pugg */
+.opt-line{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2);cursor:pointer;min-height:40px;margin:-6px 0 8px}
+.opt-line input{width:18px;height:18px;accent-color:var(--accent)}
+.deckprog{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:.88rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.deckprog .bar{flex:1;margin:0}
+.deckprog .bar i{background:var(--good)}
+.fc{min-height:250px;position:relative}
+.fc .known-mark{position:absolute;top:12px;right:14px}
+.rate{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:8px;margin-top:14px}
+.rate .btn{justify-content:center}
+.btn.good{background:var(--good);border-color:var(--good);color:var(--surface)}
+.btn.good:hover{background:var(--good);filter:brightness(1.08)}
+.btn.warn{background:var(--amber-soft);border-color:var(--amber);color:var(--ink)}
+.btn.warn:hover{background:var(--amber-soft);filter:brightness(1.03)}
+.fcnav{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:8px}
+.keys{font-size:.8rem;color:var(--ink-3);margin-top:12px;display:none}
+@media(min-width:720px) and (hover:hover){.keys{display:block}}
+.donebox{text-align:center;padding:34px 18px;background:var(--surface);border:1px solid var(--good);border-radius:var(--r);box-shadow:var(--shadow-2)}
+.donebox h3{margin:0 0 .4em}
+.donebox .cta-row{justify-content:center}
+
+/* del 1-prøve */
+.testhead{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 14px}
+.testhead h3{margin:0}
+.selfrate{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.selfrate .q{font-size:.85rem;color:var(--ink-3);margin-right:4px}
+.selfrate button{border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);padding:7px 13px;min-height:40px;border-radius:999px;font:inherit;font-size:.86rem;font-weight:600;cursor:pointer}
+.selfrate button:hover{background:var(--surface-2)}
+.selfrate button[aria-pressed="true"].r-ok{background:var(--good);border-color:var(--good);color:var(--surface)}
+.selfrate button[aria-pressed="true"].r-mid{background:var(--amber-soft);border-color:var(--amber);color:var(--ink)}
+.selfrate button[aria-pressed="true"].r-bad{background:var(--bad-soft);border-color:var(--bad);color:var(--ink)}
+.drill .yours{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);display:block;margin:8px 0 4px}
+.stickybar{position:sticky;bottom:12px;z-index:30;display:flex;justify-content:center;margin-top:14px}
+@media(max-width:879px){.stickybar{bottom:calc(84px + env(safe-area-inset-bottom,0px))}}
+.stickybar .btn{box-shadow:var(--shadow-2)}
+
+/* quiz */
+.qprog{display:flex;align-items:center;gap:12px;font-size:.88rem;color:var(--ink-3);margin:6px 0 12px;font-variant-numeric:tabular-nums}
+.qprog .bar{flex:1;margin:0}
+.qz{max-width:760px}
+.qnext{margin-top:14px;display:flex;justify-content:flex-end}
+.result{max-width:760px}
+.result .score-big{font-family:var(--serif);font-size:3rem;font-weight:700;line-height:1;margin:6px 0 8px;font-variant-numeric:tabular-nums}
+.missed{margin-top:18px;display:grid;gap:10px}
+.missed .qz{margin:0}
+
+/* notatark */
+.notes{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px 24px;font-size:.93rem;margin-top:14px}
+.notes h3{margin:1.2em 0 .5em;font-size:1.12rem}
+.notes h3:first-child{margin-top:0}
+.notes .cols{columns:2 300px;column-gap:28px}
+.notes .cols > div{break-inside:avoid;margin-bottom:10px}
+.notes dt{font-weight:700;color:var(--ink)}
+.notes dd{margin:0;color:var(--ink-2)}
+.notes ul{margin:.3em 0;padding-left:1.1em}
+.notes li{color:var(--ink-2);margin-bottom:.25em}
+
+/* søkepalett */
+.pal{position:fixed;inset:0;z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:calc(env(safe-area-inset-top,0px) + 7vh) 16px 16px;background:color-mix(in srgb,#0b0d14 45%,transparent)}
+.pal-box{width:100%;max-width:640px;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:hidden;display:flex;flex-direction:column;max-height:78vh}
+.pal-in{display:flex;align-items:center;gap:10px;padding:10px 12px 10px 16px;border-bottom:1px solid var(--line)}
+.pal-in svg{width:19px;height:19px;color:var(--ink-3);flex:none}
+.pal-in input{flex:1;border:0;background:none;font:inherit;font-size:1.08rem;color:var(--ink);outline:none;min-width:0;height:40px}
+.pal-in input::placeholder{color:var(--ink-3)}
+.pal-box:focus-within{border-color:var(--accent)}
+.pal-res{list-style:none;margin:0;padding:6px;overflow-y:auto}
+.pal-res .grp{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:10px 12px 4px}
+.pal-res a{display:block;padding:9px 12px;border-radius:9px;text-decoration:none;color:var(--ink)}
+.pal-res a.act,.pal-res a:hover{background:var(--accent-soft)}
+.pal-res .nm{display:flex;gap:8px;align-items:center;font-weight:600}
+.pal-res .sn{display:block;font-size:.85rem;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pal-empty{padding:26px 16px;text-align:center;color:var(--ink-3)}
+.pal-foot{padding:9px 14px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-3);display:flex;gap:14px;flex-wrap:wrap}
+@media(hover:none){.pal-foot{display:none}}
+
+@media print{
+  .topbar,.tabs,.toc,.seg,.noprint,.pal,.chapnav,.stickybar{display:none!important}
+  main{padding:0!important}
+  .wrap{max-width:none;padding:0}
+  .les-grid{display:block}
+  .notes{border:0;padding:0;font-size:9.5pt}
+  .kjerne{box-shadow:none}
+}
+.bar{height:7px;border-radius:99px;background:var(--surface-3);overflow:hidden;margin:8px 0 6px}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s ease}
+
+/* ---------- del 2-spesifikt ---------- */
+.d2-hero{padding-block:30px 0}
+.d2-hero h1{font-size:clamp(2rem,5.6vw,3.1rem);letter-spacing:-.03em;margin-bottom:.2em}
+.d2-hero h1 em{font-style:italic;color:var(--accent)}
+.d2-hero .sub{font-size:1.08rem;color:var(--ink-2);max-width:62ch}
+.quicknav{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:20px}
+.quicknav a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:13px 15px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow-1)}
+.quicknav a:hover{border-color:var(--accent)}
+.quicknav small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.quicknav strong{font-family:var(--serif);font-size:1.05rem;font-weight:600}
+.warnbox{display:flex;gap:11px;background:var(--rosa-soft);border-radius:var(--r);padding:13px 16px;margin:1.2em 0;font-size:.94rem;color:var(--ink)}
+.warnbox svg{flex:none;width:17px;height:17px;margin-top:3px;color:var(--rosa)}
+.warnbox b{color:var(--rosa)}
+.timeline{display:grid;gap:0;margin:1em 0;border-left:2px solid var(--line-2);padding-left:0}
+.timeline > div{position:relative;padding:0 0 16px 24px}
+.timeline > div::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.timeline .when{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-variant-numeric:tabular-nums}
+.timeline strong{display:block;color:var(--ink);font-size:1.02rem}
+.timeline p{margin:.2em 0 0;color:var(--ink-2);font-size:.95rem}
+.verb td:first-child{white-space:nowrap}
+.verb td:first-child strong{font-family:var(--serif);font-size:1.05rem}
+.steps5{display:grid;gap:10px;margin:1em 0}
+@media(min-width:760px){.steps5{grid-template-columns:repeat(5,1fr)}}
+.steps5 div{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+.steps5 b{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--accent);line-height:1}
+.steps5 strong{display:block;margin:4px 0 2px;color:var(--ink)}
+.steps5 span{font-size:.88rem;color:var(--ink-2)}
+.annot{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;margin:1.2em 0}
+.annot p{margin:0 0 .6em;color:var(--ink);line-height:1.7}
+.annot .m{border-radius:3px;padding:1px 3px}
+.annot .m1{background:var(--accent-soft)} .annot .m2{background:var(--amber-soft)} .annot .m3{background:var(--good-soft)} .annot .m4{background:var(--rosa-soft)} .annot .m5{background:var(--surface-3)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:.8rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.lens{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:760px){.lens{grid-template-columns:1fr 1fr}}
+.lens .card h4{margin-top:0;font-family:var(--serif);font-size:1.1rem}
+.lens .card ul{margin:.3em 0 0;padding-left:1.1em}
+.lens .card li{color:var(--ink-2);margin-bottom:.3em;font-size:.94rem}
+.theo{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:900px){.theo{grid-template-columns:1fr 1fr}}
+.theo article{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px}
+.theo h4{margin:0;font-family:var(--serif);font-size:1.12rem}
+.theo .yr{font-size:.8rem;color:var(--ink-3);margin:1px 0 8px;display:block}
+.theo dl{margin:0;display:grid;gap:6px}
+.theo dt{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.theo dd{margin:0 0 4px;font-size:.93rem;color:var(--ink-2)}
+.task{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);margin:0 0 12px;overflow:hidden}
+.task > summary{cursor:pointer;list-style:none;padding:15px 18px;display:flex;gap:12px;align-items:flex-start;min-height:52px}
+.task > summary::-webkit-details-marker{display:none}
+.task > summary:hover{background:var(--surface-2)}
+.task > summary .num{flex:none;width:30px;height:30px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.85rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.task > summary .ttl{flex:1;min-width:0}
+.task > summary .ttl strong{display:block;font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--ink);line-height:1.35}
+.task > summary .ttl span{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.task > summary .chev{flex:none;color:var(--ink-3);transition:transform .2s;margin-top:6px}
+.task[open] > summary .chev{transform:rotate(180deg)}
+.task .body{padding:4px 20px 20px;border-top:1px solid var(--line)}
+.task h5{font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:18px 0 6px}
+.task .body p,.task .body li{color:var(--ink-2);font-size:.96rem}
+.task .body ol,.task .body ul{padding-left:1.2em;margin:.3em 0}
+.task .body li{margin-bottom:.35em}
+.chips-inline{display:flex;flex-wrap:wrap;gap:6px}
+.chips-inline span{font-size:.82rem;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line)}
+.modeltext{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--good);border-radius:0 var(--r) var(--r) 0;padding:13px 16px;margin:.5em 0}
+.modeltext .lbl{font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--good);display:block;margin-bottom:4px}
+.modeltext p{color:var(--ink)!important;margin:0 0 .6em;line-height:1.7}
+.modeltext p:last-child{margin:0}
+.pitfall li::marker{color:var(--bad)}
+.phrasegrid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:720px){.phrasegrid{grid-template-columns:1fr 1fr}}
+@media(min-width:1180px){.phrasegrid{grid-template-columns:1fr 1fr 1fr}}
+.phr ul{padding-left:1.1em}
+.checklist{list-style:none;padding:0;margin:.5em 0;display:grid;gap:6px;max-width:780px}
+.checklist li{display:flex;gap:11px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 13px}
+.checklist li.done{background:var(--good-soft);border-color:var(--good)}
+.checklist input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--good);cursor:pointer}
+.checklist label{cursor:pointer;color:var(--ink);font-size:.96rem}
+.checklist label small{display:block;color:var(--ink-2);font-size:.86rem}
+.timerbox{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px;margin-top:14px}
+.timerbox .clock{font-family:var(--serif);font-size:2.6rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1;min-width:5ch}
+.timerbox .phase{flex:1;min-width:200px}
+.timerbox .phase strong{display:block;color:var(--ink)}
+.timerbox .phase span{font-size:.9rem;color:var(--ink-2)}
+.timerbox select{height:44px;border-radius:var(--r);border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:inherit;padding:0 10px}
+.notepad textarea{width:100%;min-height:90px;resize:vertical;padding:10px 12px;border-radius:var(--r);border:1px solid var(--line-2);background:var(--paper);color:var(--ink);font:inherit;font-size:.95rem;line-height:1.55}
+.notepad label{display:block;font-weight:700;color:var(--ink);margin:14px 0 2px}
+.notepad label small{display:block;font-weight:400;color:var(--ink-3);font-size:.86rem}
+.lookup{columns:2 320px;column-gap:24px;margin-top:12px}
+.lookup div{break-inside:avoid;padding:8px 0;border-bottom:1px dashed var(--line)}
+.lookup dt{font-weight:700;color:var(--ink)}
+.lookup dd{margin:2px 0 0;color:var(--ink-2);font-size:.92rem}
+.gradetbl td{font-size:.9rem}
+.gradetbl th:nth-child(5),.gradetbl td:nth-child(5){background:color-mix(in srgb,var(--good-soft) 60%,transparent)}
+.backlink{font-size:.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:40px}
+
+</style>
+
+</head>
+<body>
+<a class="skipto" href="#main">Hopp til innhold</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#d-start" aria-label="Del 2-håndbok, til toppen">
+      <svg class="dotgrid" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1" opacity=".55"><path d="M5 6 L12 12 L19 5 M12 12 L6 18 M12 12 L19 17"/></g><g fill="currentColor"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="1.6"/><circle cx="12" cy="12" r="2.4"/><circle cx="6" cy="18" r="1.6"/><circle cx="19" cy="17" r="1.6"/></g></svg>
+      Del&nbsp;2-håndbok
+    </a>
+    <a class="backlink" href="index.html" target="_top">&larr; <span>Fagdag-siden</span></a>
+    <span class="spacer"></span>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Bytt mellom lyst og mørkt tema"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+<div class="les-grid">
+<nav class="toc" id="toc" aria-label="Innhold"></nav>
+<div class="les-main">
+
+<section class="d2-hero" id="d-start" data-toc="Start">
+  <span class="eyebrow"><span class="pip"></span>Fagdag 25. september &middot; 3.&ndash;6. time &middot; del 2</span>
+  <h1>Alt til <em>langsvaret</em> på del 2</h1>
+  <p class="sub">Del 2 er langsvarsoppgaver. Du velger blant noen alternativer, skriver på PC og kan bruke lærebok og notater. Her er metoden, oppgavene du sannsynligvis får, eksempeltekster på 6-er-nivå, teoriene, eksemplene og formuleringene.</p>
+
+  <div class="quicknav">
+    <a href="#d-oppg"><small>Hjertet av siden</small><strong>Oppgavebank med 17 oppgaver</strong></a>
+    <a href="#d-verb"><small>Før du skriver</small><strong>Hva betyr «drøft»?</strong></a>
+    <a href="#d-avsnitt"><small>Mens du skriver</small><strong>Avsnittsmodellen</strong></a>
+    <a href="#d-dok"><small>1.&ndash;2. time</small><strong>Notatmal til dokumentaren</strong></a>
+    <a href="#d-fraser"><small>Når ordene stopper</small><strong>Formuleringsbank</strong></a>
+    <a href="#d-sjekk"><small>Siste ti minutter</small><strong>Sjekkliste før levering</strong></a>
+  </div>
+
+  <div class="warnbox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+    <span><b>To ting før du starter.</b> Spør læreren om en nettside som denne regnes som «notater» under prøven, eller om bare bok og egne notater gjelder. Er du usikker, skriv ut det du trenger. Og eksempeltekstene her viser nivået, de er ikke til å lime inn. Skriv med egne ord, ellers er det plagiat.</span>
+  </div>
+</section>
+
+<section id="d-tid" data-toc="Tidsplan og timer">
+  <span class="eyebrow"><span class="pip"></span>Metode 1</span>
+  <h2>Tidsplan og timer</h2>
+  <p class="lede">Del 2 starter når du har levert del 1, og du kan gå når du er ferdig. Regn med rundt to timer. De fleste som får lav karakter på langsvar, taper på tidsbruken: de starter å skrive før de vet hva de skal si, og rekker aldri drøftingen.</p>
+  <div class="timeline">
+    <div><span class="when">0&ndash;10 min</span><strong>Les alle oppgavene og velg</strong><p>Les hver oppgave to ganger. Strek under oppgaveordet og fagbegrepene i oppgaveteksten. Velg den du har flest begreper, teorier og eksempler til, ikke den som virker enklest.</p></div>
+    <div><span class="when">10&ndash;25 min</span><strong>Lag disposisjon</strong><p>Skriv stikkord for innledning, 3&ndash;5 hovedavsnitt og konklusjon. Bestem hvilke begreper, teoretikere og eksempler som hører til hvert avsnitt. Bestem konklusjonen <em>nå</em>, så hele teksten peker mot den.</p></div>
+    <div><span class="when">25&ndash;40 min</span><strong>Innledning og redegjørelse</strong><p>Definer hovedbegrepene presist med kilde. Ikke bruk mer enn en fjerdedel av teksten på å gjøre rede.</p></div>
+    <div><span class="when">40&ndash;95 min</span><strong>Anvendelse og drøfting</strong><p>Her avgjøres karakteren. Bruk begrepene på konkrete eksempler, og sett forklaringer mot hverandre.</p></div>
+    <div><span class="when">95&ndash;105 min</span><strong>Konklusjon</strong><p>Svar på oppgaven. Vekt forklaringene og begrunn.</p></div>
+    <div><span class="when">105&ndash;120 min</span><strong>Les gjennom</strong><p>Bruk <a href="#d-sjekk">sjekklisten</a>. Sjekk at oppgaveordet er besvart, at hvert avsnitt har et fagbegrep, og at kildene står riktig.</p></div>
+  </div>
+
+  <div class="timerbox noprint" aria-live="polite">
+    <div class="clock" id="clock">120:00</div>
+    <div class="phase"><strong id="phaseName">Klar</strong><span id="phaseHint">Start timeren når du begynner på del 2.</span></div>
+    <label class="sr-lbl" for="tLen" style="font-size:.85rem;color:var(--ink-3)">Tid</label>
+    <select id="tLen"><option value="90">90 min</option><option value="120" selected>120 min</option><option value="150">150 min</option></select>
+    <button class="btn primary" id="tStart" type="button">Start</button>
+    <button class="btn" id="tReset" type="button">Nullstill</button>
+  </div>
+</section>
+
+<section id="d-verb" data-toc="Tolk oppgaveordet">
+  <span class="eyebrow"><span class="pip"></span>Metode 2</span>
+  <h2>Tolk oppgaveordet</h2>
+  <p class="lede">Oppgaveordet bestemmer hva sensor ser etter. En tekst som «gjør rede for» når oppgaven sier «drøft», kan ikke få mer enn middels, uansett hvor mye du kan.</p>
+  <div class="tbl-scroll">
+    <table class="verb">
+      <thead><tr><th>Ordet</th><th>Hva du skal gjøre</th><th>Slik viser du det</th><th>Vanlig feil</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Gjør rede for</strong></td><td>Presentere grundig og presist, med fagbegreper og sammenhenger. Ingen egen vurdering kreves.</td><td>Definisjon med kilde, forklaring med egne ord, eksempel, og hvordan begrepet henger sammen med andre begreper.</td><td>Liste opp stikkord uten sammenheng.</td></tr>
+        <tr><td><strong>Forklar</strong></td><td>Vise <em>hvorfor</em> noe er som det er: årsaker og sammenhenger.</td><td>«Dette skyldes &hellip;», «en årsak er &hellip;, fordi &hellip;». Bruk individ- og strukturforklaringer.</td><td>Beskrive hva som skjer i stedet for hvorfor.</td></tr>
+        <tr><td><strong>Beskriv</strong></td><td>Fortelle hvordan noe er, uten å forklare eller vurdere.</td><td>Konkrete kjennetegn og fakta.</td><td>Sjelden brukt alene på del 2. Står det, følger det nesten alltid et «og drøft».</td></tr>
+        <tr><td><strong>Drøft</strong></td><td>Undersøke et spørsmål fra flere sider, veie argumentene mot hverandre og komme fram til en begrunnet konklusjon.</td><td>Minst to perspektiver eller forklaringer, argumenter <em>for og mot</em>, vekting («mer overbevisende fordi»), konklusjon.</td><td>Liste for og mot uten å veie dem, eller hoppe over konklusjonen.</td></tr>
+        <tr><td><strong>Vurder</strong></td><td>Ta stilling til hvor godt, viktig eller holdbart noe er, og begrunne det.</td><td>Kriterier: forklaringskraft, hva forklaringen får med og ikke, hvor godt belagt den er.</td><td>Mene noe uten begrunnelse.</td></tr>
+        <tr><td><strong>Analyser</strong></td><td>Dele et fenomen opp og undersøke delene og sammenhengen mellom dem ved hjelp av fagbegreper.</td><td>Bruk en tenkemåte som verktøy: nivå for nivå, perspektiv for perspektiv.</td><td>Gjenfortelle saken.</td></tr>
+        <tr><td><strong>Sammenlikn</strong></td><td>Finne likheter <em>og</em> forskjeller.</td><td>Punkt for punkt, ikke først A og så B. Avslutt med hva sammenlikningen viser.</td><td>Bare forskjeller.</td></tr>
+        <tr><td><strong>Reflekter over</strong></td><td>Tenke høyt og nyansert om betydningen av noe, gjerne med kobling til eget liv eller samfunnet.</td><td>«Dette kan bety at &hellip;», «samtidig kan man spørre om &hellip;». Egne erfaringer er lov, men knytt dem til fag.</td><td>Bare personlig synsing.</td></tr>
+        <tr><td><strong>Bruk / anvend</strong></td><td>Ta et begrep eller en teori og bruke det på et konkret tilfelle.</td><td>«Med Goffmans begrep frontstage kan vi forstå &hellip;».</td><td>Forklare teorien, men aldri bruke den.</td></tr>
+        <tr><td><strong>Utforsk</strong></td><td>Undersøke åpent, gjerne med spørsmål, og vise hva ulike perspektiver avdekker.</td><td>Still spørsmål og besvar dem med ulike tenkemåter.</td><td>Ingen retning i teksten.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+    <span><b>Sammensatte oppgaver:</b> «Gjør rede for X og drøft Y» betyr to deler med ulik vekt. Bruk omtrent en tredjedel på redegjørelsen og to tredjedeler på drøftingen. Del gjerne teksten med mellomtitler som speiler oppgaveordene.</span>
+  </div>
+</section>
+
+<section id="d-velg" data-toc="Velg riktig oppgave">
+  <span class="eyebrow"><span class="pip"></span>Metode 3</span>
+  <h2>Velg riktig oppgave</h2>
+  <p class="lede">Bruk to minutter per oppgave på denne testen. Velg den med flest ja.</p>
+  <ol class="steps">
+    <li><strong>Kan jeg definere alle fagbegrepene i oppgaveteksten</strong> presist, uten å slå opp?</li>
+    <li><strong>Har jeg minst to teoretikere</strong> eller perspektiver som passer? Uten to kan du ikke drøfte.</li>
+    <li><strong>Har jeg minst tre konkrete eksempler</strong>, gjerne ett fra pensum, ett fra samtiden og ett fra eget liv?</li>
+    <li><strong>Ser jeg en uenighet</strong> i oppgaven? Drøfting trenger noe å være uenig om.</li>
+    <li><strong>Vet jeg hva jeg vil konkludere?</strong> Om du ikke har en foreløpig konklusjon etter to minutter, er oppgaven sannsynligvis feil for deg.</li>
+  </ol>
+  <div class="warnbox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
+    <span><b>Felle:</b> Den oppgaven som virker lettest («Gjør rede for sosialisering») er ofte den vanskeligste å få 6 på, fordi den gir lite rom for drøfting. En oppgave med en tydelig påstand å drøfte gir mer å jobbe med.</span>
+  </div>
+</section>
+
+<section id="d-struktur" data-toc="Oppbygging av svaret">
+  <span class="eyebrow"><span class="pip"></span>Metode 4</span>
+  <h2>Oppbygging av svaret</h2>
+  <div class="tbl-scroll">
+    <table>
+      <thead><tr><th>Del</th><th>Omfang</th><th>Innhold</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Innledning</strong></td><td>5&ndash;10 %</td><td>En konkret inngang (et eksempel, et sitat, et tall), en presis definisjon av hovedbegrepet, en problemstilling med egne ord, og hvilke perspektiver du skal bruke. Ingen konklusjon ennå.</td></tr>
+        <tr><td><strong>Redegjørelse</strong></td><td>20&ndash;30 %</td><td>Begrepene og teoriene du trenger, presist og med kilde. Bare det du faktisk bruker seinere.</td></tr>
+        <tr><td><strong>Anvendelse</strong></td><td>20&ndash;30 %</td><td>Begrepene brukt på konkrete eksempler. Ofte vevd sammen med drøftingen.</td></tr>
+        <tr><td><strong>Drøfting</strong></td><td>30&ndash;40 %</td><td>Perspektiver og forklaringer satt mot hverandre, med vekting og kildekritikk.</td></tr>
+        <tr><td><strong>Konklusjon</strong></td><td>5&ndash;10 %</td><td>Svar direkte på problemstillingen. Si hvilken forklaring som veier tyngst og hvorfor, eller hvordan de utfyller hverandre. Ingen nye argumenter.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Innledning: fire grep</h3>
+  <ol class="steps">
+    <li><strong>Inngang:</strong> et konkret bilde. «I 2016 hang det en lapp på Ønsketreet i Slottsparken: «Jeg ønsker at alle blir litt snillere mot seg selv».»</li>
+    <li><strong>Definisjon:</strong> «Med sosialisering menes her &hellip; (Berger og Luckmann, 2000).»</li>
+    <li><strong>Problemstilling:</strong> «Spørsmålet er i hvilken grad &hellip;»</li>
+    <li><strong>Veikart:</strong> «Først gjør jeg rede for &hellip;, deretter bruker jeg &hellip; på &hellip;, før jeg drøfter &hellip;»</li>
+  </ol>
+  <h3>Konklusjon: tre grep</h3>
+  <ol class="steps">
+    <li><strong>Svar:</strong> gjenta problemstillingen i kort form og svar på den.</li>
+    <li><strong>Vekting:</strong> hvilken forklaring eller hvilket perspektiv veier tyngst, og hvorfor.</li>
+    <li><strong>Utsikt:</strong> én setning om hva dette betyr, eller hva vi fortsatt ikke vet. Ikke en ny drøfting.</li>
+  </ol>
+</section>
+
+<section id="d-avsnitt" data-toc="Avsnittsmodellen">
+  <span class="eyebrow"><span class="pip"></span>Metode 5</span>
+  <h2>Avsnittsmodellen</h2>
+  <p class="lede">Hvert hovedavsnitt i et 6-er-svar gjør de samme fem tingene. Bruk modellen som sjekk: mangler et avsnitt et av trinnene, er det tynt.</p>
+  <div class="steps5">
+    <div><b>1</b><strong>Påstand</strong><span>Første setning sier hva avsnittet handler om.</span></div>
+    <div><b>2</b><strong>Begrep</strong><span>Fagbegrep med definisjon og kilde.</span></div>
+    <div><b>3</b><strong>Eksempel</strong><span>Konkret tilfelle, koblet eksplisitt til begrepet.</span></div>
+    <div><b>4</b><strong>Nyanse</strong><span>Motargument, begrensning eller annet perspektiv.</span></div>
+    <div><b>5</b><strong>Delkonklusjon</strong><span>Hva avsnittet betyr for problemstillingen.</span></div>
+  </div>
+  <div class="annot">
+    <p><span class="m m1">En viktig årsak til at unge i dag ser ut til å gjøre mindre opprør enn før, er at forholdet til foreldrene har endret seg.</span> <span class="m m2">Sosiologene Øia og Vestel (2014) beskriver en «generasjonskløft som forsvant»: foreldrene er mindre autoritære, deltar mer i barnas liv, og deres posisjon som signifikante andre, altså de personene som betyr mest i sosialiseringen, er blitt styrket.</span> <span class="m m3">Dette ser vi i Ungdata 2020, der 92 prosent svarer at foresatte er svært interessert i livet deres (Bakken, 2020). Når grensene forhandles i stedet for å dikteres, blir det mindre å gjøre opprør mot.</span> <span class="m m4">Samtidig er det en svakhet at Ungdata bygger på selvrapportering, og det er ikke sikkert at en nær relasjon betyr at konflikten er borte. Den kan ha flyttet seg innover, som prestasjonspress i stedet for opprør.</span> <span class="m m5">Endringen i foreldrerollen forklarer derfor en del av bildet, men ikke hvorfor mange unge likevel sliter.</span></p>
+    <div class="legend"><span><i style="background:var(--accent-soft)"></i>Påstand</span><span><i style="background:var(--amber-soft)"></i>Begrep og kilde</span><span><i style="background:var(--good-soft)"></i>Eksempel</span><span><i style="background:var(--rosa-soft)"></i>Nyanse</span><span><i style="background:var(--surface-3)"></i>Delkonklusjon</span></div>
+  </div>
+</section>
+
+<section id="d-drofting" data-toc="Slik drøfter du">
+  <span class="eyebrow"><span class="pip"></span>Metode 6</span>
+  <h2>Slik drøfter du</h2>
+  <p class="lede">Å drøfte er å <em>veie</em>. En liste med argumenter for og mot er bare halvveis. Du må si hvilke argumenter som er sterkest, og hvorfor.</p>
+  <h3>Fire måter å bygge drøftingen på</h3>
+  <div class="grid2">
+    <div class="card"><h4 style="margin-top:0">For og mot</h4><p>Påstand, så argumenter for, så argumenter mot, så vekting.</p><p style="margin-bottom:0;font-size:.9rem;color:var(--ink-3)"><strong>Passer til:</strong> «Drøft påstanden &hellip;», for eksempel «Det klassiske ungdomsopprøret finnes ikke lenger».</p></div>
+    <div class="card"><h4 style="margin-top:0">Forklaring for forklaring</h4><p>Hver forklaring får et avsnitt, med styrker og svakheter. Til slutt sammenliknes forklaringskraften.</p><p style="margin-bottom:0;font-size:.9rem;color:var(--ink-3)"><strong>Passer til:</strong> «Drøft ulike forklaringer på &hellip;», for eksempel 22. juli eller prestasjonspress.</p></div>
+    <div class="card"><h4 style="margin-top:0">Perspektiv for perspektiv</h4><p>Samme fenomen sett gjennom to eller tre briller: harmoni og konflikt, individ og struktur.</p><p style="margin-bottom:0;font-size:.9rem;color:var(--ink-3)"><strong>Passer til:</strong> «Bruk ulike perspektiver til å analysere &hellip;».</p></div>
+    <div class="card"><h4 style="margin-top:0">Nivå for nivå</h4><p>Mikro, så meso, så makro. Vis hva hvert nivå får fram og hva det mister.</p><p style="margin-bottom:0;font-size:.9rem;color:var(--ink-3)"><strong>Passer til:</strong> sammensatte fenomener som radikalisering, frafall og psykisk helse.</p></div>
+  </div>
+  <h3>Sju kriterier for å veie forklaringer</h3>
+  <ul class="clean">
+    <li><strong>Forklaringskraft:</strong> Forklarer den mange tilfeller, eller bare ett?</li>
+    <li><strong>Omfang:</strong> Forklarer den hvorfor <em>så mange</em> rammes (struktur), eller hvorfor akkurat <em>denne</em> personen rammes (individ)?</li>
+    <li><strong>Belegg:</strong> Bygger den på forskning, og hvilken? Selvrapportering, feltarbeid, statistikk?</li>
+    <li><strong>Tid og sted:</strong> Gjelder den i dag, i Norge? Mead forsket på Samoa i 1925.</li>
+    <li><strong>Hva den utelater:</strong> Sier den noe om makt? Om individets valg?</li>
+    <li><strong>Hvem som sier det:</strong> Breivik om seg selv er noe annet enn en rettspsykiatrisk vurdering.</li>
+    <li><strong>Samspill:</strong> Utfyller forklaringene hverandre? Da må du si <em>hvordan</em>.</li>
+  </ul>
+  <div class="tip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+    <span><b>Den vanligste 5-er-konklusjonen</b> er «forklaringene utfyller hverandre». Den blir en 6-er først når du sier hvordan: «Strukturforklaringen forklarer hvorfor ledigheten steg for hele gruppa samtidig, mens individforklaringen forklarer hvem i gruppa som ble rammet. Uten den første ville vi lagt skylden på den enkelte, uten den andre ville vi ikke sett forskjellene innad.»</span>
+  </div>
+</section>
+
+<section id="d-linser" data-toc="Fem linser på alt">
+  <span class="eyebrow"><span class="pip"></span>Metode 7</span>
+  <h2>Fem linser du kan bruke på alt</h2>
+  <p class="lede">De fem tenkemåtene fra kapittel 1 er et ferdig analyseverktøy. Kjør hvilket som helst fenomen gjennom spørsmålene under, så har du stoff til fem avsnitt.</p>
+  <div class="lens">
+    <div class="card"><h4>1. Individ og struktur</h4><ul><li>Hvilke valg, egenskaper eller diagnoser hos personen kan forklare dette?</li><li>Hvilke forhold rundt personen virker inn: familie, venner, skole, medier, lokalmiljø, stat, det globale?</li><li>Hvor går grensen mellom de to, og hvordan påvirker de hverandre?</li></ul></div>
+    <div class="card"><h4>2. Typologi</h4><ul><li>Kan fenomenet deles i typer ut fra systematiske likheter og forskjeller?</li><li>Hvilke tilfeller passer i flere kategorier?</li><li>Hva skjuler typologien?</li></ul></div>
+    <div class="card"><h4>3. Mikro, meso og makro</h4><ul><li>Mikro: hva skjer i og rundt enkeltpersonen?</li><li>Meso: hvilke institusjoner og grupper spiller inn, som skole, familie, fengsel eller nettmiljø?</li><li>Makro: hvilke trekk ved samfunnet som helhet?</li></ul></div>
+    <div class="card"><h4>4. Harmoni og konflikt</h4><ul><li>Harmoni: hvilken funksjon har fenomenet for samfunnet? Hva holder det sammen?</li><li>Konflikt: hvem vinner og taper? Hvilke grupper kjemper om goder og verdier?</li></ul></div>
+    <div class="card"><h4>5. Arv og miljø</h4><ul><li>Hva kan skyldes medfødte forskjeller?</li><li>Hva skyldes kultur, forventninger og oppvekst?</li><li>Hvordan kan epigenetikk vise samspillet?</li></ul></div>
+    <div class="card"><h4>Bonus: kapittel 4-linsen</h4><ul><li>Hvilke normer og roller er i spill, og hvem er de signifikante andre?</li><li>Hvordan formes eller presenteres identitet (Goffman, G.H. Mead)?</li><li>Er sosialiseringen post-, kon- eller prefigurativ?</li></ul></div>
+  </div>
+</section>
+
+<section id="d-dok" data-toc="Notatmal for dokumentaren">
+  <span class="eyebrow"><span class="pip"></span>1.&ndash;2. time</span>
+  <h2>Notatmal for dokumentaren</h2>
+  <p class="lede">I 1.&ndash;2. time ser dere en dokumentar og jobber med et studieark. Det er ikke usannsynlig at en av oppgavene på del 2 bygger på den. Fyll inn mens du ser, så har du eksempler klare. Notatene lagres bare i denne nettleseren.</p>
+  <div class="notepad" id="notepad"></div>
+  <div class="toolrow noprint" style="margin-top:12px"><button class="btn" id="npClear" type="button">Tøm notatene</button></div>
+</section>
+<section id="d-oppg" data-toc="Oppgavebank">
+  <span class="eyebrow"><span class="pip"></span>Hjertet av siden</span>
+  <h2>Oppgavebank</h2>
+  <p class="lede">Sytten oppgaver som dekker det dere sannsynligvis får: oppgavene bakerst i kapittel 1 og 4, diskusjonsspørsmålene i kapitlene, og kombinasjoner av dem. Hver oppgave har tolkning, byggeklosser, disposisjon, fallgruver og eksempeltekst på 6-er-nivå.</p>
+  <div class="toolrow" role="group" aria-label="Filtrer oppgaver">
+    <button class="chip" data-tf="alle" aria-pressed="true" type="button">Alle</button>
+    <button class="chip" data-tf="k1" aria-pressed="false" type="button">Kapittel 1</button>
+    <button class="chip" data-tf="k4" aria-pressed="false" type="button">Kapittel 4</button>
+    <button class="chip" data-tf="x" aria-pressed="false" type="button">På tvers</button>
+    <button class="chip" id="openAllTasks" type="button">Åpne alle</button>
+  </div>
+  <div id="tasks"></div>
+</section>
+
+<section id="d-teori" data-toc="Teoretikerbank">
+  <span class="eyebrow"><span class="pip"></span>Byggeklosser</span>
+  <h2>Teoretikerbank</h2>
+  <p class="lede">Alle teoretikerne du kan trenge, med hovedidé, begrepene deres, hvordan du bruker dem i et langsvar, og hva som kan kritiseres. Kritikken er det som gjør at du <em>vurderer</em> og ikke bare gjengir.</p>
+  <div class="theo" id="theo"></div>
+</section>
+
+<section id="d-eks" data-toc="Eksempelbank">
+  <span class="eyebrow"><span class="pip"></span>Byggeklosser</span>
+  <h2>Eksempelbank</h2>
+  <p class="lede">Et 6-er-svar har eksempler fra tre kilder: pensum, samtiden og eget liv. Her er de, sortert etter hvilke begreper de illustrerer.</p>
+  <h3>Fra pensum</h3>
+  <div class="tbl-scroll"><table>
+    <thead><tr><th>Eksempel</th><th>Kjernen</th><th>Illustrerer</th></tr></thead>
+    <tbody>
+      <tr><td><strong>22. juli 2011</strong></td><td>77 drept i regjeringskvartalet og på Utøya. Planlagt over lang tid. Breivik dømt til 21 års forvaring.</td><td>Alle fem tenkemåtene, typologi (Bjørgo), konspirasjonsteori, selektiv eksponering, harmoni (rosetog), konflikt (oss og dem)</td></tr>
+      <tr><td><strong>Margaret Mead på Samoa (1925)</strong></td><td>68 jenter, ni måneder. Ungdomstiden var fri og lite stressende. Kultur, ikke biologi.</td><td>Kulturell variasjon i sosialisering, arv og miljø, feltarbeid, kildekritikk (Freeman)</td></tr>
+      <tr><td><strong>Mipstere</strong></td><td>Unge muslimske jenter som kombinerer vestlig mote og hijab. Raskest voksende gatemote i 2016.</td><td>Opposisjonell identitet, relasjonell identitet, Tarlo (klær som strategi), Berger og Luckmann (individet endrer normer)</td></tr>
+      <tr><td><strong>Ungdata 2020</strong></td><td>92 % opplever foresatte som svært interessert. Tre ganger så mange jenter som gutter har psykiske plager. Nær 25 % av jentene har depressive symptomer fra 15&ndash;16 år.</td><td>Generasjonskløfta som forsvant, generasjon prestasjon, paradokset, kildekritikk (selvrapportering)</td></tr>
+      <tr><td><strong>Den stille revolusjonen</strong></td><td>Fra husmorsamfunn til to yrkesaktive foreldre fra 1970-tallet.</td><td>Sosialisering i endring, primær til sekundær, normendring, strukturforklaring</td></tr>
+      <tr><td><strong>Interkjønn</strong></td><td>10&ndash;12 barn i året i Norge med ubestemmelig biologisk kjønn. Leger og foreldre bestemmer ofte kjønn og opererer.</td><td>Biologisk og sosialt kjønn, tokjønnsnormen, arv og miljø</td></tr>
+      <tr><td><strong>Stemmerett 1913, Bouazizi 2011, Black lives matter 2014, Greta Thunberg 2019</strong></td><td>Enkeltmennesker som bruker muligheten til å delta og endre.</td><td>Medborgerskap, utenforskap, individ og struktur, historisk sammenheng</td></tr>
+      <tr><td><strong>Unge arbeidsledige (VG 2015)</strong></td><td>31 000 flere ledige på et år, 13 % av unge menn ledige, tre ganger høyere enn andre grupper.</td><td>Individ- og strukturforklaringer, konjunkturer, globalisering (utenlandsk arbeidskraft), makronivå</td></tr>
+      <tr><td><strong>Servitøren (Goffman)</strong></td><td>Profesjonell foran gjestene, tuller med kokkene på kjøkkenet.</td><td>Frontstage og backstage, det regisserte selvet, sosiale roller</td></tr>
+      <tr><td><strong>Ønsketreet (2016)</strong></td><td>«Jeg ønsker at alle blir litt snillere mot seg selv.»</td><td>Generasjon prestasjon, en sterk inngang i innledningen</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Fra samtiden</h3>
+  <div class="tbl-scroll"><table>
+    <thead><tr><th>Eksempel</th><th>Illustrerer</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Arendalsuka</strong>, den årlige politiske møteplassen i Arendal hver august, der ungdom, organisasjoner og politikere møtes</td><td>Medborgerskap i praksis, deltakelse uavhengig av stemmerett, lokalt eksempel du kjenner</td></tr>
+      <tr><td><strong>Mobilfri skole</strong>: de siste årene har myndighetene anbefalt at skoler begrenser mobilbruk</td><td>Formelle normer, sekundærsosialisering, harmoniperspektiv (skolens funksjon) mot konfliktperspektiv (hvem bestemmer?)</td></tr>
+      <tr><td><strong>Aldersgrense for sosiale medier</strong>: regjeringen har foreslått 15 år</td><td>Staten som sosialiseringsaktør, prefigurativ sosialisering (unge kan mer enn voksne), strukturforklaring på prestasjonspress</td></tr>
+      <tr><td><strong>Algoritmer og «For deg»-strømmer</strong> på TikTok og Instagram</td><td>Selektiv eksponering og ekkokammer uten at du velger selv, radikalisering på nett, uformell sosialisering</td></tr>
+      <tr><td><strong>Russefeiring</strong></td><td>Uformelle normer, gruppeidentitet, ritualer (Durkheim), press og utenforskap</td></tr>
+      <tr><td><strong>Me too</strong></td><td>Medborgerskap via sosiale medier, normendring, konfliktperspektiv (makt og kjønn)</td></tr>
+      <tr><td><strong>«Close friends» og «finsta»</strong>: egne kontoer for de nærmeste</td><td>Goffmans backstage flyttet på nett, inntrykksstyring, situasjonell identitet</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Fra eget liv</h3>
+  <p>Eget liv er lov og gir uttelling når du knytter det til et begrep. Formuler det gjerne i tredje person eller generelt: «Mange ungdommer opplever &hellip;».</p>
+  <ul class="clean">
+    <li><strong>Overgangen til videregående:</strong> nye signifikante andre, nye uformelle normer i klassen, elevrollen på studiespesialisering.</li>
+    <li><strong>Å lære foreldre eller besteforeldre teknologi:</strong> prefigurativ sosialisering.</li>
+    <li><strong>Frontstage i klasserommet, backstage i gangen:</strong> Goffman.</li>
+    <li><strong>Deltidsjobb:</strong> ny ervervet rolle, arbeidslivet som sekundær sosialiseringsaktør.</li>
+    <li><strong>Å flagge norsk under håndball-VM:</strong> situasjonell identitet (Eriksens eget eksempel).</li>
+  </ul>
+</section>
+
+<section id="d-fraser" data-toc="Formuleringsbank">
+  <span class="eyebrow"><span class="pip"></span>Språk</span>
+  <h2>Formuleringsbank</h2>
+  <p class="lede">Når du står fast midt i en setning. Sortert etter hva du vil gjøre i teksten.</p>
+  <div class="phrasegrid">
+    <div class="phr"><h4>Innlede</h4><ul>
+      <li>I denne teksten undersøker jeg &hellip;</li>
+      <li>Spørsmålet er i hvilken grad &hellip;</li>
+      <li>For å svare på dette bruker jeg &hellip; og &hellip;</li>
+      <li>Først gjør jeg rede for &hellip;, deretter &hellip;</li>
+      <li>Fenomenet er aktuelt fordi &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Definere</h4><ul>
+      <li>Med &hellip; menes &hellip;</li>
+      <li>&hellip; definerer &hellip; som &hellip; (kilde, år).</li>
+      <li>Begrepet må skilles fra &hellip;, som handler om &hellip;</li>
+      <li>Kort sagt handler &hellip; om &hellip;</li>
+      <li>I denne sammenhengen bruker jeg begrepet om &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Vise til kilder</h4><ul>
+      <li>Ifølge &hellip; (år) &hellip;</li>
+      <li>&hellip; hevder at &hellip;</li>
+      <li>Dette støttes av &hellip;, som viser at &hellip;</li>
+      <li>Læreboka påpeker at &hellip;</li>
+      <li>Som &hellip; formulerer det: «&hellip;» (år, s. &hellip;).</li>
+    </ul></div>
+    <div class="phr"><h4>Eksemplifisere</h4><ul>
+      <li>Et konkret eksempel er &hellip;</li>
+      <li>Dette kommer tydelig til uttrykk i &hellip;</li>
+      <li>Bruker vi begrepet på &hellip;, ser vi at &hellip;</li>
+      <li>&hellip; illustrerer dette godt, fordi &hellip;</li>
+      <li>Et eksempel fra eget miljø er &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Forklare årsaker</h4><ul>
+      <li>En viktig årsak er &hellip;</li>
+      <li>Dette henger sammen med &hellip;</li>
+      <li>&hellip; fører til &hellip;, som igjen &hellip;</li>
+      <li>En strukturforklaring vil peke på &hellip;</li>
+      <li>Sett fra et individperspektiv &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Drøfte og kontrastere</h4><ul>
+      <li>På den ene siden &hellip; På den andre siden &hellip;</li>
+      <li>Mens &hellip; vektlegger &hellip;, framhever &hellip;</li>
+      <li>En innvending mot dette er at &hellip;</li>
+      <li>Dette forklarer likevel ikke hvorfor &hellip;</li>
+      <li>Et konfliktperspektiv vil spørre &hellip;</li>
+      <li>Ser vi det samme fenomenet på makronivå &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Nyansere og innrømme</h4><ul>
+      <li>Det er riktig at &hellip;, men &hellip;</li>
+      <li>Dette gjelder særlig for &hellip;, mindre for &hellip;</li>
+      <li>Bildet er likevel mer sammensatt, fordi &hellip;</li>
+      <li>Det kan diskuteres om &hellip;</li>
+      <li>Grensen mellom &hellip; og &hellip; er ikke skarp.</li>
+    </ul></div>
+    <div class="phr"><h4>Vekte</h4><ul>
+      <li>Det sterkeste argumentet er etter min vurdering &hellip;, fordi &hellip;</li>
+      <li>Denne forklaringen har større forklaringskraft, siden &hellip;</li>
+      <li>&hellip; veier tyngre enn &hellip;, fordi &hellip;</li>
+      <li>Svakheten ved &hellip; er at &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Være kildekritisk</h4><ul>
+      <li>Tallene er selvrapporterte, og &hellip;</li>
+      <li>Studien ble gjort i en annen tid og kultur, så &hellip;</li>
+      <li>Det er verdt å merke seg hvem som står bak &hellip;</li>
+      <li>Typologien er en forenkling, fordi &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Overganger</h4><ul>
+      <li>Dette leder over til &hellip;</li>
+      <li>Et annet perspektiv på dette er &hellip;</li>
+      <li>I tillegg kommer &hellip;</li>
+      <li>Likevel &hellip; / Derimot &hellip; / Dermed &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Konkludere</h4><ul>
+      <li>Samlet sett viser drøftingen at &hellip;</li>
+      <li>Svaret på problemstillingen er derfor at &hellip;</li>
+      <li>En helhetlig forklaring må kombinere &hellip;, fordi &hellip;</li>
+      <li>Jeg vil legge mest vekt på &hellip;</li>
+    </ul></div>
+    <div class="phr"><h4>Bytt ut</h4><ul>
+      <li>«jeg føler» &rarr; «etter min vurdering»</li>
+      <li>«ting» &rarr; det konkrete ordet</li>
+      <li>«mange mener» &rarr; hvem? Navngi kilden</li>
+      <li>«kommer av» &rarr; «henger sammen med»</li>
+      <li>«sier» &rarr; «hevder, påpeker, framhever»</li>
+      <li>«veldig» &rarr; stryk, eller bruk et tall</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="d-kilder" data-toc="Kildebruk">
+  <span class="eyebrow"><span class="pip"></span>Språk</span>
+  <h2>Kildebruk og henvisning</h2>
+  <p class="lede">Læreboka bruker APA-stil: etternavn og årstall i parentes. Bruk samme stil, og vær konsekvent. Kildehenvisninger viser at du vet hvor kunnskapen kommer fra, og det teller i vurderingen.</p>
+  <div class="tbl-scroll"><table>
+    <thead><tr><th>Situasjon</th><th>Slik skriver du</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Henvise til en teori</strong></td><td>Sosialisering handler også om at individet endrer normer (Berger og Luckmann, 2000).</td></tr>
+      <tr><td><strong>Navnet i setningen</strong></td><td>Frønes (2010) mener at jevnaldrende er de signifikante andre fra ungdomsalderen.</td></tr>
+      <tr><td><strong>Direkte sitat, kort</strong></td><td>Giddens beskriver barnet som «hjelpeløst» før sosialiseringen starter (Giddens, 2006).</td></tr>
+      <tr><td><strong>Sitat med side</strong></td><td>SSBU mente at gutten ble utsatt for omsorgssvikt (Borchgrevink, 2012, s. 58).</td></tr>
+      <tr><td><strong>Langt sitat (over 40 ord)</strong></td><td>Eget avsnitt med innrykk, uten anførselstegn, kilde til slutt.</td></tr>
+      <tr><td><strong>Læreboka selv</strong></td><td>(Læreboka, kap. 4) eller forfatternavn og år hvis du har dem. Spør læreren hvordan dere skal henvise til boka.</td></tr>
+      <tr><td><strong>Dokumentaren</strong></td><td>Tittel i kursiv og år: i dokumentaren <em>Tittel</em> (år) &hellip;</td></tr>
+      <tr><td><strong>Data fra undersøkelse</strong></td><td>92 prosent opplever at foresatte er svært interessert i livet deres (Bakken, 2020).</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Litteraturliste nederst</h3>
+  <div class="card" style="font-size:.93rem">
+    <p style="margin:0 0 .5em">Bakken, A. (2020). <em>Ungdata 2020. Nasjonale resultater</em> (NOVA Rapport 16/20). NOVA, OsloMet.</p>
+    <p style="margin:0 0 .5em">Berger, P. L. &amp; Luckmann, T. (2000). <em>Den samfunnsskapte virkelighet</em>. Fagbokforlaget.</p>
+    <p style="margin:0 0 .5em">Borchgrevink, A. S. (2012). <em>En norsk tragedie. Anders Behring Breivik og veien til Utøya</em>. Gyldendal.</p>
+    <p style="margin:0 0 .5em">Eriksen, T. H. (2004). <em>Røtter og føtter. Identitet i en omskiftelig tid</em>. Aschehoug.</p>
+    <p style="margin:0 0 .5em">Frønes, I. (2010). <em>De likeverdige. Om sosialisering og de jevnaldrendes betydning</em>. Gyldendal Akademisk.</p>
+    <p style="margin:0 0 .5em">Giddens, A. (2006). <em>Sociology</em>. Polity Press.</p>
+    <p style="margin:0 0 .5em">Goffman, E. (1992). <em>Vårt rollespill til daglig</em>. Pax Forlag.</p>
+    <p style="margin:0 0 .5em">Madsen, O. J. (2018). <em>Generasjon prestasjon. Kva er det som feiler oss?</em> Universitetsforlaget.</p>
+    <p style="margin:0">Mead, M. (1970). <em>Culture and Commitment. A Study of the Generation Gap</em>. Natural History Press.</p>
+  </div>
+  <p style="font-size:.9rem;color:var(--ink-3);margin-top:10px">Alle oppføringene er hentet fra litteraturlistene bakerst i kapittel 1 og 4 i læreboka. Ta bare med kildene du faktisk har brukt i teksten.</p>
+</section>
+
+<section id="d-feil" data-toc="Vanlige feil">
+  <span class="eyebrow"><span class="pip"></span>Unngå</span>
+  <h2>Tolv feil som trekker ned</h2>
+  <div class="tbl-scroll"><table>
+    <thead><tr><th>Feil</th><th>Hvorfor det trekker</th><th>Gjør heller</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Svarer på en annen oppgave</strong></td><td>Sensor vurderer det oppgaven spør om.</td><td>Les oppgaven igjen før hvert nytt avsnitt.</td></tr>
+      <tr><td><strong>Bare redegjørelse</strong></td><td>Et «gjør rede for»-svar på en drøftingsoppgave stopper rundt 3&ndash;4.</td><td>Maks en tredjedel redegjørelse.</td></tr>
+      <tr><td><strong>For og mot uten vekting</strong></td><td>Det er en liste, ikke en drøfting.</td><td>Si hva som veier tyngst, og hvorfor.</td></tr>
+      <tr><td><strong>Ingen konklusjon</strong></td><td>Oppgaven er ikke besvart.</td><td>Svar direkte i første setning av konklusjonen.</td></tr>
+      <tr><td><strong>«Det er vanskelig å si»</strong></td><td>Ser ut som du ikke tør å mene noe.</td><td>«Drøftingen tyder på at &hellip;, men &hellip;».</td></tr>
+      <tr><td><strong>Begreper i dagligtale</strong></td><td>«Normer» brukt som «vaner», «rolle» brukt som «oppgave».</td><td>Definer, og bruk definisjonen.</td></tr>
+      <tr><td><strong>Blander statsborger- og medborgerskap</strong></td><td>Den klassiske begrepsfeilen i kapittel 4.</td><td>Status og jus mot deltakelse og praksis.</td></tr>
+      <tr><td><strong>Blander Margaret Mead og George H. Mead</strong></td><td>To ulike personer, fag og teorier.</td><td>M. Mead: Samoa, kultur. G.H. Mead: jeg, meg, generalisert andre.</td></tr>
+      <tr><td><strong>Teorinavn uten bruk</strong></td><td>«Goffman snakker om roller» viser ingenting.</td><td>Bruk begrepet hans på et konkret tilfelle.</td></tr>
+      <tr><td><strong>Eksempel uten kobling</strong></td><td>Leseren må gjette hva eksempelet viser.</td><td>«Dette er et eksempel på &hellip;, fordi &hellip;».</td></tr>
+      <tr><td><strong>Å forklare er å forsvare</strong></td><td>Særlig i 22. juli-oppgaver.</td><td>Si eksplisitt at forklaring ikke er unnskyldning.</td></tr>
+      <tr><td><strong>Kopiert tekst</strong></td><td>Plagiat, og lett å oppdage.</td><td>Skriv med egne ord, siter med anførselstegn og kilde.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="d-karakter" data-toc="Slik vurderes del 2">
+  <span class="eyebrow"><span class="pip"></span>Vurdering</span>
+  <h2>Slik vurderes langsvaret</h2>
+  <p class="lede">Kompetansemålene sier <em>vurdere</em>, <em>bruke</em>, <em>reflektere</em> og <em>utforske</em>. Tabellen viser hva som typisk skiller karakterene. Den er en tolkning av kjennetegnene på måloppnåelse, ikke lærerens egen vurderingsmatrise.</p>
+  <div class="tbl-scroll"><table class="gradetbl">
+    <thead><tr><th></th><th>2</th><th>3&ndash;4</th><th>5</th><th>6</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Begreper</strong></td><td>Noen begreper, ofte upresise</td><td>Riktige definisjoner, noe mekanisk bruk</td><td>Presise begreper brukt gjennom hele teksten</td><td>Presise begreper, skiller nærliggende begreper, viser sammenhenger mellom dem</td></tr>
+      <tr><td><strong>Teori</strong></td><td>Nevner navn</td><td>Gjengir teorier riktig</td><td>Bruker teorier som verktøy på eksempler</td><td>Bruker teorier og vurderer dem, med styrker, svakheter og kritikk</td></tr>
+      <tr><td><strong>Eksempler</strong></td><td>Få eller generelle</td><td>Relevante, fra pensum</td><td>Konkrete og koblet til begrepene</td><td>Fra pensum, samtid og eget liv, tett koblet og brukt i drøftingen</td></tr>
+      <tr><td><strong>Drøfting</strong></td><td>Lite eller ingen</td><td>For og mot listet opp</td><td>Perspektiver satt mot hverandre, noe vekting</td><td>Tydelig vekting med begrunnelse, selvstendig konklusjon</td></tr>
+      <tr><td><strong>Kritisk blikk</strong></td><td>&ndash;</td><td>Lite</td><td>Noe kildekritikk</td><td>Problematiserer kunnskapen: metode, tid, hvem som sier det</td></tr>
+      <tr><td><strong>Struktur og språk</strong></td><td>Uklar oppbygging</td><td>Innledning, hoveddel og avslutning</td><td>Tydelig rød tråd og fagspråk</td><td>Presis, variert fagspråk, hvert avsnitt driver argumentet framover</td></tr>
+      <tr><td><strong>Kilder</strong></td><td>Ingen</td><td>Noen henvisninger</td><td>Henvisninger i teksten</td><td>Konsekvent henvisning, riktige sitater, litteraturliste</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="d-sjekk" data-toc="Sjekkliste før levering">
+  <span class="eyebrow"><span class="pip"></span>Siste ti minutter</span>
+  <h2>Sjekkliste før du leverer</h2>
+  <p class="lede">Gå gjennom teksten én gang med denne lista. Huk av etter hvert.</p>
+  <ul class="checklist" id="checklist"></ul>
+  <div class="toolrow noprint" style="margin-top:10px"><button class="btn" id="ckReset" type="button">Nullstill sjekklisten</button></div>
+</section>
+
+<section id="d-begreper" data-toc="Begrepsoppslag">
+  <span class="eyebrow"><span class="pip"></span>Oppslag</span>
+  <h2>Begrepsoppslag</h2>
+  <p class="lede">Alle begrepene fra begge kapitlene, til rask sjekk av en definisjon mens du skriver.</p>
+  <div class="bsearch">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="lq" type="search" placeholder="Søk, for eksempel «norm» eller «Goffman»" aria-label="Søk i begrepene" autocomplete="off">
+  </div>
+  <p class="shown" id="lshown" style="margin-top:10px"></p>
+  <dl class="lookup" id="lookup"></dl>
+</section>
+
+</div>
+</div>
+</main>
+<script>
+"use strict";
+
+/* ============ DATA: BEGREPER ============ */
+var TERMS = [
+/* --- Kapittel 1 --- */
+{n:"Sosiologi",k:"k1",p:1,
+ d:"Vitenskapen om samfunnet og om relasjonene mellom individer, grupper og samfunnet som helhet. Av latin societas (samfunn) og gresk logos (kunnskap). Kalles en generell samfunnsvitenskap fordi den ikke er spesialisert på ett område, men studerer hvordan samfunnet er bygd opp, hvordan det fungerer og hvordan det endrer seg.",
+ e:"Nils Christie studerte fengsel og straff; Eilert Sundt kartla levekår i Norge på 1800-tallet. Metodene spenner fra statistikk og intervjuer til tekstanalyse og teoretisk arbeid.",
+ b:"Ta med de fem overordnede målene: årsaker og sammenhenger, nye begreper, vitenskapelige undersøkelser, kritisk ståsted, helhetlig forståelse. Da svarer du på mer enn bare ordforklaringen."},
+{n:"Sosialantropologi",k:"k1",p:1,
+ d:"Det sammenliknende studiet av kultur og samfunn med utgangspunkt i lokalt liv (Eriksen, 2003). Direkte oversatt fra gresk: læren om mennesket. Faget insisterer på at virkeligheten er basert på relasjoner mellom mennesker, og bruker feltarbeid som hovedmetode.",
+ e:"Malinowski på Trobrianderøyene, Boas blant inuitter på Grønland, Margaret Mead på Samoa, Emma Tarlo om hijab og mote i Storbritannia.",
+ b:"Nevn de to hovedmålene: å vise de store kulturelle variasjonene, og å forklare hva kulturer har felles. Legg til at faget nå også studerer vårt eget samfunn."},
+{n:"Feltarbeid",k:"k1",p:0,
+ d:"Sosialantropologiens kjernemetode: forskeren reiser ut, bor sammen med menneskene som studeres over tid, observerer og deltar i hverdagen deres (deltakende observasjon).",
+ e:"Malinowskis feltarbeid på Trobrianderøyene ble et ideal for kommende generasjoner. Mead var ni måneder på Ta'ū.",
+ b:"Bruk Siv Elin Ånestads sitat om hvor krevende feltarbeid er, og koble til at forskerens kjønn, alder og språk påvirker hva hun får tilgang til: kjernen i Freemans kritikk av Mead."},
+{n:"Kulturrelativisme",k:"k1",p:0,
+ d:"Prinsippet om at samfunn og kulturer må forstås ut fra sin egen logikk, og derfor ikke kan rangeres som bedre eller dårligere enn andre. Franz Boas regnes som opphavsmannen.",
+ e:"Boas viste at alle samfunn har en unik historie, og at det ikke finnes bestemte utviklingsfaser som alle må gjennom, i motsetning til de første antropologene, som mente fjerne samfunn var mindre utviklede.",
+ b:"Brukes til å forsvare at vi kan lære noe av andre. Motargumentet i en drøfting: kan alt forsvares kulturelt? Der stopper kulturrelativismen som moralsk prinsipp."},
+{n:"Kulturelle variasjoner",k:"k1",p:0,
+ d:"At måtene mennesker lever og former livene sine på varierer fra sted til sted. Det kulturelle mangfoldet er sosialantropologiens utgangspunkt.",
+ e:"Hipstere i Santo Domingo, ifugao-folket i Cordillera-fjellene, matvaner i Sør-Norge, unge jenter på Samoa.",
+ b:"Koble til Margaret Mead: at også pubertet og psykisk helse varierer kulturelt, ikke bare mat og klær."},
+{n:"Individforklaring",k:"k1",p:0,
+ d:"En forklaring som viser til individet og egenskapene det har: at personen tar et rasjonelt valg, handler etter egne normer og moral, eller har en egenskap, sykdom eller diagnose som forklarer handlingen.",
+ e:"Å forklare Breiviks handlinger med psykisk sykdom, eller med at de var resultat av lang tids planlegging og et rasjonelt valg. At Lise ikke gjør lekser fordi hun er lat.",
+ b:"Presiser at forskere som bruker individforklaringer godt kan studere store fenomener: de forklarer da mønsteret som summen av mange enkeltmenneskers handlinger og valg."},
+{n:"Strukturforklaring",k:"k1",p:0,
+ d:"En forklaring som viser til forholdene rundt individet: familie, venner, medier, lokalmiljø, institusjoner, land og globale forhold, som direkte eller indirekte påvirker personen til å handle på en bestemt måte.",
+ e:"Breiviks oppvekstforhold, skole og arbeidsmarked, medievaner, og det sosialdemokratiske Norge han vokste opp i. Eller: hvordan velferdsordninger påvirker fødselstall.",
+ b:"Bruk sirkelmodellen systematisk innenfra og ut: barnet, familien, barnehage og skole, lokalmiljø, nasjon, globalt nivå. Da får svaret ditt en synlig struktur."},
+{n:"Struktur",k:"k1",p:0,
+ d:"Omgivelsene rundt personen: de mønstrene i samfunnet som former hvordan vi handler og hvilke valg vi tar, ofte uten at vi er klar over det selv.",
+ e:"Bokas bilde: en by sett ovenfra om natta viser et mønster av lyspunkter og streker som ikke er synlig fra bakkeplan. Samfunnet har tilsvarende usynlige mønstre.",
+ b:"Bruk bybildet som åpning i en oppgave om tenkemåter: det viser at begreper og teorier gjør det usynlige synlig."},
+{n:"Typologi",k:"k1",p:0,
+ d:"En inndeling i typer på grunnlag av systematiske forskjeller og likheter. Typologier består gjerne av gjensidig utelukkende kategorier, men er alltid forenklinger, fordi virkelige fenomener som regel er blandinger av kategoriene.",
+ e:"Bjørgos fire veier inn i voldelig ekstremisme: de ideologiske aktivistene, medløperne, eventyrerne og de sosialt frustrerte. Meads tre former for sosialisering er også en typologi.",
+ b:"Vis at kategoriene overlapper. Breivik presenterer seg som ideologisk aktivist, men kan også plasseres som eventyrer og sosialt frustrert. Det er selve poenget, ikke en svakhet i svaret ditt."},
+{n:"Mikronivå",k:"k1",p:1,
+ d:"Analysenivået som handler om individet og de små gruppene nærmest det. Her ser forskeren detaljene i hvordan mennesker lever livene sine lokalt, men risikerer å gå glipp av det store bildet.",
+ e:"Å bruke Breivik som case. Å studere de nære relasjonene i en familie. En antropolog som studerer livet i én landsby.",
+ b:"Si alltid hva du taper ved å velge nivået: det viser at valget er bevisst."},
+{n:"Mesonivå",k:"k1",p:1,
+ d:"Mellomnivået. Meso betyr imellom: nivået mellom individet og samfunnet, altså organisasjoner og institusjoner som skoler, fengsler, familie og lokalsamfunn.",
+ e:"Å forske på hvordan sosialt samspill innad i et fengsel, eller i grupper som IS eller Profetens Ummah, bidrar til radikalisering av ungdommer.",
+ b:"Mesonivået glemmes oftest. Å huske det skiller ofte en 4 fra en 5 på akkurat dette spørsmålet. Goffmans totale institusjoner er et mesonivå-begrep."},
+{n:"Makronivå",k:"k1",p:1,
+ d:"Analysenivået som handler om storsamfunnet og strukturene: de overordnede trekkene. Nesten som å plassere forskeren i et helikopter: hun ser det store bildet, men går ofte glipp av detaljene.",
+ e:"Framveksten av høyreekstreme ideologier og konspirasjonsteorier, internetts betydning for radikalisering, sammenlikning av velferdsstater, konsekvenser av globalisering og klimaendringer.",
+ b:"Kombiner nivåene i samme svar: makro forklarer omfanget, mikro forklarer mekanismen."},
+{n:"Harmoniperspektiv",k:"k1",p:0,
+ d:"Et perspektiv der samfunnet ses som en organisme med ulike deler som er avhengige av hverandre og må være til stede for at helheten skal fungere. Kalles også funksjonalistisk, fordi det spør hvilken funksjon hver del har for helheten.",
+ e:"Familien holder ved like verdier gjennom sosialisering; skolen formidler kunnskap og gjør ungdom klar for arbeidslivet. Etter 22. juli: rosetog, samlende ritualer og oppslutning om felles verdier (Rafoss, 2018).",
+ b:"Navn å nevne: Durkheim, Parsons, Merton, Davis og Moore, og antropologene Malinowski og Radcliffe-Brown. Durkheims poeng om at forbrytelser viser hvor grensene går, er alltid relevant."},
+{n:"Konfliktperspektiv",k:"k1",p:0,
+ d:"Et perspektiv som er opptatt av hvordan ulike interesser og maktforhold fører til sosiale ulikheter og motsetninger mellom grupper. Det foregår en kamp mellom grupper om goder og om hvilke verdier som skal gjelde.",
+ e:"Breiviks oss og dem: høyreekstreme riddere mot Arbeiderpartiet, multikulturalistene og feministene. Eller: at innvandring og globalisering har skapt nye konfliktlinjer.",
+ b:"Navn: Marx (filosof), Weber og Bourdieu. Bruk konfliktperspektivet som innvending mot Goffman og G.H. Mead, som begge sier lite om makt."},
+{n:"Arv og miljø",k:"k1",p:0,
+ d:"Kontrasten mellom å forklare menneskers handlinger ut fra gener og arv, og å forklare dem ut fra miljøet: samfunnet og kulturen vi lever i. Tradisjonelt studerer samfunnsfagene miljøet og naturvitenskapene arven, men det er en arbeidsdeling, ikke en uenighet.",
+ e:"Velger kvinner og menn ulike yrker fordi de er disponert for ulike interesser, eller fordi kjønnsroller og forventninger varierer mellom samfunn og over tid?",
+ b:"Bruk kjønn som eksempel, og la epigenetikken være broen mellom de to posisjonene."},
+{n:"Epigenetikk",k:"k1",p:0,
+ d:"Tilleggsgenetikk eller overgenetikk: feltet som handler om hvordan miljøfaktorer og hendelser i livet kan påvirke kroppen og genene våre. Genene har kjemiske knapper som styrer i hvor stor grad et gen kommer til uttrykk. Hovedpoenget er at egenskaper ofte er et resultat av samspillet mellom arv og miljø.",
+ e:"Seinvirkninger av sult, feilernæring, kjemisk påvirkning og stråling kan være synlige to og tre generasjoner etterpå. Også kroppskontakt og amming kan påvirke genreguleringen (Undlien og Hessen, 2012).",
+ b:"Bruk epigenetikk til å avvise enten-eller-tenkning i alle arv-miljø-oppgaver. Knyttet til Breivik: omsorgssvikt gir skader på hjerne og nervesystem, og kan forklare aggresjon, angst og manglende sosiale ferdigheter."},
+{n:"Konspirasjonsteori",k:"k1",p:0,
+ d:"En teori som forklarer hendelser som hemmelige sammensvergelser satt i scene av mektige personer og institusjoner. Begrepet brukes ofte synonymt med vandrehistorier, eller for å avfeie paranoide rykter.",
+ e:"Eurabia-teorien, som Breivik trodde på: at elitene i politikk og medier samarbeidet i det skjulte for å legge Europa åpent for islamisering.",
+ b:"Forklar hvorfor konspirasjonsteorien er nøkkelen til målvalget: Breivik angrep norsk elite og ikke muslimer, fordi elitene i hans verdensbilde var de som gjennomførte konspirasjonen (Åmås, 2015)."},
+{n:"Selektiv eksponering",k:"k1",p:0,
+ d:"At mennesker oppsøker de nyhetskildene de er på bølgelengde med, og unngår andre. Slik oppstår flere parallelle medievirkeligheter.",
+ e:"Breivik oppsøkte nasjonale og internasjonale høyreekstreme nettsteder, debattfora og blogger, og slapp dermed å bli motsagt i sitt syn på islam og multikulturalisme.",
+ b:"Par det alltid med ekkokammer, og bruk det som en strukturforklaring på mesonivå: det er nettmiljøet, ikke bare individet, som gjør jobben."},
+{n:"Ekkokammer",k:"k1",p:0,
+ d:"Et medielandskap der personen ikke hører noe nytt, bare ekkoet av sine egne meninger. Resultatet av selektiv eksponering.",
+ e:"De høyreekstreme nettforaene Breivik brukte. I dag: algoritmestyrte feeder som viser deg mer av det du allerede klikker på.",
+ b:"Et godt sted å trekke inn eget samtidseksempel, som viser at du kan bruke begrepet utenfor pensumcasen."},
+{n:"Rasjonell aktør",k:"k1",p:0,
+ d:"Forestillingen om at mennesker handler etter å ha veid konsekvensene av valgene sine opp mot hverandre, og velger det som gir størst nytte.",
+ e:"Å veie sjansen for å bli tatt mot gevinsten ved å stjele en sjokolade. I Breiviks straffebegrunnelse ble det lagt vekt på at handlingene var basert på et rasjonelt valg.",
+ b:"Bruk det som en variant av individforklaring, og sett det opp mot forklaringer som vektlegger normer og moral."},
+{n:"Radikalisering",k:"k1",p:0,
+ d:"Prosessen der en person i økende grad aksepterer og støtter bruk av vold for å nå politiske, ideologiske eller religiøse mål. Bjørgos typologi peker på fire ulike veier inn.",
+ e:"Bjørgos fire typer: ideologiske aktivister, medløpere, eventyrere og sosialt frustrerte. Typologien skal fungere uansett om gruppa er høyreekstrem, venstreradikal eller militant islamistisk.",
+ b:"Presiser at radikalisering er en prosess over tid, ikke en tilstand, og at den skjer på mesonivå, i grupper og miljøer."},
+
+/* --- Kapittel 4 --- */
+{n:"Samfunn",k:"k4",p:0,
+ d:"En samling individer og eller grupper som over et lengre tidsrom lever i en form for fellesskap på et nærmere avgrenset geografisk område (Sølvberg et al., 2015, s. 23).",
+ e:"Bygda Naustdal, Tøyen skole, en moské, landet Norge, og nettsamfunn. Passasjerene på toget Oslo-Bergen er derimot ikke et samfunn, fordi fellesskapet ikke varer.",
+ b:"Bruk de tre kriteriene aktivt: fellesskap, avgrenset område, varighet. Og problematiser det geografiske kriteriet med nettsamfunn."},
+{n:"Statsborgerskap",k:"k4",p:1,
+ d:"En status som henger sammen med juridiske rettigheter og plikter. Handler om forholdet mellom mennesket og staten.",
+ e:"Rett til pass, grunnleggende sosial og økonomisk sikkerhet og stemmerett ved stortingsvalg, og plikter som verneplikt og skatt.",
+ b:"Sett det alltid opp mot medborgerskap: status mot praksis, jus mot deltakelse. Du kan ha det ene uten det andre."},
+{n:"Medborgerskap",k:"k4",p:1,
+ d:"Å være en aktiv deltaker i samfunnet. Borgernes muligheter til å delta i ulike sosiale og politiske fellesskap, på mange måter uavhengig av status som statsborger (Stray, 2012).",
+ e:"Skole, fritidsaktiviteter, jobb, frivillighet, og uformelle arenaer der vi bare henger. Historisk: stemmerettskampen i 1913, Bouazizi i Tunisia, Black lives matter, Greta Thunberg.",
+ b:"Legg til sammenhengen med demokratiet: anerkjenner demokratiet borgernes engasjement og deltakelse, styrkes medborgerskapet. Og legg til et konfliktperspektiv: medborgerskap krever ressurser, og er derfor ulikt fordelt."},
+{n:"Utenforskap",k:"k4",p:0,
+ d:"En tilstand eller følelse der enkeltmennesker eller grupper av ulike grunner deltar mindre i samfunnet. Beskrives ofte som det motsatte av medborgerskap.",
+ e:"Boka nevner arbeidsledighet, manglende språkkunnskaper og avbrutt skolegang som årsaker. Bjørgos sosialt frustrerte er radikaliseringens versjon av utenforskap.",
+ b:"Koble til Goffmans stigma for å vise dybde, og til strukturforklaringer: utenforskap er sjelden et rent individuelt valg."},
+{n:"Sosial prosess",k:"k4",p:1,
+ d:"Noe som utvikles gradvis eller gjennom ulike stadier, og som er sosialt fordi det skjer i samspillet mellom mennesker, og mellom mennesker og samfunn.",
+ e:"Sosialisering, integrering og sosial mobilitet er de tre eksemplene boka gir.",
+ b:"Nøkkelordene i definisjonen er gradvis og samspill. Sier du bare at det er noe som skjer over tid, mister du halve poenget."},
+{n:"Sosialisering",k:"k4",p:0,
+ d:"De prosessene der individet både lærer og internaliserer samfunnets normer og atferdsmønster, men også selv er med på å skape eller endre normer (Berger og Luckmann, 2000). En livslang læring der mennesket får psykisk, sosial og kulturell kompetanse til å klare seg i samfunnet.",
+ e:"Fra at foreldre lærer barnet å si unnskyld, til at en 60-åring må lære nye normer for kommunikasjon på arbeidsplassen.",
+ b:"Sammenlikn alltid med Giddens (2006), som ser barnet som mer passivt: formet av en gitt kultur. Poenget er at Berger og Luckmann får med begge retninger. Det er selve 6-er-grepet i kapittel 4."},
+{n:"Primærsosialisering",k:"k4",p:1,
+ d:"Sosialiseringen i de første leveårene, der foreldre, søsken og nær familie betyr mest for barnets læring og utvikling. Den skal gi barnet trygghet til å møte nye arenaer for sosialisering.",
+ e:"Å lære språk, å hilse, å sitte pent ved bordet, å stole på andre mennesker.",
+ b:"Merk at primærsosialisering handler om hvem og når, ikke om hvor formelt det er. Foreldre er både primære og formelle sosialiseringsaktører."},
+{n:"Sekundærsosialisering",k:"k4",p:1,
+ d:"Sosialiseringen som skjer etter hvert som barnet blir eldre, gjennom barnehage, skole og jevnaldrende, og seinere medier og arbeidsliv.",
+ e:"Elevrollen, klassens uskrevne regler, arbeidslivets normer, reklamens kroppsidealer.",
+ b:"Koble til den stille revolusjonen: da begge foreldrene kom i jobb, flyttet mye av sosialiseringsansvaret fra primære til sekundære arenaer."},
+{n:"Formell sosialisering",k:"k4",p:0,
+ d:"Sosialisering i samspill med personer eller institusjoner som har fått ansvar for å drive opplæring av den oppvoksende generasjonen.",
+ e:"Foreldre, barnehager og skoler.",
+ b:"Sett den mot uformell sosialisering i samme setning: det er kontrasten som gir mening."},
+{n:"Uformell sosialisering",k:"k4",p:0,
+ d:"Sosialisering i samspill med personer eller institusjoner som ikke har en slik formell opplæringsoppgave.",
+ e:"Venner og jevnaldrende, medier og reklame.",
+ b:"Poenget er at den er minst like virksom som den formelle, selv om ingen har planlagt den. Frønes er hovedkilden her."},
+{n:"Internalisere",k:"k4",p:1,
+ d:"Å gjøre samfunnets normer til sine egne, slik at vi handler i tråd med dem uten å tenke over det. Normene blir en del av oss.",
+ e:"Vi hilser når vi møter kjente, sier unnskyld om vi trår på noen, sitter pent ved bordet, stiller oss bakerst i køen.",
+ b:"Test på internalisering: du merker normen først når noen bryter den. Og husk andre halvdel av Berger og Luckmann: vi kan også bryte og endre de internaliserte normene."},
+{n:"Normer",k:"k4",p:0,
+ d:"Regler som sier noe om hva som er forventet oppførsel i et samfunn. Normer dannes med utgangspunkt i hvilke forventninger vi møter, og de varierer mellom situasjoner, kulturer og tidsperioder.",
+ e:"At eldre søsken tar ansvar for de yngre var en norm i Norge i besteforeldrenes barndom. I dag forventes det heller at staten tilbyr barnehageplass fra ettårsalderen.",
+ b:"Bruk normendring som bevis på at sosialisering går begge veier: forholdet mellom lærer og elev er bokas eget eksempel."},
+{n:"Formelle normer",k:"k4",p:1,
+ d:"Normer som er skrevet ned, ofte med formelle sanksjoner om de brytes.",
+ e:"Norges lover, skolereglementet, fraværsgrensa, arbeidsreglementet.",
+ b:"På lærerens liste står formelle og uformelle normer som ett punkt: vær forberedt på å definere begge og gi eksempler på begge i samme svar."},
+{n:"Uformelle normer",k:"k4",p:1,
+ d:"Normer som ikke er skrevet ned, men som likevel følges i stor grad av samfunnets medlemmer. Sanksjonene er sosiale.",
+ e:"Å ta av seg skoene før man går inn i et hus, pene klær på 17. mai, å ikke sette seg inntil noen på en tom buss.",
+ b:"De uformelle normene er de mest internaliserte: det er derfor bruddene føles så ubehagelige."},
+{n:"Forventninger",k:"k4",p:0,
+ d:"Det omgivelsene regner med at vi skal gjøre i en gitt posisjon. Normer dannes med utgangspunkt i forventninger, og vellykket sosialisering er at vi lærer å tilpasse oss dem.",
+ e:"At du ikke stiller i fillete olabukser i 17. mai-toget. Forventninger varierer fra situasjon til situasjon, over tid og mellom kulturer.",
+ b:"Forventninger er limet mellom normer, roller og identitet: en sosial rolle er nettopp summen av normer og forventninger."},
+{n:"Signifikante andre",k:"k4",p:1,
+ d:"De personene som er viktigst i sosialiseringsprosessen: de vi lærer mest av og speiler oss i. De er rollemodeller for, eller budbringere av, samfunnets normer.",
+ e:"Foreldre, søsken og nær familie i de første leveårene; barnehage, skole og jevnaldrende seinere; medier og arbeidsliv i voksen alder.",
+ b:"Frønes (2010) mener de jevnaldrende overtar fra tidlig ungdomsalder, fordi det er da de unge frigjøres fra familien. Men Øia og Vestel (2014) mener foreldrenes posisjon er styrket igjen. Sett de to mot hverandre: det er en ferdig drøfting."},
+{n:"Den generaliserte andre",k:"k4",p:0,
+ d:"George H. Meads begrep for samfunnets forventninger til oss: alle som befinner seg rundt oss og bidrar med positive og negative tilbakemeldinger. Det er først når vi ser oss selv fra dette perspektivet at identiteten kan ta form.",
+ e:"Fotballaget der spilleren må forstå alle de andres roller og hele regelverket samtidig for å kunne spille. Da er laget blitt til et indre samfunn i hodet hennes.",
+ b:"Skill den fra de signifikante andre: de signifikante andre er konkrete personer, den generaliserte andre er samfunnet som helhet, internalisert."},
+{n:"Det handlende barnet",k:"k4",p:0,
+ d:"Frønes' begrep for barnet slik det trer fram i barn-barn-relasjonen, der det ikke bare tilpasser seg, men aktivt kjemper om posisjoner, status, deltakelse, kjærester og venner, og diskuterer hva som er riktig og galt.",
+ e:"Forhandlingene i barnehagens lek og i ungdomsgruppa, i motsetning til foreldre-barn-relasjonen, der barnet i større grad lærer og tilpasser seg.",
+ b:"Begrepet er et konkret belegg for Berger og Luckmanns poeng om at individet også skaper normer. Bruk det til å knytte Frønes til definisjonsdiskusjonen."},
+{n:"Den stille revolusjonen",k:"k4",p:0,
+ d:"Overgangen fra et husmorsamfunn til et samfunn der også kvinnene jobber. Beskriver de dramatiske endringene i kvinners og menns livsløp siden 1970-årene.",
+ e:"Likestillingsprosessene fra 1950- og 1960-årene, barnehageutbygging, og at barna dermed er i barnehage fra ung alder.",
+ b:"Bruk den som strukturforklaring på hvorfor sosialiseringen har flyttet seg fra primære til sekundære arenaer."},
+{n:"Sosiale roller",k:"k4",p:1,
+ d:"Summen av de normene og forventningene som knytter seg til en person i en bestemt stilling eller posisjon i samfunnet.",
+ e:"Elev, venn, arbeidstaker, kollega, datter, lagkamerat. Rollene kan trekke i hver sin retning: strukturert volleyballspiller i det ene øyeblikket, sur og uhøflig datter i det neste.",
+ b:"Legg til komplementære roller, ervervede og medfødte roller, og Goffmans rolledistanse. Da dekker du hele rollefeltet i ett svar."},
+{n:"Komplementære roller",k:"k4",p:0,
+ d:"At roller alltid opptrer i relasjon til hverandre: én rolle er avhengig av en annen for å eksistere.",
+ e:"Elev og lærer, foreldre og barn, fotballspiller og fotballdommer, pasient og lege. Det ville ikke finnes en elevrolle uten lærere.",
+ b:"Bruk dem til å vise at roller er relasjonelle, akkurat som identitet er det hos Eriksen og Goffman."},
+{n:"Ervervet rolle",k:"k4",p:0,
+ d:"En rolle vi har fått ved å gjøre noe aktivt for å bli tildelt den.",
+ e:"Trener, lege, mor, lagkaptein, elev på studiespesialisering.",
+ b:"Sett den mot medfødt rolle. Grensen er ikke alltid skarp: er rollen som forelder ervervet eller medfødt? Å påpeke det gir uttelling."},
+{n:"Medfødt rolle",k:"k4",p:0,
+ d:"En rolle vi har uten å ha gjort noe aktivt for å få den.",
+ e:"Datter, sønn, søster, bror, barnebarn.",
+ b:"Koble til at forventningene til medfødte roller likevel endrer seg: foreldre forventer noe annet av en ungdom enn av et barn."},
+{n:"Biologisk kjønn",k:"k4",p:1,
+ d:"Kjønn definert ut fra de medfødte, fysiologiske forskjellene mellom jenter og gutter. Samfunnet er organisert rundt en idé om at man er enten jente eller gutt, tokjønnsnormen.",
+ e:"Kromosomer, kjønnsorganer og hormoner. Hvert år fødes ti til tolv barn i Norge der biologisk kjønn er vanskelig å avgjøre.",
+ b:"Bruk interkjønn til å vise at heller ikke det biologiske kjønnet er en enkel todeling: det er et poeng som løfter svaret."},
+{n:"Sosialt kjønn",k:"k4",p:1,
+ d:"De forventningene vi har til gutter og jenter fordi de er biologisk forskjellige. Hvilken betydning forskjellene får, avgjøres av samfunnet og miljøene barna vokser opp i, og varierer mellom land og gjennom historien.",
+ e:"Rosa pledd og blått pledd på fødestua, kjønnsdelte leker, klær, filmer og musikk. Margaret Meads studie av arapesh, mundugumor og tchambuli viste helt ulike kjønnsforventninger i tre naboland.",
+ b:"Poenget som gir 6: selv foreldre som ønsker kjønnsnøytral oppdragelse får det vanskelig til, fordi samfunnets forventninger er med på å konstruere kjønn."},
+{n:"Interkjønn (intersex)",k:"k4",p:0,
+ d:"At et barn er født med ubestemmelig kjønn ut fra de kriteriene som vanligvis brukes for å avgjøre biologisk kjønn. De fysiologiske variasjonene er store.",
+ e:"Noen er født med én eggstokk og én testikkel. I Norge bestemmer leger i samråd med foreldrene hvilket kjønn barnet skal ha, og barnet opereres ofte. De fleste gjøres til jenter i biologisk forstand.",
+ b:"Bruk debatten: bør man vente til barnet selv kan avgjøre, og bør interkjønn bli en tredje kjønnskategori? Det er en ferdig drøftingsakse."},
+{n:"Ungdomskultur",k:"k4",p:0,
+ d:"Kulturen som vokser fram blant unge i livsfasen mellom barndom og voksenliv. Fenomenet ble på mange måter skapt av samfunnsendringene i 1960- og 1970-årene.",
+ e:"Ungdomsopprør, studentopprør, kvinnebevegelse, hippiebevegelse og musikkbaserte subkulturer. I dag: Ungdata beskriver en streitere, veltilpasset og hjemmekjær generasjon.",
+ b:"Vis endringen som en prosess med årsaker: krav til utdanning, flytting til byene, foreldre som ble utdaterte som autoriteter, og internasjonal inspirasjon."},
+{n:"Generasjon prestasjon",k:"k4",p:0,
+ d:"Uttrykk for dagens unge som opplever at det stilles så høye krav til dem at de blir psykisk syke av det. Beslektede uttrykk: generasjon skikkelig, generasjon antiopposisjon, flinkiser.",
+ e:"Ungdata 2020: tre ganger så mange jenter som gutter har psykiske helseplager; nær 25 prosent av jentene har depressive symptomer fra 15-16-årsalderen; hver tredje jente er lite fornøyd med seg selv.",
+ b:"Husk paradokset: objektivt har vi det bedre enn noen generasjon før, subjektivt føler flere seg dårligere. Og husk Mælands poeng: presset er skapt av kulturelle strukturer, ikke av den enkelte."},
+{n:"Generasjonskløfta",k:"k4",p:0,
+ d:"Avstanden mellom ungdommer og voksne. Stor i 1960- og 1970-årene, mye mindre synlig i dag. Øia og Vestel (2014) kaller det generasjonskløfta som forsvant.",
+ e:"92 prosent av Ungdata-respondentene opplever at foresatte er svært interessert i livet deres. Mange sier de er venner med foreldrene sine.",
+ b:"Tre forklaringer: foreldre er mer til stede og mindre autoritære, foreldrenes egen ungdomstid forlenges (Pedersen, 2003), og teknologien endrer omgangsformene."},
+{n:"Postfigurativ sosialisering",k:"k4",p:0,
+ d:"Margaret Meads begrep for sosialisering i samfunn der normer og verdier overføres forholdsvis uendret fra en generasjon til den neste. De unge tar i liten grad egne valg, men innlemmes i fastlagte rutiner og mønstre.",
+ e:"Norge før 1950, der barnas framtid var styrt av familietradisjoner og foreldrenes ønsker. I dag: konservative religiøse miljøer. Samfunnene preges av tydelige autoriteter, stabilitet og tradisjoner.",
+ b:"Husk at et samfunn sjelden er rent postfigurativt: som oftest finnes alle tre formene samtidig, men én dominerer."},
+{n:"Konfigurativ sosialisering",k:"k4",p:0,
+ d:"Meads begrep for sosialisering som åpner for dialog mellom grupper og individer, der det gis større rom for forhandling om samfunnsnormer. Mindre direkte press fra autoriteter, mer debatt og problematisering av verdier.",
+ e:"De fleste moderne samfunn i dag, der de unge får ta egne valg og barnets medbestemmelse vektlegges hjemme og i samfunnet. Samfunnene preges av kulturell endring, åpenhet og fleksibilitet.",
+ b:"Dette er formen som dominerer i dagens Norge. Bruk forhandlinger om grenser mellom foreldre og ungdom som konkret eksempel."},
+{n:"Prefigurativ sosialisering",k:"k4",p:0,
+ d:"Meads begrep for sosialisering der barn og unge vet mer enn de voksne, og på mange måter er med på å oppdra foreldrene sine. Vanlig i samfunn i rask endring, der kunnskap fra eldre generasjoner ikke lenger er like nyttig.",
+ e:"Ungdom som lærer foreldre og besteforeldre å bruke smarttelefon, sosiale medier og normer for samhandling på nett. Mange har også høyere utdanning enn foreldrene.",
+ b:"Det sterkeste enkelteksempelet på at sosialisering går begge veier: bruk det som bevis for Berger og Luckmann framfor Giddens."},
+{n:"Identitet",k:"k4",p:0,
+ d:"Hvordan vi oppfatter oss selv, hvordan vi presenterer oss selv, og hvordan vi skaper oss selv i møte med andre. Identitet er ikke medfødt, men formes gjennom hele livet.",
+ e:"Familie, venner, hjemsted, bøker og musikk, religion og livssyn, kjønn og seksualitet, politisk ståsted.",
+ b:"Del svaret i personlig identitet (jeg) og gruppeidentitet (vi), og legg til at begge er nødvendige: vi ser oss selv gjennom andre (Eriksen, 2004)."},
+{n:"Relasjonell identitet",k:"k4",p:1,
+ d:"At identitet handler om identifikasjon i relasjon til omgivelsene: den skapes enten i kontrast til andre individer og grupper (som noe vi ikke er) eller sammen med dem vi identifiserer oss med (Eriksen, 2004).",
+ e:"Mipsterne skaper seg selv i relasjon til mødrene sine, til majoritetssamfunnet og til andre muslimer samtidig.",
+ b:"Par den alltid med situasjonell identitet: relasjonell handler om hvem, situasjonell om hvor og når."},
+{n:"Situasjonell identitet",k:"k4",p:1,
+ d:"At vi kan spille på ulike sider av identiteten vår alt etter hvilken situasjon vi er i.",
+ e:"Din identitet som norsk er lite relevant til daglig, men i det øyeblikket Norge slår Sverige i håndball, blir det morsomt å flagge den (Eriksen, 2004).",
+ b:"Broen videre til Goffman: situasjonell identitet er nettopp det frontstage og backstage handler om."},
+{n:"Det regisserte selvet",k:"k4",p:1,
+ d:"Forståelsen av at livet er en scene og at vi er skuespillere i mange roller. Rollens utforming er en blanding av omgivelsenes påvirkning og forventninger og vår egen mulighet til å gi rollen innhold. Det latinske persona betyr maske.",
+ e:"Hjemme hos en venn oppfører du deg innøvd og høflig i stua med foreldrene, men er straks mer avslappet når døra til rommet lukkes.",
+ b:"Nevn begge ytterpunktene boka gir: noen ganger føler vi oss som dukker der andre trekker i trådene, andre ganger er rollene så fleksible at vi kan forme dem fritt."},
+{n:"Frontstage",k:"k4",p:0,
+ d:"Goffmans begrep for der vi går ut på scenen, tar på oss de offentlige, sosiale rollene og opptrer for et publikum. Vi applauderes for god oppførsel, men kan bues på om publikums forventninger ikke innfris.",
+ e:"Servitøren i møte med gjestene. Legen foran pasienten. Instagram-profilen din.",
+ b:"Bruk sosiale medier som eget eksempel: det viser at du kan overføre en teori fra 1959 til din egen samtid."},
+{n:"Backstage",k:"k4",p:0,
+ d:"Goffmans begrep for der individet er seg selv og kan gå ut av de sosiale rollene, der publikum ikke lenger ser oss.",
+ e:"Servitøren som tuller med kokkene på kjøkkenet. Familien og de nærmeste vennene. Snapchat med de nærmeste.",
+ b:"Et godt drøftingsspørsmål: er vi egentlig mer oss selv backstage, eller er også backstage en forestilling for et annet publikum?"},
+{n:"Personlig identitet",k:"k4",p:0,
+ d:"Den delen av identiteten som er unik og sier noe om hvem du er som person.",
+ e:"Dine interesser, verdier, væremåte og livshistorie.",
+ b:"Vis at den ikke kan eksistere uten gruppeidentiteten: vi ser oss selv gjennom andre."},
+{n:"Gruppeidentitet",k:"k4",p:0,
+ d:"Den delen av identiteten som formes sammen med andre, fordi dere har lik alder, interesser, yrke, nasjonalitet eller kultur.",
+ e:"Å være russ, håndballspiller, kristen, nordmann, sosiologielev.",
+ b:"Boka konkluderer med at gruppeidentitet ikke bare er sosialt nødvendig, men avgjørende for hvordan vi formes som mennesker."},
+{n:"Kulturell identitet",k:"k4",p:0,
+ d:"At kulturene vi vokser opp med former personligheten og selvbildet vårt. Kultur gir oss holdninger og verdier som styrer hvordan vi oppfatter oss selv, forstår verden og oppfører oss.",
+ e:"Tradisjonelle samfunn legger større vekt på fellesskapet og hvem vi er; moderne samfunn framhever friheten til å forme sitt eget liv.",
+ b:"Legg til at identitet kan være både samlende og splittende: den skaper tilhørighet, men holder også noen utenfor."},
+{n:"Symbolsk interaksjonisme",k:"k4",p:0,
+ d:"Retningen som handler om hvordan vi tar andres roller: vi speiler oss i andre og ser hvordan de reagerer på måten vi oppfører oss på. Vi ser oss selv gjennom andre (Eriksen, 2004). George H. Mead har gått i dybden på dette.",
+ e:"Eleven som justerer atferden sin etter hvordan læreren og medelevene reagerer. Barnet som lærer hvem det er gjennom lek.",
+ b:"Nevn at Herbert Blumer laget selve begrepet i 1937, og hans tre premisser: mening styrer handling, mening oppstår i samhandling, mening bearbeides gjennom fortolkning."},
+{n:"Opposisjonell identitet",k:"k4",p:0,
+ d:"En identitet som står i kontrast til det majoritetssamfunnet forventer.",
+ e:"Ungdommer som kler seg eller oppfører seg annerledes enn den aksepterte normen (freak, snobb, geek) eller som markerer tydelig religiøst eller politisk ståsted. Mipsterne er bokas hovedeksempel.",
+ b:"Vis at den likevel skapes i relasjon til det den opponerer mot: opposisjon er også en form for tilhørighet."},
+
+/* --- Utvidelser --- */
+{n:"Inntrykksstyring",k:"ut",p:0,
+ d:"Goffmans begrep (impression management) for hvordan vi kontrollerer og styrer det inntrykket andre får av oss, gjennom oppførsel, utseende og omgivelser.",
+ e:"Å rydde ekstra før gjester kommer, legge fram visse bøker og skjule andre, ta av kosebuksa før du går ut døra.",
+ b:"Bruk det norske og det engelske begrepet sammen: det signaliserer presisjon uten at det koster plass."},
+{n:"Rolledistanse",k:"ut",p:0,
+ d:"Goffmans begrep for at vi bevisst markerer avstand til en rolle vi spiller, for å vise at dette ikke egentlig er meg.",
+ e:"Eleven som gjør leksene, men himler med øynene mens hun gjør det. Ungdommen som går i konfirmasjon, men understreker at det er for gavenes skyld.",
+ b:"Perfekt i en oppgave om ungdomsroller og om spennet mellom å tilpasse seg og være kritisk."},
+{n:"Totale institusjoner",k:"ut",p:0,
+ d:"Goffmans begrep (Asylums, 1961) for steder der mennesker bor, arbeider og sover innenfor samme ramme, under én autoritet, avskåret fra samfunnet ellers. Den tidligere identiteten brytes ned og en ny, institusjonell identitet bygges opp.",
+ e:"Psykiatriske sykehus, fengsler, militærleirer, internatskoler, klostre.",
+ b:"En direkte bro mellom kapittel 4 og mesonivået i kapittel 1, og til Bjørgos poeng om at noen radikaliseres i fengsel."},
+{n:"Stigma",k:"ut",p:0,
+ d:"Goffmans begrep (1963) for et kjennetegn som gjør identiteten ødelagt i andres øyne. Han skiller mellom diskrediterte, der stigmaet er synlig, og diskrediterbare, der det kan skjules og samhandlingen handler om informasjonskontroll.",
+ e:"Psykiske helseplager blant ungdom er ofte diskrediterbare: de kan skjules, og mye energi går med til å skjule dem.",
+ b:"Bruk stigma til å gi utenforskap et teoretisk fundament i stedet for bare en beskrivelse."},
+{n:"Lekestadiet og spillstadiet",k:"ut",p:0,
+ d:"George H. Meads to stadier i utviklingen av selvet. På lekestadiet (play) tar barnet rollen til én annen om gangen. På spillstadiet (game) må barnet ta rollene til alle de andre samtidig og forstå hele regelverket, og det er der den generaliserte andre oppstår.",
+ e:"Å leke mamma eller lege på lekestadiet; å spille på et fotballag på spillstadiet.",
+ b:"Dette står ikke i boka, men det er selve mekanismen bak den generaliserte andre. Tar du det med, forklarer du hvordan, ikke bare hva."},
+{n:"Speilingsselvet",k:"ut",p:0,
+ d:"Charles Horton Cooleys begrep (the looking-glass self): jeg forestiller meg hvordan jeg framstår for deg, jeg forestiller meg din vurdering av meg, og jeg får en følelse ut av det: stolthet eller skam.",
+ e:"Likes og kommentarer på sosiale medier som et bokstavelig speil, koblet til prestasjonspress og misnøye med eget utseende.",
+ b:"Nært beslektet med G.H. Mead og symbolsk interaksjonisme. Bruk det til å forklare hvorfor sosiale medier treffer identiteten så hardt."},
+{n:"Signifikante symboler",k:"ut",p:0,
+ d:"George H. Meads begrep for gester og ord som betyr det samme for den som sender og den som mottar dem. Språket er det viktigste. Uten felles symboler er rolleovertakelse umulig, og uten rolleovertakelse blir det intet selv.",
+ e:"Ordet skole utløser samme forestilling hos deg og meg. Et tommelopp betyr det samme for begge.",
+ b:"Bruk det til å forklare hvorfor Mead mener individet er grunnleggende sosialt: selvet krever språk, og språk krever andre."},
+{n:"Freeman-kontroversen",k:"ut",p:0,
+ d:"Derek Freemans kritikk (1983) av Margaret Meads Samoa-studie: at samfunnet var langt strengere seksuelt enn hun beskrev, at ni måneder var for kort, at språkkunnskapene var svake, og at unge informanter kan ha tullet med henne.",
+ e:"Kritikken er selv kritisert: Freeman forsket flere tiår seinere, i andre landsbyer, som mann, og kritikken kom etter Meads død.",
+ b:"Bruk den som kildekritikk i enhver Mead-oppgave: den handler om arv mot miljø, om forskerens rolle, og om etterprøvbarhet i kvalitativ forskning."}
+];
+
+/* ============ DATA: SITATER ============ */
+var QUOTES = [
+{q:"(...) en prosess der det hjelpeløse barnet gjennom kontakt med andre mennesker gradvis blir et selvbevisst og kunnskapsrikt individ, formet av en gitt kultur.",s:"Anthony Giddens (2006)",u:"Åpningssitatet i enhver sosialiseringsoppgave. Følg alltid opp med hva definisjonen mangler: at individet også skaper og endrer samfunnet."},
+{q:"Sosialisering er de prosesser der individet både lærer og internaliserer samfunnets normer og atferdsmønster, men også selv er med på å skape eller endre normer.",s:"Peter Berger og Thomas Luckmann (2000)",u:"Definisjonen boka selv legger til grunn. Si det eksplisitt, og begrunn hvorfor du velger den framfor Giddens."},
+{q:"Gjennom arbeidet med denne boka har jeg beveget meg fra å se 22. juli som utslag av en større reaksjon på globalisering og modernitet og langt i retning mot å se terrorhandlingene som utslag av omsorgssvikt i familien, overføring av dårlige tilknytningsmønstre over generasjoner og påfølgende psykisk lidelse på individplan.",s:"Aage Borchgrevink (2012, s. 533-534)",u:"Selve skolebokeksempelet på en bevegelse fra strukturforklaring på makronivå til individ- og mikroforklaring. Men påpek at han ikke avviser politikken: det blir en kombinasjonsforklaring."},
+{q:"SSBU beskrev hvordan hun forvirret gutten gjennom vekselvis å skyve ham vekk og trekke ham til seg. Moren var kritikkløs, uten evne til å se seg selv i situasjonen &ndash; alt var andres skyld.",s:"Aage Borchgrevink (2012, s. 68)",u:"Bruk det i diskusjonen om gråsonen: er de aller nærmeste omgivelsene en individ- eller strukturforklaring? Å reise spørsmålet er poenget."},
+{q:"Om én mann kan vise så mye hat, tenk hvor mye kjærlighet vi alle kan vise sammen.",s:"AUF-medlem på Twitter, juli 2011",u:"Harmoniperspektivet i én setning. Koble til Durkheim: forbrytelsen samler folk i fordømmelsen og styrker samholdet."},
+{q:"Sosiologien ga meg hjelp til å forstå det som skjedde rundt meg, og analysere konsekvenser.",s:"Tom Colbjørnsen, sosiologen.no",u:"Fin åpning på en oppgave om hva sosiologi er, og om fagets nytteverdi utenfor akademia."},
+{q:"Bevisstheten om styrken i analyse og diskusjon ble helt klart formet i studietiden, og det sosiologiske blikket blir vel som kontaktlinser man glemmer å ta ut og legge i et sånt vannbad. Jeg bruker det i jobben hele tiden.",s:"Nora Blaasvær, sosiologen.no",u:"Bildet av det sosiologiske blikket som kontaktlinser er et godt avslutningssitat: faget endrer hvordan du ser, ikke bare hva du vet."},
+{q:"Å prøve å forstå kvifor nokon andre meiner det dei meiner, er heilt essensielt for å få til ein dialog. Eg ser på dette som ei antropologisk tilnærming.",s:"Ragnhild Therese Nordvik, antropologi.org",u:"Bruk det til å forklare kulturrelativisme og antropologiens forståelsesideal, og til å begrunne at å forklare ikke er å forsvare."},
+{q:"Alle som har gjort feltarbeid, vet hvor krevende det kan være til tider; hvordan man kjenner sulten, varmen, kulden, avvisningen, fascinasjonen, skammen over sin egen klønete uvitenhet, gleden, oppgløddheten, tvilen og ensomheten på kroppen.",s:"Siv Elin Ånestad, antropologi.org",u:"Bruk det når du skriver om feltarbeid som metode, og koble til at forskerens egen situasjon påvirker dataene."},
+{q:"Et samfunn er en samling individer og eller grupper som over et lengre tidsrom lever i en form for fellesskap på et nærmere avgrenset geografisk område.",s:"Sølvberg et al. (2015, s. 23)",u:"Den ene definisjonen du bør kunne ordrett i kapittel 4 ved siden av sosialiseringsdefinisjonene. Bruk de tre kriteriene som disposisjon."},
+{q:"Jeg ønsker at alle blir litt snillere mot seg selv.",s:"Lapp på Ønsketreet i Slottsparken, gjengitt hos Madsen (2018)",u:"Perfekt åpning på en oppgave om generasjon prestasjon. Kort, konkret, og leder rett inn i paradokset."},
+{q:"Norske jenter har bedre karakterer enn noensinne, bruker mindre rus og er mer pliktoppfyllende enn før. Men aldri har de slitt mer med prestasjonspress, stress og psykiske plager.",s:"Introduksjon til dokumentarserien Sykt perfekt, tv2.no",u:"Formulerer paradokset i kapittel 4 bedre enn du rekker å gjøre selv. Følg opp med Mælands poeng om kulturelle strukturer."},
+{q:"Jeg har vært vant til å klare alt, men så en dag sier det stopp. Jeg blir innlagt på akuttpsykiatrisk med diagnosen alvorlig depresjon. (...) Jeg får livet mitt tilbake, men flinkismønstrene sitter i ryggmargen.",s:"Solveig Melkeraaen, regissør av Flink pike",u:"Et mikroperspektiv på et makrofenomen. Bruk det til å vise hvordan strukturelt press oppleves individuelt."},
+{q:"Som muslim ønsket jeg å respektere min tro. Men jeg valgte det selv, det var ingen hjemme som presset meg. (...) At det ikke er noen motsetning mellom det å kle seg vestlig moteriktig og samtidig ha hijab.",s:"Jente ved Jordal skole i Oslo (Hoffengh, 2016)",u:"Kjernen i mipster-casen: identitet som aktivt valg, ikke som påtvunget tradisjon. Koble til Tarlo (2010)."},
+{q:"get rich or die trying",s:"Breivik på FpUs debattforum, 2003 (Seierstad, 2013, s. 96)",u:"Konkret belegg for at målet om suksess kolliderte med strukturene i lokalmiljøet og arbeidsmarkedet. Kort og treffsikkert i en strukturforklaring."}
+];
+
+/* ============ DATA: QUIZ ============ */
+var QUIZ = [
+{q:"Hva er den viktigste forskjellen mellom statsborgerskap og medborgerskap?",
+ o:["Statsborgerskap er en juridisk status, medborgerskap handler om faktisk deltakelse i sosiale og politiske fellesskap","Statsborgerskap gjelder voksne, medborgerskap gjelder barn og unge","Statsborgerskap er frivillig, medborgerskap er lovpålagt","Medborgerskap er det samme som stemmerett"],
+ a:0,x:"Statsborgerskap handler om forholdet mellom mennesket og staten (rettigheter og plikter). Medborgerskap handler om forholdet mellom mennesker og om mulighetene til å delta, på mange måter uavhengig av status som statsborger (Stray, 2012)."},
+{q:"Hvilken definisjon av sosialisering legger læreboka til grunn, og hvorfor?",
+ o:["Giddens, fordi den er enklest å huske","Berger og Luckmann, fordi den får med at individet også skaper og endrer normer","Durkheim, fordi han er en klassiker","Frønes, fordi han skriver om jevnaldrende"],
+ a:1,x:"Giddens (2006) får fram at sosialisering er en livslang prosess og at vi er avhengige av omgivelsene, men mangler at individet selv skaper og endrer samfunnet. Derfor bruker boka Berger og Luckmann (2000)."},
+{q:"En forsker studerer hvordan samspillet mellom innsatte i et fengsel bidrar til radikalisering. Hvilket analysenivå er dette?",
+ o:["Mikronivå","Mesonivå","Makronivå","Ingen av dem: det er en typologi"],
+ a:1,x:"Fengselet er en institusjon, altså noe mellom individet og samfunnet. Meso betyr imellom. Mikro ville vært én innsatt som case, makro ville vært framveksten av ekstreme ideologier i samfunnet."},
+{q:"Hva er kjernen i internalisering?",
+ o:["At vi lærer normer utenat til prøver","At normene blir en del av oss, slik at vi følger dem uten å tenke over det","At staten håndhever normene","At normene skrives ned i lovverket"],
+ a:1,x:"Internalisering er at samfunnets normer blir våre egne. Kjennetegnet er at du merker normen først når noen bryter den. Nedskriving av normer er derimot definisjonen på formelle normer."},
+{q:"Hvem utviklet typologien med fire veier inn i voldelig ekstremisme?",
+ o:["Aage Borchgrevink","Åsne Seierstad","Tore Bjørgo","Tore Rafoss"],
+ a:2,x:"Tore Bjørgo (2015): de ideologiske aktivistene, medløperne, eventyrerne og de sosialt frustrerte. Rafoss (2018) skrev om rosetogene og konsensusperioden; Borchgrevink og Seierstad skrev bøkene om Breivik."},
+{q:"Hvilket perspektiv passer best på analysen av at rosetogene og markeringene etter 22. juli styrket samholdet i Norge?",
+ o:["Konfliktperspektiv","Harmoniperspektiv","Individforklaring","Typologi"],
+ a:1,x:"Harmoniperspektivet, i funksjonalistisk form. Durkheim: forbrytelser har en sosial funksjon ved at de viser hvor grensene går og samler folk i felles fordømmelse. Rafoss (2018) kaller tiden etterpå en konsensusperiode."},
+{q:"Margaret Mead konkluderte i Coming of Age in Samoa med at",
+ o:["pubertet er like traumatisk i alle samfunn, fordi den er biologisk bestemt","kulturelle, ikke biologiske, faktorer styrte ungdommenes opplevelse av følelsesmessig stress","samoanske jenter var strengere oppdratt enn amerikanske","ungdomstiden ikke finnes som livsfase på Samoa"],
+ a:1,x:"Mead fant at samoanske jenter ikke hadde de samme utfordringene som amerikanske ungdommer, blant annet på grunn av et friere og mindre tabubelagt forhold til kropp og seksualitet. Konklusjonen var altså kulturell, ikke biologisk."},
+{q:"Hva er prefigurativ sosialisering?",
+ o:["Sosialisering som overføres uendret fra en generasjon til den neste","Sosialisering gjennom forhandling mellom jevnaldrende","Sosialisering der de unge lærer de voksne","Sosialisering som skjer før barnet fødes"],
+ a:2,x:"Prefigurativ sosialisering bygger på at barn og unge vet mer enn de voksne: typisk teknologi og sosiale medier. Postfigurativ er uendret overføring nedover, konfigurativ er forhandling mellom jevnaldrende."},
+{q:"Hva er en komplementær rolle?",
+ o:["En rolle du får uten å ha gjort noe for den","En rolle som bare finnes i relasjon til en annen rolle","En rolle du spiller backstage","En rolle som gir høy status"],
+ a:1,x:"Elev forutsetter lærer, pasient forutsetter lege, fotballspiller forutsetter dommer. Rollen du får uten å gjøre noe aktivt er en medfødt rolle."},
+{q:"Goffman skiller mellom frontstage og backstage. Hvilken påstand er riktig?",
+ o:["Backstage er der vi opptrer for et publikum","Frontstage er der vi kan gå ut av de sosiale rollene","Frontstage er der vi tar på oss de offentlige rollene og kan bli applaudert eller buet på","Skillet gjelder bare for yrkesroller"],
+ a:2,x:"Frontstage = scenen, med publikum og forventninger. Backstage = der publikum ikke ser oss, og vi kan legge beina på bordet. Skillet gjelder hele det sosiale livet, også privat."},
+{q:"Hva er den generaliserte andre hos George H. Mead?",
+ o:["De personene som betyr mest for oss i oppveksten","Samfunnets forventninger til oss, slik vi har internalisert dem","Den delen av oss som ubevisst responderer på omgivelsene","En person som representerer en gruppe"],
+ a:1,x:"De signifikante andre er konkrete personer. Den generaliserte andre er samfunnets forventninger som helhet. Den delen som ubevisst responderer, er jeget."},
+{q:"Hvilken av disse er en uformell norm?",
+ o:["Fraværsgrensa i videregående skole","Å ta av seg skoene når man kommer inn i et norsk hjem","Straffeloven","Skolereglementet"],
+ a:1,x:"Uformelle normer er ikke nedskrevet, men følges likevel. De tre andre er nedskrevne, altså formelle normer, med formelle sanksjoner."},
+{q:"Ungdata 2020 viser at ungdom i dag er streitere enn før. Hvilken kritiske innvending er mest relevant?",
+ o:["Undersøkelsen er for gammel til å brukes","Tallene er selvrapporterte, og gutter underrapporterer psykiske plager","Bare elever i Oslo deltar","Ungdata måler bare rusbruk"],
+ a:1,x:"Boka påpeker selv at guttene underrapporterer egne psykiske utfordringer, og spør om mange blir presset til å føle seg presset. Ungdata dekker et bredt spekter av temaer og har hatt 660 000 deltakere siden 2010."},
+{q:"Hva er forskjellen på relasjonell og situasjonell identitet?",
+ o:["Relasjonell handler om hvem vi speiler oss i, situasjonell om at vi spiller på ulike sider av identiteten i ulike situasjoner","Relasjonell er medfødt, situasjonell er ervervet","Relasjonell gjelder familien, situasjonell gjelder venner","Det er to ord for det samme"],
+ a:0,x:"Relasjonell identitet skapes i kontrast til eller sammen med andre. Situasjonell identitet er at vi framhever ulike sider etter situasjonen, som norskheten din i det Norge slår Sverige i håndball (Eriksen, 2004)."},
+{q:"Hvorfor er Derek Freemans kritikk av Margaret Mead nyttig i en besvarelse?",
+ o:["Fordi den beviser at Mead tok feil","Fordi den viser at arv er viktigere enn miljø","Fordi den belyser forskerens rolle, etterprøvbarhet og debatten arv mot miljø","Fordi den er den eneste kritikken som finnes av antropologisk metode"],
+ a:2,x:"Freemans kritikk er selv omstridt: han forsket flere tiår seinere, i andre landsbyer, som mann, og etter Meads død. Poenget er ikke å avgjøre saken, men å vise at kunnskap i faget er omstridt og påvirket av forskerens situasjon."}
+];
+</script>
+<script>
+var TASKS = [
+{k:"k1", t:"Gjør rede for likheter og forskjeller mellom sosiologi og sosialantropologi, og drøft hvorfor faggrensene har blitt mindre tydelige.",
+ why:"To deler: en sammenlikning (likheter og forskjeller) og en drøfting av en utvikling. Sammenlikningen må gå punkt for punkt. Drøftingen må ha en årsak (globaliseringen) og nyansere den.",
+ beg:["Sosiologi","Sosialantropologi","Feltarbeid","Kulturrelativisme","Mikro, meso, makro","Kulturelle variasjoner"],
+ teo:["Eriksen (2003): det sammenliknende studiet av kultur og samfunn","Boas: kulturrelativisme","Malinowski: feltarbeid som ideal","Marx, Weber, Durkheim: sosiologiens klassikere"],
+ eks:["Malinowski på Trobrianderøyene","Mead på Samoa","Tarlos studie av hijab og mote i Storbritannia (antropologi i eget samfunn)","Ungdata som sosiologisk storskalaundersøkelse"],
+ disp:["Innledning: to fag i én bok. Definer begge med kilde.","Likheter: studerer samspillet mellom mennesker og samfunn, kritisk ståsted, sammenlikning.","Forskjeller punkt for punkt: metode (statistikk og intervju mot feltarbeid), studieobjekt (vestlige mot ikke-vestlige småskalasamfunn), analysenivå (alle nivåer mot mikro og meso).","Drøfting: globaliseringen vever samfunn sammen. Antropologer studerer nå eget samfunn (Tarlo), sosiologer bruker kvalitative metoder.","Nyanse: forskjellene i vitenskapstradisjon og metode er fortsatt tydelige på universitetet.","Konklusjon: grensene er mindre tydelige i hva fagene studerer, men fortsatt tydelige i hvordan de studerer det."],
+ fall:["Bare forskjeller, ingen likheter","Sosialantropologi forklart som «studiet av primitive folk». Det er nettopp synet Boas gjorde opp med","Ingen konkret årsak til at grensene viskes ut"],
+ inn:"Både en sosiolog og en sosialantropolog kunne skrevet om unge muslimske jenter som kombinerer hijab med vestlig mote. Sosiologen ville kanskje målt hvor mange som gjør det, og hvorfor. Antropologen ville heller brukt tid sammen med dem for å forstå hva klærne betyr for dem selv. Sosiologi er vitenskapen om samfunnet og relasjonene mellom individer, grupper og samfunnet som helhet, mens sosialantropologi er «det sammenliknende studiet av kultur og samfunn med utgangspunkt i lokalt liv» (Eriksen, 2003). I denne teksten sammenlikner jeg fagene ut fra metode, studieobjekt og analysenivå, før jeg drøfter hvorfor grensene mellom dem er blitt mindre tydelige.",
+ dro:"Den viktigste årsaken til at faggrensene viskes ut, er globaliseringen. Da Malinowski dro til Trobrianderøyene, var det mulig å studere et samfunn som relativt avgrenset og fjernt. I dag er det knapt noe samfunn som ikke er vevd sammen med resten av verden gjennom handel, migrasjon og internett. Det betyr at antropologen ikke lenger trenger å reise langt for å studere kulturell variasjon: Emma Tarlo (2010) studerte muslimsk mote i Storbritannia, altså i antropologens eget samfunn. Samtidig bruker sosiologer i økende grad kvalitative metoder som dybdeintervju og observasjon. Likevel ville det være for enkelt å si at fagene er blitt like. Feltarbeidet, der forskeren lever sammen med menneskene hun studerer over lang tid, er fortsatt antropologiens kjennetegn, og antropologen holder seg oftest på mikro- og mesonivå. Grensene er dermed mest utvisket når det gjelder <em>hva</em> fagene studerer, og minst når det gjelder <em>hvordan</em>.",
+ avs:"Sosiologi og sosialantropologi deler interessen for samspillet mellom mennesker og samfunn, og begge har et kritisk og sammenliknende blikk. De skiller seg i metode, i hvilke samfunn de tradisjonelt har studert, og i analysenivå. Globaliseringen har gjort at antropologer studerer eget samfunn og at sosiologer studerer lokale fellesskap med kvalitative metoder, og derfor overlapper fagene mer enn før. Etter min vurdering er likevel metoden det som fortsatt skiller dem tydeligst."},
+
+{k:"k1", t:"Bruk individ- og strukturforklaringer til å forklare hvorfor unge gutter kan bli arbeidsledige. Vurder forklaringene opp mot hverandre.",
+ why:"Oppgave 4 bakerst i kapittel 1, med VG-lederen fra 2015. «Bruk» betyr at begrepene skal brukes på teksten, ikke bare forklares. «Vurder» betyr at du må si hvilken forklaring som har mest for seg, og hvorfor.",
+ beg:["Individforklaring","Strukturforklaring","Rasjonell aktør","Makronivå","Mesonivå","Utenforskap","Medborgerskap"],
+ teo:["Sirkelmodellen: fra familie til det globale nivået","Rasjonell aktør","Utenforskap (kap. 4)"],
+ eks:["31 000 flere ledige på ett år, høyeste nivå på ti år","13 % av unge menn ledige, tre ganger høyere enn andre grupper","Olje, bygg og anlegg rammes av konjunkturene, Vestlandet i omstilling","Utenlandske arbeidssøkere og flere over 55 i arbeid","Unge menn hopper oftere av studier"],
+ disp:["Innledning: tallene fra VG. Definer de to forklaringstypene.","Individforklaringer: avbrutte studier, motivasjon, rasjonelle valg (jobb framfor skole i oljeboomen).","Strukturforklaringer, innenfra og ut: familie og nettverk, skole og utdanningsvalg, arbeidsmarkedet og konjunkturene (oljeprisfallet), globalisering og arbeidsinnvandring.","Vurdering: strukturforklaringen forklarer omfanget og tidspunktet, individforklaringen hvem som rammes.","Samspill: valget om å droppe skolen var rasjonelt i en struktur der oljebransjen tok imot ufaglærte.","Konklusjon med vekting."],
+ fall:["Moralisering: «de er late»","Gjengi artikkelen uten fagbegreper","Glemme å vurdere, bare liste opp"],
+ inn:"I 2015 økte antallet arbeidsledige i Norge med 31 000 på ett år, og hele 13 prosent av unge menn sto uten jobb, tre ganger så mange som i andre grupper (VG, 2015). Tallene reiser spørsmålet om hvorfor nettopp unge gutter rammes så hardt. En individforklaring viser til egenskaper og valg hos personen selv, mens en strukturforklaring viser til forholdene rundt personen, fra familie og skole til arbeidsmarkedet og globale forhold. I denne teksten bruker jeg begge forklaringstypene på VG-artikkelen, og vurderer hvilken som har størst forklaringskraft.",
+ dro:"Når jeg vurderer forklaringene opp mot hverandre, er det avgjørende å skille mellom hvorfor ledigheten steg og hvem som ble ledige. At ledigheten økte med 31 000 på ett år, kan vanskelig forklares med at unge menn plutselig ble mindre motiverte. Det tyder på en endring i strukturene: oljeprisfallet rammet olje, bygg og anlegg, der mange unge menn jobbet, og konkurransen fra utenlandske arbeidssøkere og eldre arbeidstakere økte. Individforklaringene forklarer derimot hvem i gruppa som rammes først. Den som har hoppet av studiene, står svakere enn den som har fullført. Samtidig er grensen mellom forklaringene ikke skarp. Å velge jobb i oljebransjen framfor videre utdanning var trolig et rasjonelt valg da bransjen trengte folk. Valget ble først et problem da strukturene endret seg. Individenes valg er altså tatt innenfor strukturer, og de samme valgene får ulike konsekvenser i ulike konjunkturer.",
+ avs:"Drøftingen viser at både individ- og strukturforklaringer bidrar til å forklare hvorfor unge gutter blir arbeidsledige, men at de forklarer ulike ting. Etter min vurdering veier strukturforklaringene tyngst, fordi de forklarer hvorfor så mange ble rammet samtidig. Individforklaringene er likevel nødvendige for å forstå hvorfor noen rammes hardere enn andre. Uten strukturforklaringen risikerer vi å gi den enkelte skylden for et samfunnsproblem."},
+
+{k:"k1", t:"Drøft ulike forklaringer på terrorangrepet 22. juli 2011. Hvilke forklaringer vil du legge mest vekt på?",
+ why:"Kapitlets gjennomgangscase. «Drøft» og «legg mest vekt på» krever at du tar stilling. Du må vise at du kjenner flere forklaringstyper, og at forklaring ikke er det samme som forsvar.",
+ beg:["Individforklaring","Strukturforklaring","Typologi","Mikro, meso, makro","Harmoni og konflikt","Selektiv eksponering","Ekkokammer","Konspirasjonsteori","Epigenetikk"],
+ teo:["Bjørgo (2015): typologien","Borchgrevink (2012): omsorgssvikt og psykisk lidelse","Seierstad (2013)","Durkheim: forbrytelsens funksjon","Rafoss (2018): konsensusperioden"],
+ eks:["SSBU i 1983: omsorgssvikt","«get rich or die trying»","World of Warcraft og Call of Duty","Høyreekstreme nettfora","Eurabia-teorien","Brundtland-regjeringen og «statsfeminisme»","Kritikken av terrorberedskapen"],
+ disp:["Innledning: fakta, Lippestads poeng om å forstå uten å forsvare, problemstilling.","Individforklaringer: psykisk sykdom mot rasjonelt valg.","Strukturforklaringer: oppvekst, skole og arbeid, medier og nettmiljø, samfunnet (sosialdemokratiet, innvandring).","Typologien: ideologisk aktivist etter egen framstilling, men også eventyrer og sosialt frustrert.","Vekting: Borchgrevinks sitat som ankerpunkt.","Konklusjon: en kombinasjon, med begrunnet tyngdepunkt."],
+ fall:["Monokausal forklaring («han var syk», «det var dataspillene»)","Moralisering i stedet for analyse","Glemme hvorfor målene var AUF og regjeringen (konspirasjonsteorien)"],
+ inn:"Den 22. juli 2011 drepte Anders Behring Breivik åtte mennesker i regjeringskvartalet og 69 på Utøya. Forsvareren hans, Geir Lippestad, mente det var viktig å ikke omtale ham som en demon, men forsøke å forstå hvordan en gutt som vokste opp i Norge, kunne gjøre noe slikt (Lippestad, u.å.). Å forklare er ikke å forsvare, men en forutsetning for å kunne forebygge. I denne teksten drøfter jeg individforklaringer, strukturforklaringer og Tore Bjørgos typologi over veier inn i ekstremisme, og vurderer hvilke forklaringer som veier tyngst.",
+ dro:"Aage Borchgrevink (2012) beskriver hvordan han under arbeidet med boka beveget seg fra å se 22. juli som en «reaksjon på globalisering og modernitet» til å se terrorhandlingene som utslag av omsorgssvikt og psykisk lidelse. Han flyttet seg altså fra en strukturforklaring på makronivå til forklaringer på mikro- og individnivå. Argumentet er sterkt, fordi det forklarer noe strukturforklaringene ikke kan forklare: hvorfor akkurat denne mannen handlet, når tusenvis av andre leste de samme nettsidene og spilte de samme spillene uten å bli terrorister. Samtidig avviser ikke Borchgrevink politikken. Konspirasjonsteorien om Eurabia forklarer <em>hvorfor</em> målene var regjeringskvartalet og AUF og ikke muslimer, og ekkokammeret i nettmiljøet ga ham et fellesskap som bekreftet verdensbildet hans. Etter min vurdering forklarer individforklaringene best at han handlet, mens strukturforklaringene forklarer best hva han gjorde og mot hvem.",
+ avs:"Terrorangrepet 22. juli kan ikke forklares med én årsak. Omsorgssvikt og psykisk lidelse forklarer hvorfor akkurat Breivik ble i stand til å gjøre det han gjorde, mens ideologien, konspirasjonsteorien og nettmiljøet forklarer retningen og målene. Jeg vil derfor legge mest vekt på samspillet mellom individuell sårbarhet og et ideologisk miljø som ga sårbarheten et politisk språk. En slik kombinasjonsforklaring er også den mest nyttige for samfunnet, fordi den peker på forebygging både i barnevernet og i arbeidet mot ekstreme ytringer."},
+
+{k:"k1", t:"Gjør rede for Tore Bjørgos typologi over veier inn i voldelig ekstremisme, og drøft styrker og svakheter ved å bruke typologier til å forstå radikalisering.",
+ why:"Redegjørelse pluss en metodedrøfting. Poenget er å vurdere typologien som verktøy, ikke bare plassere Breivik i en boks. Oppgave 3 bakerst i kapitlet (fremmedkrigere) er en variant.",
+ beg:["Typologi","Radikalisering","Individforklaring","Strukturforklaring","Mesonivå"],
+ teo:["Bjørgo (2015)","Mead (1970) som eksempel på en annen typologi"],
+ eks:["Ulrike Meinhof og Osama bin Laden (ideologiske aktivister)","Mobbeofre i nynazistiske grupper (medløpere)","Breivik i minst tre kategorier","Norske fremmedkrigere i Syria"],
+ disp:["Innledning: definer typologi og radikalisering.","Redegjørelse for de fire typene, med kjennetegn og eksempel.","Anvendelse på Breivik.","Styrker: sortering, sammenlikning på tvers av ideologier, peker på ulike tiltak.","Svakheter: forenkling, overlapp, bygger på hvordan personer presenterer seg, lite om strukturer.","Konklusjon: nyttig som verktøy, farlig som fasit."],
+ fall:["Bare redegjørelse","Plassere Breivik i én type"],
+ dro:"Den største styrken ved Bjørgos typologi er at den skal fungere uavhengig av ideologi, slik at vi kan sammenlikne høyreekstreme, venstreradikale og militante islamister. Den viser at veiene inn er ulike, og dermed at forebyggingen må være ulik: en medløper som søker tilhørighet, trenger et annet fellesskap, mens en ideologisk aktivist må møtes med motargumenter. Svakheten er at virkeligheten sjelden passer i én kategori. Breivik presenterte seg selv som ideologisk aktivist, men det som kom fram i rettssaken og biografiene, gjør at han også passer som eventyrer og sosialt frustrert. Det viser et metodisk problem: typologien bygger delvis på hvordan personene framstiller seg selv, og en terrorist har gode grunner til å framheve ideologi og tone ned personlige nederlag. Typologien er derfor mest nyttig når den brukes til å stille spørsmål, og minst nyttig når den brukes til å gi svar."},
+
+{k:"k1", t:"Forklar mikro-, meso- og makronivå, og bruk nivåene til å analysere et selvvalgt sosialt fenomen.",
+ why:"«Forklar» og «bruk». Velg et fenomen der alle tre nivåene har noe å si, for eksempel prestasjonspress, frafall eller radikalisering. Vis hva hvert nivå får fram og mister.",
+ beg:["Mikronivå","Mesonivå","Makronivå","Individforklaring","Strukturforklaring"],
+ teo:["Helikopterbildet fra læreboka","Goffmans totale institusjoner (meso)","Madsen (2018) og Mæland (2016) for prestasjonspress"],
+ eks:["Prestasjonspress: én jente (mikro), skolen og vennegjengen (meso), kunnskapssamfunnet og sosiale medier (makro)","Radikalisering: Breivik (mikro), nettforum eller fengsel (meso), høyreekstreme ideologier (makro)"],
+ disp:["Innledning: velg fenomen, definer de tre nivåene.","Mikro: hva vi ser når vi zoomer inn.","Meso: institusjonene imellom.","Makro: samfunnet som helhet.","Drøfting: hva hvert nivå mister, hvordan nivåene påvirker hverandre.","Konklusjon: nivåene utfyller hverandre, og hvilket du vil vektlegge."],
+ fall:["Glemme mesonivået","Bare definere nivåene uten å bruke dem"],
+ dro:"Prestasjonspresset blant unge jenter kan se helt forskjellig ut avhengig av nivået vi velger. På mikronivå ser vi en jente som ikke får sove før en prøve, og da er det nærliggende å snakke om perfeksjonisme som en personlig egenskap. Beveger vi oss til mesonivå, ser vi skolen som institusjon, der vurdering og karakterer er en sentral del av hverdagen, og vennegjengen, der sammenlikningen fortsetter på sosiale medier etter skoletid. På makronivå ser vi et kunnskapssamfunn som stiller høye krav til utdanning, og en kultur der kravet om å være perfekt kommer fra strukturene de unge vokser opp i (Mæland, 2016). Mikronivået alene ville gjort presset til et individuelt problem som løses hos psykologen. Makronivået alene ville gjort det usynlig hvorfor noen jenter tåler presset bedre enn andre. Det er først når nivåene ses sammen, at vi forstår hvordan samfunnets krav blir til én persons søvnløse natt."},
+
+{k:"k1", t:"Bruk harmoniperspektivet og konfliktperspektivet til å analysere samfunnets reaksjoner etter 22. juli.",
+ why:"Perspektiv for perspektiv. Harmoni får fram samholdet, konflikt får fram motsetningene. En 6-er viser at begge er sanne samtidig, og at konsensusperioden tok slutt.",
+ beg:["Harmoniperspektiv","Funksjonalisme","Konfliktperspektiv","Makronivå"],
+ teo:["Durkheim: forbrytelsens sosiale funksjon","Rafoss (2018): konsensusperioden","Marx, Weber: konflikt om goder og verdier","Merton: manifeste og latente funksjoner (utover boka)"],
+ eks:["Rosetogene","«Om én mann kan vise så mye hat &hellip;»","Breiviks oss og dem","Debatten om innvandring og ytringsfrihet etterpå","Kritikken av politiet og beredskapen"],
+ disp:["Innledning: to perspektiver, definer.","Harmoni: Durkheim, rosetog, samlende ritualer, felles verdier.","Konflikt: motsetningene som gjorde angrepet mulig, og debattene etterpå.","Drøfting: hva hvert perspektiv overser.","Konklusjon."],
+ fall:["Bruke harmoniperspektivet til å forklare Breiviks handlinger. Læreboka sier at de er for eksepsjonelle til det","Glemme at konsensusperioden var en periode"],
+ dro:"Harmoniperspektivet får tydelig fram hvordan angrepet samlet befolkningen. Ifølge Durkheim har forbrytelser en sosial funksjon ved at de viser hvor grensene går og samler folk i fordømmelsen. Rosetogene, der hundretusener gikk sammen, og AUF-erens tweet om at vi alle kan vise mer kjærlighet sammen, er eksempler på samlende ritualer som bekreftet oppslutningen om et inkluderende demokrati. Rafoss (2018) kaller tiden etterpå en konsensusperiode. Men perspektivet har en blindsone. Det sier lite om de motsetningene i samfunnet som Breivik utnyttet, og lite om at konsensusen var midlertidig. Et konfliktperspektiv vil peke på at debatten om innvandring, islam og ytringsfrihet blusset opp igjen etter hvert, og at spørsmålet om hvem som hadde ansvaret for manglende beredskap, var en kamp om makt og skyld. Begge perspektivene er altså sanne, men om ulike tidsrom: harmoniperspektivet beskriver sjokket, konfliktperspektivet beskriver det som kom etterpå."},
+
+{k:"k1", t:"Arv eller miljø? Drøft hvorfor kvinner og menn ofte velger ulike yrker.",
+ why:"Arv-miljø-aksen brukt på kjønn. Lærebokas eget eksempel. En 6-er avviser enten-eller og bruker epigenetikk og Meads studie fra Ny-Guinea (utover boka).",
+ beg:["Arv og miljø","Epigenetikk","Biologisk kjønn","Sosialt kjønn","Sosialisering","Normer","Den stille revolusjonen"],
+ teo:["Margaret Mead: Sex and Temperament (1935)","Den stille revolusjonen","Berger og Luckmann"],
+ eks:["Rosa og blå pledd på fødestua","Kjønnsdelte leker","Husmoridealet på 1950-tallet","Kjønnsforskjeller i utdanningsvalg i dag"],
+ disp:["Innledning: problemstilling, definer arv og miljø.","Arv: biologiske forskjeller, mulige ulike interesser.","Miljø: sosialisering fra fødselen, forventninger, rollemodeller, normer.","Historisk og kulturell variasjon: den stille revolusjonen, Mead.","Epigenetikk som bro.","Konklusjon."],
+ fall:["Å avvise biologi helt","Påstander uten eksempler"],
+ dro:"Det sterkeste argumentet for at miljøet veier tungt, er at kjønnsforskjellene varierer mellom samfunn og over tid. Om yrkesvalg bare var styrt av biologi, ville vi forventet omtrent like forskjeller overalt. Men i Norge på 1950-tallet var det en internalisert norm at far var forsørger og mor hjemmeværende, og rollefordelingen ble oppfattet som naturlig. Etter den stille revolusjonen er det normalt at begge jobber. Margaret Mead fant på 1930-tallet tre folkegrupper på Ny-Guinea med helt ulike forventninger til hva som var mannlig og kvinnelig. Samtidig kan vi ikke utelukke at biologien spiller en rolle. Epigenetikken viser at det ikke er et enten-eller: genetiske disposisjoner trenger et miljø for å komme til uttrykk. Når jenter og gutter fra fødestua får ulike leker og ulike forventninger, blir eventuelle små medfødte forskjeller forsterket av sosialiseringen."},
+
+{k:"k4", t:"Gjør rede for sosialisering som en livslang prosess, og drøft i hvilken grad sosialiseringsprosesser varierer mellom samfunn og over tid.",
+ why:"Oppgave 7 bakerst i kapittel 4. To deler: redegjørelse (livslang) og drøfting (variasjon). Margaret Meads tre former er det naturlige analyseverktøyet.",
+ beg:["Sosialisering","Sosial prosess","Primær- og sekundærsosialisering","Signifikante andre","Internalisering","Normer","Post-, kon- og prefigurativ sosialisering","Den stille revolusjonen"],
+ teo:["Giddens (2006)","Berger og Luckmann (2000)","Frønes (2010)","Margaret Mead (1928, 1970)","Freeman (1983)"],
+ eks:["Livsløpet fra spedbarn til pensjonist","Norge før 1950 (postfigurativt)","Konservative religiøse miljøer i dag","Ungdom som lærer foreldre teknologi","Samoa"],
+ disp:["Innledning: definer med Berger og Luckmann, og si hvorfor ikke Giddens.","Livslang: primær, sekundær, voksenliv, alderdom.","Mead: tre former.","Drøfting mellom samfunn: Samoa mot USA, form mot prosess.","Drøfting over tid: stille revolusjonen, fra post- til konfigurativ.","Nyanse: alle tre formene finnes samtidig i samme samfunn.","Kildekritikk: Freeman.","Konklusjon."],
+ fall:["Bare Giddens","Stoppe sosialiseringen ved 18 år","Blande Margaret Mead og George H. Mead"],
+ inn:"En baby født i Arendal i dag og en baby født på Samoa i 1925 fødes med de samme grunnleggende evnene, men vokser opp til å bli svært forskjellige mennesker. Forskjellen skyldes sosialisering, som Berger og Luckmann (2000) definerer som «de prosesser der individet både lærer og internaliserer samfunnets normer og atferdsmønster, men også selv er med på å skape eller endre normer». Jeg bruker denne definisjonen framfor Giddens (2006), fordi den får med at sosialisering går begge veier. I denne teksten gjør jeg først rede for hvorfor sosialisering er en livslang prosess. Deretter drøfter jeg, med utgangspunkt i Margaret Meads tre former for sosialisering, i hvilken grad prosessen varierer mellom samfunn og over tid.",
+ dro:"Margaret Meads feltarbeid på Samoa viser at sosialiseringens <em>innhold</em> kan variere dramatisk mellom samfunn. Der var fødsel og død en naturlig del av oppveksten, mens bordskikk og høflighet betydde mindre enn i USA, og ungdomstiden var preget av frihet heller enn stress. Mead konkluderte med at det var kulturelle og ikke biologiske faktorer som styrte ungdommenes opplevelse (Mead, 1928). Det taler for at sosialiseringen varierer mye. Samtidig er det viktig å skille mellom prosessen og formen. At barn lærer normer av signifikante andre og internaliserer dem, skjer i alle samfunn. Det er formen og innholdet som varierer. Mead mente dessuten selv at ett samfunn sjelden har bare én form for sosialisering. I dagens Norge dominerer den konfigurative formen, men konservative religiøse miljøer er fortsatt postfigurative, og mange familier har prefigurative trekk når barna lærer foreldrene å bruke sosiale medier. Variasjonen finnes altså ikke bare <em>mellom</em> samfunn, men også <em>innenfor</em> dem.",
+ avs:"Sosialisering er en livslang prosess fordi vi hele livet møter nye arenaer, nye roller og nye normer, fra primærsosialiseringen i familien til arbeidslivet og alderdommen. Drøftingen viser at sosialiseringen som prosess er universell, men at formen, innholdet og retningen varierer mye, både mellom samfunn, over tid og innenfor ett og samme samfunn. Meads studier må leses med Freemans kritikk i bakhodet, men hovedpoenget hennes står seg: det er kulturen som bestemmer hvordan vi blir sosialisert, ikke bare biologien."},
+
+{k:"k4", t:"Forklar begrepet medborgerskap, og drøft hvordan mennesker har brukt medborgerskapet sitt til å endre samfunnet.",
+ why:"Oppgave 2 og 8 bakerst i kapittel 4. Skill medborgerskap fra statsborgerskap med én gang. Drøftingen er individ mot struktur: hvor mye kan enkeltmennesket endre?",
+ beg:["Medborgerskap","Statsborgerskap","Utenforskap","Individforklaring","Strukturforklaring","Normer"],
+ teo:["Stray (2012): medborgerskap og demokrati","Konfliktperspektivet: medborgerskap krever ressurser"],
+ eks:["Stemmeretten 1913","Mohamed Bouazizi og den arabiske våren 2011","Black lives matter 2014","Greta Thunberg 2019","Me too","Arendalsuka"],
+ disp:["Innledning: Greta utenfor Riksdagen. Definer medborgerskap og skill det fra statsborgerskap.","Medborgerskap og demokrati (Stray).","Fire eksempler i historisk sammenheng.","Drøfting: individets handling mot strukturene som gjorde den mulig.","Konfliktperspektiv: ulik fordeling av medborgerskap, utenforskap.","Konklusjon."],
+ fall:["Blande med statsborgerskap","Bare fortelle historiene uten begreper"],
+ inn:"I august 2018 satte en 15 år gammel svensk skoleelev seg ned utenfor Riksdagen med en plakat der det sto «Skolstrejk för klimatet». Året etter streiket millioner av unge over hele verden. Greta Thunberg hadde ikke stemmerett, men hun brukte sitt medborgerskap, altså sin mulighet til å delta i sosiale og politiske fellesskap, uavhengig av juridisk status (Stray, 2012). Medborgerskap må skilles fra statsborgerskap, som er en juridisk status med rettigheter og plikter. I denne teksten forklarer jeg medborgerskap nærmere, og drøfter med utgangspunkt i fire eksempler hvor mye enkeltmennesker faktisk kan endre samfunnet.",
+ dro:"Eksemplene kan gi inntrykk av at enkeltmennesker alene endrer historien. Et individperspektiv vil framheve Bouazizi, den amerikanske aktivisten som skrev «black lives matter» på Facebook, og Greta Thunberg. Uten deres handling hadde bevegelsene kanskje ikke startet akkurat da. Likevel skjedde ingen av handlingene i et vakuum. Læreboka understreker at slike hendelser alltid skjer innenfor en historisk, kulturell, økonomisk, teknologisk, sosial og politisk sammenheng. Bouazizis selvmord ble startskuddet for et opprør fordi misnøyen med regimet allerede var utbredt. Black lives matter spredte seg fordi sosiale medier gjorde det mulig, og fordi kampen mot rasisme i USA har røtter tilbake til borgerrettsbevegelsen. Enkeltmennesket er altså en gnist, men strukturene avgjør om det finnes noe som kan ta fyr. Et konfliktperspektiv vil i tillegg påpeke at medborgerskap er ulikt fordelt. Det krever tid, språk, nettverk og trygghet, og de som står i utenforskap, har minst av det.",
+ avs:"Medborgerskap handler om faktisk deltakelse, og eksemplene viser at også mennesker uten formell makt kan sette dagsorden. Drøftingen viser likevel at enkeltmenneskers handlinger får størst virkning når de møter strukturer som er klare for endring, og at mange av kampsakene har lange historiske røtter. Samfunnsendring tar tid. Et sterkt demokrati er derfor et demokrati som ikke bare tillater deltakelse, men legger til rette for at også de med svakest medborgerskap kan delta."},
+
+{k:"k4", t:"Drøft påstanden: «Det klassiske ungdomsopprøret finnes ikke lenger.»",
+ why:"Oppgave 6 bakerst i kapittel 4. Klassisk for og mot-oppgave. Definer hva du mener med «klassisk», så blir drøftingen presis.",
+ beg:["Ungdomskultur","Generasjonskløfta","Signifikante andre","Sosiale roller","Prefigurativ sosialisering","Opposisjonell identitet","Generasjon prestasjon"],
+ teo:["Øia og Vestel (2014)","Pedersen (2003)","Bakken (2020), Ungdata","Madsen (2018)","Mead (1970)"],
+ eks:["1960- og 70-tallets opprør","92 % opplever foresatte som interessert","Klimastreiken","Mipstere","Prestasjonspress"],
+ disp:["Innledning: definer klassisk ungdomsopprør (kollektivt, synlig, mot voksne autoriteter).","For: Ungdata, generasjonskløfta som forsvant, Pedersen.","Mot: opprøret har skiftet form og retning, klimastreik, opposisjonelle identiteter, prefigurativ sosialisering.","Kildekritikk: selvrapportering, variasjon mellom grupper.","Tolkning: konflikten er flyttet innover, prestasjonspress.","Konklusjon."],
+ fall:["Svare ja eller nei uten å definere «klassisk»","Bare synse om egen generasjon"],
+ inn:"På 1960- og 70-tallet protesterte unge mot foreldre, skole og stat, og voksne så på ungdommen som en trussel mot samfunnets orden. I dag viser Ungdata at unge er «streitere enn noen gang», bruker mindre rus og har tette bånd til foreldrene (Bakken, 2020). Med det klassiske ungdomsopprøret mener jeg her et kollektivt, synlig opprør rettet mot voksne autoriteter. I denne teksten drøfter jeg om dette opprøret er borte, eller om det bare har skiftet form.",
+ dro:"På den andre siden kan det argumenteres for at opprøret ikke er forsvunnet, men har skiftet retning. Klimastreiken fra 2019 var nettopp et kollektivt og synlig opprør der unge mennesker kritiserte voksengenerasjonen for å svikte framtiden. Forskjellen fra 1968 er at målet ikke var foreldrene hjemme, men politikerne. Mipsterne viser en annen form for opposisjon: de bryter både med majoritetssamfunnets forventninger og med sine egne mødre, som ofte ikke brukte hijab. I tillegg er prefigurativ sosialisering i seg selv en maktforskyvning, når unge lærer de voksne hvordan verden fungerer. Det sterkeste motargumentet mot påstanden er likevel prestasjonspresset. Når så mange unge sliter med krav om å være perfekte, kan det tolkes som at konflikten mellom individ og samfunn fortsatt finnes, men at den er internalisert og rettet innover, mot en selv, i stedet for utover, mot autoritetene.",
+ avs:"Drøftingen viser at det klassiske ungdomsopprøret, kollektivt, synlig og rettet mot foreldre og voksne autoriteter, er svekket. Generasjonskløfta er mindre, og foreldrene er styrket som signifikante andre. Påstanden er likevel for enkel. Opprøret har flyttet seg fra generasjonsaksen til saksaksen, som i klimastreiken, og fra gata til den enkeltes forhold til krav og prestasjon. Etter min vurdering har ungdomsopprøret derfor ikke forsvunnet, men endret form."},
+
+{k:"k4", t:"Stiller samfunnet så høye krav at ungdom er redde for ikke å strekke til? Bruk både individ- og strukturforklaringer.",
+ why:"Diskusjonsspørsmålet på side 114. Krever standpunkt, begge forklaringstyper og kildekritikk til tallene.",
+ beg:["Generasjon prestasjon","Individforklaring","Strukturforklaring","Normer","Signifikante andre","Mikro og makro"],
+ teo:["Madsen (2018): paradokset","Mæland (2016): kulturelle strukturer","Bakken (2020): Ungdata","Goffman: selvpresentasjon på sosiale medier","Cooley: speilingsselvet (utover boka)"],
+ eks:["Tallene fra Ungdata","Ønsketreet","Sykt perfekt og Flink pike","Sosiale medier og kroppsidealer"],
+ disp:["Innledning: Ønsketreet og tallene.","Individforklaringer: perfeksjonisme, sårbarhet, psykisk sykdom.","Strukturforklaringer: skole og vurdering, kunnskapssamfunnet, sosiale medier, kroppsidealer.","Paradokset og kildekritikk: vi vet mer, selvrapportering, gutter underrapporterer, «presset til å føle seg presset».","Konklusjon med standpunkt."],
+ fall:["Behandle tallene som fasit","Glemme guttene"],
+ dro:"En individforklaring vil peke på at noen er mer perfeksjonistiske eller sårbare enn andre, og at presset først blir et problem når det møter en person som har vanskelig for å senke kravene til seg selv. Forklaringen har noe for seg, fordi ikke alle unge i samme klasse sliter like mye. Men den forklarer ikke hvorfor andelen jenter med psykiske plager er så høy, og hvorfor de melder om dette samtidig som de har bedre karakterer og bruker mindre rus enn noen gang. Her er strukturforklaringen sterkere. Mæland (2016) understreker at kravet om å være perfekt kommer fra de kulturelle strukturene de unge vokser opp i: et kunnskapssamfunn med høye krav til utdanning, en skole der vurdering er en del av hverdagen, og sosiale medier som presser fram idealer om kropp og popularitet. Samtidig må tallene leses kritisk. Madsen (2018) påpeker at vi i dag snakker mer om psykisk helse og måler oftere, og læreboka spør om mange blir «presset til å føle seg presset». Det betyr ikke at presset er innbilt, men at økningen kan være mindre enn tallene tyder på."},
+
+{k:"k4", t:"Gjør rede for hvordan identiteten din har blitt formet. Bruk fagbegreper fra kapittel 4 og teoriene til George H. Mead og Erving Goffman.",
+ why:"Oppgave 9 bakerst i kapittel 4. Det er lov å skrive om seg selv, men teorien må bære teksten. Hver personlige erfaring skal knyttes til et begrep.",
+ beg:["Identitet","Personlig identitet","Gruppeidentitet","Relasjonell identitet","Situasjonell identitet","Det regisserte selvet","Frontstage og backstage","Signifikante andre","Symbolsk interaksjonisme","Kulturell identitet"],
+ teo:["George H. Mead (1934): jeg, meg, den generaliserte andre, lekestadiet og spillstadiet","Goffman (1959): frontstage, backstage, inntrykksstyring","Eriksen (2004)","Barth: identitet skapes i grensene mot andre (utover boka)"],
+ eks:["Familien som første signifikante andre","Lagidrett som spillstadiet","Klasserom og gang","Instagram og Snapchat","Å flagge norsk under håndball"],
+ disp:["Innledning: identitet er ikke medfødt, men formes i relasjon til andre.","G.H. Mead: jeg, meg, generalisert andre, knyttet til egen oppvekst (lek, lagidrett).","Goffman: frontstage og backstage i eget liv, sosiale medier.","Relasjonell og situasjonell identitet, personlig og gruppeidentitet.","Drøfting: regissør eller dukke? Tilpasning mot kritisk selvstendighet.","Konklusjon."],
+ fall:["Dagbokstekst uten fagbegreper","Bare teori uten deg selv","Kalle ham «Georg»"],
+ inn:"Om noen spør meg hvem jeg er, vil svaret avhenge av hvem som spør og hvor jeg er. Til en lærer er jeg elev på studiespesialisering, til treneren er jeg lagspiller, og hjemme er jeg sønn eller datter. Det tyder på at identitet ikke er noe fast vi fødes med, men noe som formes gjennom livet i møte med andre. Med identitet menes her hvordan vi oppfatter oss selv, presenterer oss selv og skaper oss selv i møte med andre. I denne teksten bruker jeg George Herbert Meads teori om hvordan selvet blir til, og Erving Goffmans teori om hvordan vi framfører det, for å gjøre rede for hvordan min egen identitet er formet.",
+ dro:"Goffmans begreper frontstage og backstage passer godt på min egen hverdag. I klasserommet er jeg frontstage: jeg rekker opp hånda, bruker fagspråk og viser fram den delen av meg som læreren forventer. I friminuttet med nære venner er jeg mer backstage og kan tulle og legge fra meg elevrollen. På sosiale medier er skillet enda tydeligere. Instagram-profilen min er en nøye kuratert frontstage som alle kan se, mens Snapchat med de nærmeste vennene fungerer mer som backstage. Dette er et eksempel på inntrykksstyring: jeg velger hvilke bilder som legges ut, og hvilke som slettes. Samtidig kan man spørre om backstage virkelig er der jeg er «meg selv», eller om det bare er en ny scene med et annet publikum. Også blant nære venner finnes forventninger. Goffman selv understreker at identiteten ikke skapes uavhengig av strukturene rundt oss, og det stemmer med min erfaring: selv når jeg føler meg fri, spiller jeg en rolle som andre har vært med på å skrive.",
+ avs:"Identiteten min er formet gjennom samspill med andre: først gjennom de signifikante andre i familien, seinere gjennom lek, lagidrett og skole, der jeg lærte å se meg selv utenfra slik George H. Mead beskriver. Goffman viser hvordan jeg bruker dette selvet i praksis, ved å veksle mellom frontstage og backstage. Etter min vurdering er identiteten verken fritt valgt eller helt bestemt av andre. Den forhandles fram i situasjoner, innenfor rammer jeg ikke har valgt selv, men som jeg likevel kan være med på å endre."},
+
+{k:"k4", t:"Hvem er de viktigste signifikante andre for ungdom i dag: foreldrene eller de jevnaldrende?",
+ why:"En ferdig drøftingsakse fra læreboka: Frønes mot Øia og Vestel. Definer signifikante andre og ta stilling.",
+ beg:["Signifikante andre","Primær- og sekundærsosialisering","Formell og uformell sosialisering","Det handlende barnet","Generasjonskløfta","Prefigurativ sosialisering"],
+ teo:["Frønes (2010)","Øia og Vestel (2014)","Pedersen (2003)","George H. Mead: signifikante andre og den generaliserte andre"],
+ eks:["92 % opplever foresatte som interessert","Barnegruppa som arena for status og posisjon","Foreldre og barn på samme konsert","Sosiale medier"],
+ disp:["Innledning: definer signifikante andre.","Frønes: jevnaldrende fra tidlig ungdomsalder, det handlende barnet.","Øia og Vestel: foreldrene styrket, generasjonskløfta som forsvant.","Drøfting: ulike arenaer, ulik type læring.","Konklusjon: det avhenger av hva som læres."],
+ fall:["Bare velge side uten motargument"],
+ dro:"Frønes (2010) og Øia og Vestel (2014) ser ut til å være uenige, men de beskriver kanskje ulike sider av samme virkelighet. Frønes er opptatt av hva som skjer i relasjonen mellom barn: der kjempes det om posisjon og status, og der diskuteres det hva som er riktig og galt. Det er i jevnaldergruppa det handlende barnet trer fram. Øia og Vestel er opptatt av den emosjonelle relasjonen til foreldrene, som i dag er tettere enn før. En mulig løsning er å skille mellom hva som læres hvor. Foreldrene er fortsatt viktige for verdier, trygghet og store valg som utdanning. De jevnaldrende er viktigst for de uformelle normene: hvordan man kler seg, snakker og oppfører seg for å bli akseptert. Spørsmålet «hvem er viktigst?» har dermed ikke ett svar, men avhenger av hvilken del av sosialiseringen vi ser på."},
+
+{k:"k4", t:"Født sånn eller blitt sånn? Drøft forholdet mellom biologisk og sosialt kjønn.",
+ why:"Arv-miljø-debatten fra kapittel 1 brukt på kjønn. Definer begge begrepene presist, bruk interkjønn, og unngå enten-eller.",
+ beg:["Biologisk kjønn","Sosialt kjønn","Interkjønn","Tokjønnsnormen","Sosialisering","Normer","Epigenetikk"],
+ teo:["Margaret Mead (1935), utover boka","Berger og Luckmann","Den stille revolusjonen"],
+ eks:["Fødestua","Leker og klær","Interkjønn: 10&ndash;12 barn i året","Debatten om operasjoner og tredje kjønn"],
+ disp:["Innledning: spørsmålet fra læreboka, definer begrepene.","Biologisk kjønn og tokjønnsnormen, interkjønn.","Sosialt kjønn: forventninger fra fødselen, variasjon mellom samfunn.","Drøfting: samspill, epigenetikk, kjønnsnøytral oppdragelse.","Konklusjon."],
+ fall:["Bruke upresise eller foreldede ord","Gjengi definisjonen av transpersoner fra side 109 ordrett. Den mangler et «ikke»"],
+ dro:"Interkjønn utfordrer ideen om at det biologiske kjønnet alltid er en enkel todeling. Hvert år fødes ti til tolv barn i Norge der det biologiske kjønnet er vanskelig å avgjøre, og ofte bestemmer leger og foreldre hvilket kjønn barnet skal oppdras som. Da er det i praksis samfunnet, og ikke biologien, som tildeler kjønnet. Det viser hvor sterk tokjønnsnormen er: samfunnet er organisert rundt ideen om at man er enten jente eller gutt, og barn som ikke passer, blir tilpasset. Samtidig viser debatten om operasjonene at normen er i endring. Flere mener det er feil å operere før barnet selv kan velge, og noen land har innført en tredje kjønnskategori. Det er et eksempel på det Berger og Luckmann beskriver: normene internaliseres, men de kan også utfordres og endres."},
+
+{k:"k4", t:"Er klær viktige identitetsmarkører? Bruk mipsterkulturen og antropologisk teori om identitet.",
+ why:"Diskusjonsspørsmålene på side 120&ndash;121. Bruk Tarlo og Eriksen, og ta stilling.",
+ beg:["Identitet","Relasjonell identitet","Situasjonell identitet","Opposisjonell identitet","Gruppeidentitet","Kulturell identitet"],
+ teo:["Tarlo (2010): klær som strategi","Eriksen (2004): relasjonell og situasjonell identitet","Goffman: inntrykksstyring","Barth: grenser mellom grupper (utover boka)"],
+ eks:["Mipstere","Jenta fra Jordal skole","Russeklær","Merkeklær i ungdomsmiljøer","Hvite klær i rosetogene"],
+ disp:["Innledning: sitatet fra Jordal-jenta.","Tarlo: forbi frivillig eller undertrykt.","Relasjonell identitet i tre retninger.","Drøfting: klær som markør mot at identitet er mer enn klær.","Konklusjon."],
+ fall:["Diskutere hijab som religion eller politikk i stedet for identitet","Glemme spørsmålet i oppgaven: «er klær viktige?»"],
+ dro:"Mipsterkulturen viser at klær kan være en måte å fortelle omverdenen hvem man er. Emma Tarlo (2010) argumenterer for at vi må komme lenger enn debatten om hijaben er frivillig eller undertrykkende, og se på hva klærne betyr for dem som bærer dem. Jenta fra Jordal skole forteller at hun valgte hijaben selv, og at det er viktig for henne å vise at sjal og vestlig mote ikke er en motsetning (Hoffengh, 2016). Klærne er altså ikke bare pynt, men en strategi. Samtidig skaper mipsterne identiteten sin i relasjon til tre grupper på én gang: majoritetssamfunnet, sine egne mødre, som ofte ikke brukte hijab, og andre muslimer som lever annerledes (Eriksen, 2004). Det gjør klærne til en tydelig markør, men det viser også at identiteten ligger i relasjonene. Klærne er et språk, men det er relasjonene som gir språket mening."},
+
+{k:"x", t:"Bruk Goffmans teori til å analysere hvordan ungdom presenterer seg selv på sosiale medier. Vurder hvor godt teorien passer.",
+ why:"Kombinerer rosa sider med samtiden. «Vurder» krever at du sier hvor teorien passer, og hvor den kommer til kort.",
+ beg:["Det regisserte selvet","Frontstage og backstage","Inntrykksstyring","Situasjonell identitet","Generasjon prestasjon","Rolledistanse"],
+ teo:["Goffman (1959)","George H. Mead og Cooley: speilingsselvet","Madsen (2018)"],
+ eks:["Instagram mot Snapchat","«Close friends» og egne kontoer for de nærmeste","Filtrerte bilder","Likes som tilbakemelding"],
+ disp:["Innledning: Goffman skrev før internett.","Teorien.","Anvendelse: plattformer som ulike scener.","Hvor teorien passer: inntrykksstyring, kuratert frontstage.","Hvor den kommer til kort: publikum er ukjent og permanent, grensene visker ut, algoritmer, makt.","Konklusjon."],
+ fall:["Bare beskrive egne vaner"],
+ dro:"Goffmans teori passer påfallende godt på sosiale medier. Der kan vi velge nøyaktig hvilke bilder som vises, filtrere dem og slette det som ikke gir nok likes. Det er inntrykksstyring i sin reneste form. Likevel skiller sosiale medier seg fra Goffmans teater på viktige punkter. På en scene vet skuespilleren hvem publikum er, men på nettet kan et innlegg nå langt flere enn tenkt, og det kan ligge der i årevis. Grensen mellom frontstage og backstage visker seg ut når et bilde fra en privat chat blir delt videre. I tillegg sier teorien lite om hvem som bestemmer reglene for scenen. Algoritmene avgjør hva som blir sett, og det er kommersielle selskaper som har makten over dem. Et konfliktperspektiv ville derfor supplert Goffman med spørsmålet om hvem som tjener på at ungdom presenterer seg på denne måten. Teorien er et godt verktøy for å forstå hva den enkelte gjør, men et svakere verktøy for å forstå rammene."},
+
+{k:"x", t:"Bruk minst to tenkemåter fra kapittel 1 til å analysere et fenomen fra kapittel 4, eller fra dokumentaren dere så.",
+ why:"En typisk sammensatt oppgave. Velg to tenkemåter som gir ulike svar, så har du drøftingen gratis. Har du notert fra dokumentaren i <a href=\"#d-dok\">notatmalen</a>, bruk den her.",
+ beg:["Individ- og strukturforklaring","Mikro, meso, makro","Harmoni og konflikt","Arv og miljø","Typologi"],
+ teo:["Velg etter fenomen, se teoretikerbanken"],
+ eks:["Prestasjonspress","Generasjonskløfta","Sosialisering i endring","Interkjønn","Dokumentaren"],
+ disp:["Innledning: fenomenet, de to tenkemåtene og hvorfor du valgte dem.","Tenkemåte 1 brukt grundig.","Tenkemåte 2 brukt grundig.","Drøfting: hva hver får fram og overser, og hvordan de utfyller hverandre.","Konklusjon."],
+ fall:["Tre halve tenkemåter i stedet for to hele","Glemme å begrunne valget"],
+ dro:"Den stille revolusjonen ser ulik ut gjennom harmoni- og konfliktperspektivet. Et harmoniperspektiv vil spørre hvilken funksjon endringen har for helheten: når begge foreldrene jobber, øker verdiskapingen, og barnehagen overtar en del av sosialiseringen og gjør barna klare for skolen. Endringen blir en tilpasning der samfunnets deler finner en ny balanse. Et konfliktperspektiv vil derimot se overgangen som resultatet av en kamp. Kvinnebevegelsen kjempet mot tradisjonelle kjønnsrollenormer som ble forsvart med at de var til barnas og samfunnets beste, og endringen kom fordi kvinner vant fram, ikke fordi systemet tilpasset seg av seg selv. Etter min vurdering beskriver konfliktperspektivet best hvordan endringen skjedde, mens harmoniperspektivet beskriver best hvordan samfunnet fungerer etterpå."}
+];
+
+var THEO = [
+{n:"Anthony Giddens",y:"f. 1938 · britisk sosiolog",i:"Sosialisering er prosessen der det hjelpeløse barnet gradvis blir et selvbevisst og kunnskapsrikt individ, formet av en gitt kultur (2006).",b:"Sosialisering, livslang prosess",u:"Åpningsdefinisjon i sosialiseringsoppgaver, alltid fulgt av hva den mangler.",k:"Gjør individet for passivt. Utover boka: Giddens har selv en teori, strukturasjonsteorien, om at strukturer både begrenser og muliggjør handling og gjenskapes gjennom den. Den er en god bro mellom individ og struktur."},
+{n:"Peter Berger og Thomas Luckmann",y:"1929–2017 og 1927–2016",i:"Individet både lærer og internaliserer samfunnets normer, og er selv med på å skape og endre dem (2000). Originalen kom i 1966.",b:"Sosialisering, internalisering, primær- og sekundærsosialisering",u:"Definisjonen læreboka bruker. Kontrast til Giddens.",k:"Utover boka: skillet mellom primær- og sekundærsosialisering kommer fra dem. Kritikere mener de sier lite om hvorfor noen har mer makt enn andre til å definere normene."},
+{n:"Émile Durkheim",y:"1858–1917 · fransk sosiolog",i:"Samfunnet holdes sammen av felles verdier. Forbrytelser har en funksjon ved å vise hvor grensene går og samle folk i fordømmelse.",b:"Harmoniperspektiv, funksjonalisme, sosial orden",u:"Rosetogene etter 22. juli, ritualer som russefeiring og 17. mai.",k:"Sier lite om konflikt og makt. Læreboka oppgir feil fødselsår (1887)."},
+{n:"Karl Marx",y:"1818–1883 · tysk filosof",i:"Samfunnet preges av konflikt mellom klasser om produksjonsmidlene.",b:"Konfliktperspektiv",u:"Som motvekt når oppgaven lett blir harmonisk, for eksempel om medborgerskap.",k:"Reduserer mye til økonomi."},
+{n:"Max Weber",y:"1864–1920 · tysk sosiolog",i:"Ulikhet handler om klasse, status og makt. Vil forstå handlingene ut fra meningen de har for aktørene.",b:"Konfliktperspektiv, sosial ulikhet",u:"Når oppgaven handler om hvem som har makt til å sette normer.",k:"Mindre relevant for kapittel 4, nevn kort."},
+{n:"Pierre Bourdieu",y:"1930–2002 · fransk sosiolog",i:"Grupper kjemper om ulike former for kapital: økonomisk, kulturell og sosial.",b:"Konfliktperspektiv",u:"Utover boka: hans begrep habitus, de internaliserte vanene og smaken vi får fra oppveksten, er en fin bro mellom sosialisering og ulikhet.",k:"Kan virke deterministisk."},
+{n:"Talcott Parsons og Robert Merton",y:"amerikanske funksjonalister",i:"Samfunnets institusjoner fyller funksjoner for helheten. Familien sosialiserer barna.",b:"Harmoniperspektiv, funksjon",u:"Utover boka: Merton skiller mellom manifeste (tilsiktede) og latente (utilsiktede) funksjoner. Skolens manifeste funksjon er kunnskap, en latent funksjon er at elevene lærer å forholde seg til autoriteter og tid.",k:"Forklarer stabilitet bedre enn endring."},
+{n:"Ivar Frønes",y:"norsk sosiolog",i:"Barn og unge lærer av hverandre. I barn–barn-relasjonen trer det handlende barnet fram. Fra tidlig ungdomsalder er jevnaldrende de signifikante andre (2010).",b:"Signifikante andre, det handlende barnet, jevnaldrende",u:"Mot Øia og Vestel i oppgaver om foreldre eller venner.",k:"Kan undervurdere dagens tette foreldrerelasjoner."},
+{n:"Tormod Øia og Viggo Vestel",y:"norske ungdomsforskere",i:"Generasjonskløfta som forsvant: foreldrene er mindre autoritære og styrket som signifikante andre (2014).",b:"Generasjonskløfta, signifikante andre",u:"Ungdomsopprørsoppgaven og foreldre mot venner.",k:"Bygger på data der ungdom selv svarer."},
+{n:"Willy Pedersen",y:"norsk sosiolog",i:"Ungdomstiden er blitt et ideal for voksne som vegrer seg mot å bli eldre (2003).",b:"Generasjonskløfta, forlenget ungdomstid",u:"En tredje forklaring på at opprøret har forsvunnet.",k:"Mest et kulturelt poeng, lite målbart."},
+{n:"Thomas Hylland Eriksen",y:"norsk sosialantropolog",i:"Sosialantropologi er det sammenliknende studiet av kultur og samfunn ut fra lokalt liv (2003). Identitet er relasjonell og situasjonell (2004).",b:"Relasjonell og situasjonell identitet, gruppeidentitet, symbolsk interaksjonisme",u:"Alle identitetsoppgaver. Håndballeksempelet.",k:"Utover boka: Fredrik Barth viste i 1969 at etniske grupper defineres av grensene mot andre, ikke av innholdet i kulturen. Det underbygger at identitet er relasjonell."},
+{n:"Tore Bjørgo",y:"norsk ekstremismeforsker",i:"Fire veier inn i voldelig ekstremisme: ideologiske aktivister, medløpere, eventyrere og sosialt frustrerte (2015).",b:"Typologi, radikalisering",u:"22. juli, fremmedkrigere, radikalisering på nett.",k:"Typer overlapper, bygger delvis på selvpresentasjon."},
+{n:"Aage Borchgrevink",y:"forfatter av En norsk tragedie (2012)",i:"Flyttet seg fra å se 22. juli som reaksjon på globalisering til omsorgssvikt og psykisk lidelse, uten å avvise politikken.",b:"Individ og struktur",u:"Kjernesitatet i 22. juli-oppgaver.",k:"Én forfatters tolkning, ikke en rettslig vurdering."},
+{n:"Tore Rafoss",y:"norsk forsker",i:"Tiden etter 22. juli var en konsensusperiode med samarbeid på tvers av politikk og religion (2018).",b:"Harmoniperspektiv",u:"Rosetogene.",k:"Beskriver en periode, ikke en varig tilstand."},
+{n:"Margaret Mead",y:"1901–1978 · amerikansk sosialantropolog",i:"Ungdomsstress er kulturelt, ikke biologisk (Samoa, 1928). Tre former for sosialisering: post-, kon- og prefigurativ (1970).",b:"Kulturell variasjon, sosialiseringsformer",u:"Alle oppgaver om variasjon i sosialisering, kjønn (Sex and Temperament, 1935) og ungdomstid.",k:"Freeman (1983) kritiserte feltarbeidet. Freeman er selv kritisert: annen tid, andre landsbyer, mann, og etter Meads død."},
+{n:"Erving Goffman",y:"1922–1982 · kanadisk-amerikansk sosiolog",i:"Livet som teater: frontstage og backstage, inntrykksstyring (1959).",b:"Det regisserte selvet, frontstage, backstage",u:"Identitet, sosiale medier, roller. Utover boka: rolledistanse, stigma (1963), totale institusjoner (1961).",k:"Sterk på mikronivå, svak på makt og strukturer."},
+{n:"George Herbert Mead",y:"1863–1931 · amerikansk filosof",i:"Selvet består av jeg, meg og den generaliserte andre. Vi blir oss selv ved å ta andres roller. Mind, Self and Society (1934) ble satt sammen av studentene etter hans død.",b:"Symbolsk interaksjonisme, den generaliserte andre",u:"Identitetsoppgaver. Lekestadiet og spillstadiet forklarer hvordan den generaliserte andre oppstår.",k:"Sier lite om hvem som bestemmer hvilke forventninger som gjelder."},
+{n:"Herbert Blumer og Charles H. Cooley",y:"amerikanske sosiologer",i:"Blumer laget begrepet symbolsk interaksjonisme (1937). Cooley beskrev speilingsselvet (1902): vi ser oss selv slik vi tror andre ser oss.",b:"Symbolsk interaksjonisme, speilingsselvet",u:"Utover boka. Speilingsselvet passer på likes og prestasjonspress.",k:"Mikroperspektiv."},
+{n:"Ole Jacob Madsen",y:"norsk psykolog",i:"Generasjon prestasjon: objektivt bedre, subjektivt verre. Vi vet og snakker mer (2018).",b:"Generasjon prestasjon, paradokset",u:"Prestasjonspress og ungdomsopprør.",k:"&ndash;"},
+{n:"Anders Bakken (Ungdata)",y:"NOVA, OsloMet",i:"Ungdata 2020: streitere ungdom, tette bånd til foreldrene, men mye stress og psykiske plager hos jenter.",b:"Empiri til kapittel 4",u:"Tall i alle ungdomsoppgaver.",k:"Selvrapportert. Gutter underrapporterer."},
+{n:"Emma Tarlo",y:"britisk sosialantropolog",i:"Klær er en strategi for å fortelle hvem man er. Vi må forbi spørsmålet om hijab er frivillig eller undertrykkende (2010).",b:"Identitet, klær, mipstere",u:"Identitetsoppgaver med klær.",k:"&ndash;"},
+{n:"Janicke Heldal Stray",y:"norsk pedagog",i:"Medborgerskap handler om muligheten til å delta i sosiale og politiske fellesskap, uavhengig av statsborgerskap (2012).",b:"Medborgerskap",u:"Definisjonskilde i medborgerskapsoppgaver.",k:"&ndash;"},
+{n:"Franz Boas og Bronislaw Malinowski",y:"antropologiens grunnleggere",i:"Boas: kulturrelativisme. Malinowski: feltarbeid på Trobrianderøyene som ideal.",b:"Sosialantropologi, feltarbeid",u:"Oppgaver om fagene.",k:"Malinowski regnes også til funksjonalismen."}
+];
+
+var NOTEFIELDS = [
+ ["tittel","Tittel og tema","Hva heter dokumentaren, og hva handler den om?"],
+ ["aktorer","Hvem møter vi?","Personer, grupper, institusjoner."],
+ ["individ","Individforklaringer","Valg, egenskaper, diagnoser, motivasjon."],
+ ["struktur","Strukturforklaringer","Familie, skole, venner, medier, lokalmiljø, stat, det globale."],
+ ["nivaa","Mikro, meso, makro","Hva skjer på hvert nivå?"],
+ ["harmkonf","Harmoni og konflikt","Hva holder sammen? Hvem kjemper om hva?"],
+ ["sos","Sosialisering, normer og roller","Signifikante andre, formelle og uformelle normer, roller, forventninger."],
+ ["id","Identitet","Frontstage og backstage, relasjonell eller situasjonell identitet, opposisjonell identitet."],
+ ["sitat","Sitater og tall","Skriv ordrett, med hvem som sa det."],
+ ["egen","Min vurdering","Hva er den viktigste forklaringen, og hvorfor?"]
+];
+
+var CHECK = [
+ ["Jeg har svart på oppgaveordet","Står det «drøft», har jeg vektet og konkludert."],
+ ["Hovedbegrepet er definert presist i innledningen","Med kilde der det er mulig."],
+ ["Hvert hovedavsnitt har minst ett fagbegrep","Og begrepet er brukt, ikke bare nevnt."],
+ ["Jeg har minst to teoretikere eller perspektiver","Ellers er det ikke en drøfting."],
+ ["Eksemplene er koblet eksplisitt til begrepene","«Dette er et eksempel på &hellip;, fordi &hellip;»."],
+ ["Jeg har eksempler fra pensum og fra samtiden eller eget liv",""],
+ ["Jeg har minst ett kildekritisk poeng","Metode, tid, hvem som sier det."],
+ ["Konklusjonen svarer direkte på problemstillingen","Og inneholder ingen nye argumenter."],
+ ["Henvisningene er konsekvente","(Etternavn, år) og (Etternavn, år, s. X) for sitater."],
+ ["Sitater står i « » med kilde",""],
+ ["Litteraturliste nederst","Bare kildene jeg har brukt."],
+ ["Margaret Mead og George H. Mead er ikke blandet",""],
+ ["Statsborgerskap og medborgerskap er ikke blandet",""],
+ ["Jeg har lest gjennom for skrivefeil og lange setninger",""],
+ ["Teksten er skrevet med egne ord",""]
+];
+</script>
+<script>
+"use strict";
+(function(){
+function load(k, f){ try{ var v = localStorage.getItem(k); return v === null ? f : JSON.parse(v); }catch(e){ return f; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function $(id){ return document.getElementById(id); }
+function each(l, f){ Array.prototype.forEach.call(l, f); }
+
+/* tema */
+var root = document.documentElement, st = load("sos.theme", null);
+if(st === "dark" || st === "light") root.setAttribute("data-theme", st);
+function isDark(){ var t = root.getAttribute("data-theme"); if(t) return t === "dark"; return !!(window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches); }
+function paintTheme(){ var d = isDark(); $("themeIcon").innerHTML = d ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>' : '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>'; $("themeBtn").setAttribute("aria-label", d ? "Bytt til lyst tema" : "Bytt til mørkt tema"); }
+paintTheme();
+$("themeBtn").addEventListener("click", function(){ var n = isDark() ? "light" : "dark"; root.setAttribute("data-theme", n); save("sos.theme", n); paintTheme(); });
+
+/* oppgavebank */
+var tf = "alle";
+function list(a){ return '<div class="chips-inline">' + a.map(function(x){ return '<span>' + x + '</span>'; }).join("") + '</div>'; }
+function renderTasks(){
+  $("tasks").innerHTML = TASKS.map(function(t, i){
+    if(tf !== "alle" && t.k !== tf) return "";
+    var tag = t.k === "k1" ? '<span class="tag k1">Kapittel 1</span>' : t.k === "k4" ? '<span class="tag k4">Kapittel 4</span>' : '<span class="tag ut">På tvers</span>';
+    var extra = (t.inn ? '<span class="tag pv" style="background:var(--good)">Innledning, drøfting og avslutning</span>' : '<span class="tag pv" style="background:var(--good)">Eksempelavsnitt</span>');
+    return '<details class="task" id="oppg-' + (i + 1) + '"><summary><span class="num">' + (i + 1) + '</span><span class="ttl"><strong>' + t.t + '</strong><span>' + tag + extra + '</span></span>'
+      + '<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="body">'
+      + '<h5>Slik tolker du oppgaven</h5><p>' + t.why + '</p>'
+      + '<h5>Begreper å bruke</h5>' + list(t.beg)
+      + '<h5>Teori og kilder</h5><ul>' + t.teo.map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ul>'
+      + '<h5>Eksempler</h5><ul>' + t.eks.map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ul>'
+      + '<h5>Disposisjon</h5><ol>' + t.disp.map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ol>'
+      + '<h5>Fallgruver</h5><ul class="pitfall">' + t.fall.map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ul>'
+      + (t.inn ? '<h5>Eksempel: innledning</h5><div class="modeltext"><span class="lbl">Innledning</span><p>' + t.inn + '</p></div>' : '')
+      + '<h5>Eksempel: ' + (t.inn ? 'drøftingsavsnitt' : 'nøkkelavsnitt') + '</h5><div class="modeltext"><span class="lbl">Drøfting</span><p>' + t.dro + '</p></div>'
+      + (t.avs ? '<h5>Eksempel: avslutning</h5><div class="modeltext"><span class="lbl">Avslutning</span><p>' + t.avs + '</p></div>' : '')
+      + '</div></details>';
+  }).join("");
+}
+each(document.querySelectorAll(".chip[data-tf]"), function(c){
+  c.addEventListener("click", function(){
+    tf = c.getAttribute("data-tf");
+    each(document.querySelectorAll(".chip[data-tf]"), function(o){ o.setAttribute("aria-pressed", o === c ? "true" : "false"); });
+    renderTasks();
+  });
+});
+$("openAllTasks").addEventListener("click", function(){
+  var all = document.querySelectorAll("#tasks details"), open = Array.prototype.some.call(all, function(d){ return !d.open; });
+  each(all, function(d){ d.open = open; });
+  this.textContent = open ? "Lukk alle" : "Åpne alle";
+});
+renderTasks();
+
+/* teoretikere */
+$("theo").innerHTML = THEO.map(function(t){
+  return '<article><h4>' + esc(t.n) + '</h4><span class="yr">' + esc(t.y) + '</span><dl>'
+    + '<dt>Hovedidé</dt><dd>' + esc(t.i) + '</dd>'
+    + '<dt>Begreper</dt><dd>' + esc(t.b) + '</dd>'
+    + '<dt>Bruk den til</dt><dd>' + esc(t.u) + '</dd>'
+    + (t.k && t.k !== "&ndash;" ? '<dt>Kritikk og mer</dt><dd>' + esc(t.k) + '</dd>' : '')
+    + '</dl></article>';
+}).join("");
+
+/* notatmal */
+var notes = load("sos.d2notes", {});
+$("notepad").innerHTML = NOTEFIELDS.map(function(f){
+  return '<label for="np-' + f[0] + '">' + esc(f[1]) + '<small>' + esc(f[2]) + '</small></label><textarea id="np-' + f[0] + '" data-np="' + f[0] + '">' + esc(notes[f[0]] || "") + '</textarea>';
+}).join("");
+$("notepad").addEventListener("input", function(e){ var k = e.target.getAttribute("data-np"); if(!k) return; notes[k] = e.target.value; save("sos.d2notes", notes); });
+$("npClear").addEventListener("click", function(){ if(!confirm("Tømme alle notatene fra dokumentaren?")) return; notes = {}; save("sos.d2notes", notes); each(document.querySelectorAll("#notepad textarea"), function(t){ t.value = ""; }); });
+
+/* sjekkliste */
+var ck = load("sos.d2check", {});
+function renderCheck(){
+  $("checklist").innerHTML = CHECK.map(function(c, i){
+    var d = !!ck[i];
+    return '<li class="' + (d ? "done" : "") + '"><input type="checkbox" id="ck-' + i + '" data-ck="' + i + '"' + (d ? " checked" : "") + '><label for="ck-' + i + '">' + c[0] + (c[1] ? '<small>' + c[1] + '</small>' : '') + '</label></li>';
+  }).join("");
+}
+$("checklist").addEventListener("change", function(e){ var i = e.target.getAttribute("data-ck"); if(i === null) return; if(e.target.checked) ck[i] = 1; else delete ck[i]; save("sos.d2check", ck); e.target.closest("li").classList.toggle("done", e.target.checked); });
+$("ckReset").addEventListener("click", function(){ ck = {}; save("sos.d2check", ck); renderCheck(); });
+renderCheck();
+
+/* begrepsoppslag */
+function renderLookup(){
+  var q = $("lq").value.trim().toLowerCase();
+  var l = TERMS.filter(function(t){ return !q || (t.n + " " + t.d + " " + t.e).toLowerCase().indexOf(q) > -1; });
+  $("lshown").textContent = "Viser " + l.length + " av " + TERMS.length + " begreper.";
+  $("lookup").innerHTML = l.map(function(t){ return '<div><dt>' + esc(t.n) + '</dt><dd>' + esc(t.d) + '</dd></div>'; }).join("");
+}
+$("lq").addEventListener("input", renderLookup);
+renderLookup();
+
+/* timer */
+var PH = [[10,"Les og velg oppgave","Les alle oppgavene to ganger. Strek under oppgaveord og begreper."],[25,"Lag disposisjon","Stikkord for hvert avsnitt, og bestem konklusjonen nå."],[40,"Innledning og redegjørelse","Definer presist med kilde. Maks en fjerdedel av teksten."],[95,"Anvendelse og drøfting","Bruk begrepene på eksempler. Sett forklaringer mot hverandre."],[105,"Konklusjon","Svar på oppgaven, vekt og begrunn."],[120,"Les gjennom","Bruk sjekklisten nederst på siden."]];
+var tm = load("sos.d2timer", null), iv = null;
+function fmt(s){ s = Math.max(0, Math.round(s)); var m = Math.floor(s / 60), r = s % 60; return m + ":" + (r < 10 ? "0" : "") + r; }
+function tick(){
+  var len = tm ? tm.len : +$("tLen").value;
+  if(!tm){ $("clock").textContent = fmt(len * 60); $("phaseName").textContent = "Klar"; $("phaseHint").textContent = "Start timeren når du begynner på del 2."; $("tStart").textContent = "Start"; return; }
+  var el = (Date.now() - tm.start) / 1000, left = len * 60 - el;
+  $("clock").textContent = fmt(left);
+  if(left <= 0){ $("phaseName").textContent = "Tiden er ute"; $("phaseHint").textContent = "Lagre og lever."; clearInterval(iv); return; }
+  var minUsed = el / 60 * (120 / len), p = PH[PH.length - 1];
+  for(var i = 0; i < PH.length; i++){ if(minUsed < PH[i][0]){ p = PH[i]; break; } }
+  $("phaseName").textContent = p[1]; $("phaseHint").textContent = p[2];
+  $("tStart").textContent = "Går";
+}
+$("tStart").addEventListener("click", function(){ if(tm) return; tm = {start: Date.now(), len: +$("tLen").value}; save("sos.d2timer", tm); $("tLen").value = tm.len; clearInterval(iv); iv = setInterval(tick, 1000); tick(); });
+$("tReset").addEventListener("click", function(){ tm = null; save("sos.d2timer", null); clearInterval(iv); tick(); });
+$("tLen").addEventListener("change", function(){ if(!tm) tick(); });
+if(tm){ $("tLen").value = tm.len; iv = setInterval(tick, 1000); }
+tick();
+
+/* innholdsliste */
+var toc = $("toc"), secs = document.querySelectorAll("section[data-toc]");
+toc.innerHTML = '<span class="toc-h">Del 2-håndbok</span>' + Array.prototype.map.call(secs, function(s){ return '<a href="#' + s.id + '" data-sec="' + s.id + '">' + esc(s.getAttribute("data-toc")) + '</a>'; }).join("");
+if("IntersectionObserver" in window){
+  var spy = new IntersectionObserver(function(en){
+    en.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var link = null;
+      each(toc.querySelectorAll("a"), function(a){ var on = a.getAttribute("data-sec") === e.target.id; a.classList.toggle("on", on); if(on) link = a; });
+      if(link && toc.scrollWidth > toc.clientWidth + 4) toc.scrollLeft = link.offsetLeft - toc.clientWidth / 2 + link.offsetWidth / 2;
+    });
+  }, {rootMargin: "-140px 0px -65% 0px"});
+  each(secs, function(s){ spy.observe(s); });
+}
+/* åpne oppgave fra lenke */
+function openFromHash(){ var h = location.hash.slice(1); if(h.indexOf("oppg-") === 0){ var d = $(h); if(d){ d.open = true; d.scrollIntoView({block:"start"}); } } }
+window.addEventListener("hashchange", openFromHash); openFromHash();
+})();
+</script>
+
+</body>
+</html>
